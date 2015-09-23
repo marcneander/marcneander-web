@@ -1,0 +1,7 @@
+{
+  "name": "marcneander.se",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.5"
+  }
+}
