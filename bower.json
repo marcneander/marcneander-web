@@ -2,6 +2,7 @@
   "name": "marcneander.se",
   "license": "MIT",
   "dependencies": {
-    "angular": "~1.4.5"
+    "angular": "~1.4.5",
+    "normalize-css": "normalize.css#~3.0.3"
   }
 }

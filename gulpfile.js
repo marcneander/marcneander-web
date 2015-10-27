@@ -31,7 +31,9 @@ gulp.task('js', function() {
 
 gulp.task('less', function() {
     gulp.src(config.styles.appLess)
-        .pipe($.less())
+        .pipe($.less({
+            paths: config.lib
+        }))
         .pipe(gulp.dest(config.temp + '/css/'))
         .pipe($.connect.reload());
 });

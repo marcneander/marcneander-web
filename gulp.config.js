@@ -6,11 +6,12 @@ module.exports = function() {
             appLess: './src/less/app.less',
             allOutputCss: './build/css/**/*.css'
         },
+        lib: './src/lib/',
         fonts: './src/lib/ionic/fonts/*',
         js: {
             app: './src/js/app.js',
             lib: [
-                    './src/js/lib/angular/angular.min.js'
+                    './src/lib/angular/angular.min.js'
             ],
             allJs: './src/js/**/*.js',
             allOutputJs: './build/js/**/*.js',
