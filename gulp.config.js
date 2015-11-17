@@ -3,26 +3,13 @@ module.exports = function() {
         root: './',
         styles: {
             allLess: './src/less/**/*.less',
-            appLess: './src/less/app.less',
+            appLess: './src/less/style.less',
             allOutputCss: './build/css/**/*.css'
         },
+        html: './src/html/**/*.html',
         lib: './src/lib/',
-        fonts: './src/lib/ionic/fonts/*',
-        js: {
-            app: './src/js/app.js',
-            lib: [
-                    './src/lib/angular/angular.min.js'
-            ],
-            allJs: './src/js/**/*.js',
-            allOutputJs: './build/js/**/*.js',
-            output: 'app.min.js'
-        },
-        html: {
-            indexHtml: './src/index.html',
-            allHtml: './src/templates/**/*.html'
-        },
         temp: './build',
-        ignorePath: '/build'
+        img: './src/img/**/*'
     }
 
     return config;

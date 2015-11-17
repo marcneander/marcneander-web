@@ -1,0 +1,232 @@
+/**
+ * marcneander.se stylesheet
+ *
+ * This stylesheet follows the principles of writing 
+ * consistent, idiomatic CSS by Nicolas Gallagher.
+ *
+ * https://github.com/necolas/idiomatic-css/
+ *
+ */
+
+
+/* Include normalize.css by Nicolas Gallagher */
+@import (inline) "normalize-css/normalize.css";
+
+/* ==========================================================================
+   Basic styling for text and scaffolding
+   ========================================================================== */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #333333;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        text-align: left;
+        font-size: 20px;
+        line-height: 37px;
+    }
+}
+
+a { 
+    color: #20A2FF;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1,
+h2 {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+h3,
+h4,
+h5 {
+    margin: 0 0 12px;
+    font-size: 20px;
+
+    @media (min-width: 768px) {
+        margin: 0 0 20px;
+        font-size: 24px;
+    }
+}
+
+p {
+    margin: 0 0 26px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.container { 
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 768px) {
+        width: 620px;
+    }
+}
+
+/* Utilities */
+.fs24 { font-size: 24px; }
+.mb-38 { margin-bottom: 38px; }
+.mb-10 { margin-bottom: 10px; }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+    color: #ffffff;
+    background: url('/img/wood_2x.png') bottom left repeat-x #293440;
+    background-size: 450px 45px;
+
+    padding-top: 30px;
+    
+    .container {
+        position: relative;
+        overflow: visible;
+    }
+
+    .svg {
+        width: 99px;
+        height: 250px;
+
+        margin: 14px 0 5px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: bold;
+    }
+
+    h2 {
+        color: #8F9BA8;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 3px;
+
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 100px 0;
+
+        .svg {
+            height: 349px;
+            width: 138px;
+            position: absolute;
+            bottom: -118px;
+            right: 30px;
+            margin: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.sec-special {
+    border-color: #f1f1f1;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    background-color: #fbfbfb;
+}
+
+.sec-p-l { padding: 60px 0; }
+.sec-p-m { padding: 45px 0; }
+.sec-p-s { padding: 45px 0; }
+
+@media (min-width: 768px) {
+    .sec-p-l { padding: 100px 0 110px; }
+    .sec-p-m { padding: 80px 0 85px 0; }
+    .sec-p-s { padding: 55px 0 65px 0; }
+}
+
+.avatar {
+    margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+    .container {
+        overflow: hidden;
+    }
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+        .avatar {
+            float: left;
+            margin: 0 30px 0 0;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+    }
+}
+
+/* ==========================================================================
+   Labels
+   ========================================================================== */
+
+.label {
+    display: inline-block;
+    border: 1px solid #26B255;
+    border-radius: 21px;
+    padding: 0 14px;
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 42px;
+    color: #26B255;
+
+    &.label-s {
+        font-size: 14px;
+        line-height: 38px;
+        
+        border-radius: 19px
+    }
+
+    &.label-xs {
+        font-size: 12px;
+        line-height: 34px;
+        
+        border-radius: 17px
+    }
+}
