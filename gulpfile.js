@@ -30,9 +30,14 @@ gulp.task('html', function() {
         .pipe($.connect.reload());
 });
 
+gulp.task('cname', function() {
+    gulp.src(config.cname)
+        .pipe(gulp.dest(config.temp));
+});
+
 gulp.task('watch', function() {
     gulp.watch(config.styles.allLess, ['less']);
     gulp.watch(config.html, ['html']);
 });
 
-gulp.task('default', ['html', 'img', 'less', 'webserver', 'watch']);
+gulp.task('default', ['html', 'cname', 'img', 'less', 'webserver', 'watch']);

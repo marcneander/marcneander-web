@@ -9,6 +9,7 @@ module.exports = function() {
         html: './src/html/**/*.html',
         bowerComponents: './bower_components/',
         temp: './build',
+        cname: './src/CNAME',
         img: './src/img/**/*'
     }
 
