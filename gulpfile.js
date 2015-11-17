@@ -18,7 +18,7 @@ gulp.task('img', function() {
 gulp.task('less', function() {
     gulp.src(config.styles.appLess)
         .pipe($.less({
-            paths: config.lib
+            paths: config.bowerComponents
         }))
         .pipe(gulp.dest(config.temp + '/css/'))
         .pipe($.connect.reload());

@@ -7,7 +7,7 @@ module.exports = function() {
             allOutputCss: './build/css/**/*.css'
         },
         html: './src/html/**/*.html',
-        lib: './src/lib/',
+        bowerComponents: './bower_components/',
         temp: './build',
         img: './src/img/**/*'
     }
