@@ -10,7 +10,8 @@ module.exports = function() {
         bowerComponents: './bower_components/',
         temp: './build',
         cname: './src/CNAME',
-        img: './src/img/**/*'
+        img: './src/img/**/*',
+        favicons: './src/favicons/**/*'
     }
 
     return config;

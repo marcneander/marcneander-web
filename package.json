@@ -21,5 +21,5 @@
   },
   "scripts": {
     "postversion": "git push && git push --tags && git subtree push --prefix build origin gh-pages"
-  } 
+  }
 }

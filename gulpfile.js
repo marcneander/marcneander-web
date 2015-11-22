@@ -30,6 +30,11 @@ gulp.task('html', function() {
         .pipe($.connect.reload());
 });
 
+gulp.task('favicons', function() {
+    gulp.src(config.favicons)
+        .pipe(gulp.dest(config.temp));
+});
+
 gulp.task('cname', function() {
     gulp.src(config.cname)
         .pipe(gulp.dest(config.temp));
@@ -40,4 +45,4 @@ gulp.task('watch', function() {
     gulp.watch(config.html, ['html']);
 });
 
-gulp.task('default', ['html', 'cname', 'img', 'less', 'webserver', 'watch']);
+gulp.task('default', ['html', 'favicons', 'cname', 'img', 'less', 'webserver', 'watch']);
