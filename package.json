@@ -1,6 +1,6 @@
 {
   "name": "marcneander.se",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Small presentation website of myself",
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
     "gulp-inject": "^2.2.0",
     "gulp-less": "^3.0.3",
     "gulp-load-plugins": "^0.10.0"
-  }
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags && git subtree push --prefix build origin gh-pages"
+  } 
 }
