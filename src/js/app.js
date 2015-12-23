@@ -12,7 +12,7 @@
         '$urlRouterProvider',
         function($locationProvider, $stateProvider, $urlRouterProvider) {
             $locationProvider.html5Mode(true);
-            
+
             $urlRouterProvider.when('', function($injector) {
                 $injector.invoke(['$state', function($state) {
                     $state.go('home');
@@ -39,6 +39,12 @@
                 }]);
             });
 
-        }]);
+        }])
+
+        .run(['$anchorScroll', '$rootScope', function($anchorScroll, $rootScope) {
+            $rootScope.$on('$stateChangeSuccess', function() {
+                $anchorScroll();
+            });
+        }])
 
 }());
