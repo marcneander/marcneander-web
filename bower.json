@@ -1,7 +1,9 @@
 {
-    "name": "marcneander.se",
-    "license": "MIT",
-    "dependencies": {
-        "normalize-css": "normalize.css#~3.0.3"
-    }
+  "name": "marcneander.se",
+  "license": "MIT",
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3",
+    "angular": "angularjs#~1.4.8",
+    "angular-ui-router": "~0.2.15"
+  }
 }

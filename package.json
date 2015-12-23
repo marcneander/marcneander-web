@@ -14,10 +14,19 @@
   "homepage": "https://github.com/marcneander/marcneander.se#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-connect": "^2.2.0",
+    "gulp-add-src": "^0.2.0",
+    "gulp-angular-templatecache": "^1.8.0",
+    "gulp-concat": "^2.6.0",
     "gulp-inject": "^2.2.0",
     "gulp-less": "^3.0.3",
-    "gulp-load-plugins": "^0.10.0"
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-remove-html-comments": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev-hash": "0.0.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-webserver": "^0.9.1",
+    "merge-stream": "^1.0.0",
+    "wiredep": "^3.0.0"
   },
   "scripts": {
     "postversion": "git push && git push --tags && git subtree push --prefix build origin gh-pages"

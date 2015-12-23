@@ -1,7 +1,7 @@
 /**
  * marcneander.se stylesheet
  *
- * This stylesheet follows the principles of writing 
+ * This stylesheet follows the principles of writing
  * consistent, idiomatic CSS by Nicolas Gallagher.
  *
  * https://github.com/necolas/idiomatic-css/
@@ -660,3 +660,15 @@ footer h3 {
   line-height: 34px;
   border-radius: 17px;
 }
+/* ==========================================================================
+   404 page
+   ========================================================================== */
+.fourofour {
+  text-align: center;
+}
+.fourofour .svg {
+  margin-bottom: 25px;
+}
+/* ==========================================================================
+   Resumé page
+   ========================================================================== */

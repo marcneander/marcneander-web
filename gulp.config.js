@@ -6,7 +6,9 @@ module.exports = function() {
             appLess: './src/less/style.less',
             allOutputCss: './build/css/**/*.css'
         },
+        js: './src/js/app.js',
         html: './src/html/**/*.html',
+        indexHtml: './src/index.html',
         bowerComponents: './bower_components/',
         temp: './build',
         cname: './src/CNAME',
