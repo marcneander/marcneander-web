@@ -19,27 +19,7 @@ gulp.task('img', function() {
         .pipe(gulp.dest(config.temp + '/img/'));
 });
 
-gulp.task('js', function() {
-    var bowerFiles = wiredep({devDependencies: true})['js'];
-
-    var appjs = gulp
-        .src(config.html)
-        .pipe($.angularTemplatecache('templates.js', {module: 'marcneander'}))
-        .pipe($.addSrc.prepend(config.js))
-        .pipe($.concat('app.min.js'))
-        .pipe($.uglify())
-        .pipe(gulp.dest(config.temp + '/js/'));
-
-    var libjs = gulp
-        .src(bowerFiles)
-        .pipe($.concat('lib.min.js'))
-        .pipe($.uglify())
-        .pipe(gulp.dest(config.temp + '/js/'));
-
-    return merge(appjs, libjs);
-});
-
-gulp.task('rev', ['js', 'html', 'less'], function () {
+gulp.task('rev', ['html', 'less'], function () {
 	return gulp
         .src(config.indexHtml)
 		.pipe($.revHash({
@@ -61,10 +41,6 @@ gulp.task('less', function() {
 gulp.task('html', function() {
     return gulp
         .src(config.indexHtml)
-        .pipe(gulp.dest(config.temp))
-        .pipe($.rename({
-            basename: '404'
-        }))
         .pipe(gulp.dest(config.temp));
 });
 
@@ -82,8 +58,6 @@ gulp.task('cname', function() {
 
 gulp.task('watch', function() {
     gulp.watch(config.styles.allLess, ['less']);
-    gulp.watch(config.html, ['js']);
-    gulp.watch(config.js, ['js']);
     gulp.watch(config.indexHtml, ['html']);
 });
 
