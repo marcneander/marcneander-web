@@ -30,6 +30,6 @@
     "wiredep": "^3.0.0"
   },
   "scripts": {
-    "postversion": "git push && git push --tags && git subtree push --prefix build origin gh-pages"
+    "postversion": "git push && git push --tags"
   }
 }
