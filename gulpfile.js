@@ -35,6 +35,7 @@ gulp.task('less', function() {
         .pipe($.less({
             paths: config.bowerComponents
         }))
+        .pipe($.cleanCss())
         .pipe(gulp.dest(config.temp + '/css/'));
 });
 
