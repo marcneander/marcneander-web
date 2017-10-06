@@ -1,6 +1,6 @@
 {
   "name": "marcneander.se",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "description": "Small presentation website of myself",
   "repository": {
     "type": "git",
@@ -11,25 +11,26 @@
   "bugs": {
     "url": "https://github.com/marcneander/marcneander.se/issues"
   },
-  "homepage": "https://github.com/marcneander/marcneander.se#readme",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-add-src": "^0.2.0",
-    "gulp-angular-templatecache": "^1.8.0",
-    "gulp-clean-css": "^2.0.12",
-    "gulp-concat": "^2.6.0",
-    "gulp-inject": "^2.2.0",
-    "gulp-less": "^3.0.3",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-remove-html-comments": "^1.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-rev-hash": "0.0.2",
-    "gulp-uglify": "^1.5.1",
-    "gulp-webserver": "^0.9.1",
-    "merge-stream": "^1.0.0",
-    "wiredep": "^3.0.0"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "less-plugin-clean-css": "^1.5.1",
+    "normalize-css": "^2.3.1",
+    "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
   },
   "scripts": {
-    "postversion": "git push && git push --tags"
+    "build": "webpack",
+    "start": "webpack-dev-server -d --hot --config webpack.config.js --watch"
   }
 }
