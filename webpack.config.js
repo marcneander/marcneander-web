@@ -4,8 +4,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports = {
+const config = {
     entry: './src/js/app.js',
     name: 'app',
     target: 'web',
@@ -17,13 +18,26 @@ module.exports = {
     module: {
         rules: [{
             test: /\.js$/,
-            exclude: /node_modules/,
+            exclude: /node_modules(?!\/webpack-dev-server)/,
             loader: 'babel-loader'
         },
         {
             test: /\.less$/,
             use: ExtractTextWebpackPlugin.extract({
-                use: ['css-loader', 'less-loader'],
+                use: [
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'less-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
+                ],
                 fallback: 'style-loader'
             })
         },
@@ -45,14 +59,29 @@ module.exports = {
             inject: false
         }),
         new ExtractTextWebpackPlugin({
-            filename: 'css/style.[contenthash:8].css'
+            filename: 'css/style.[contenthash:8].css',
+            allChunks: true
         }),
-        new webpack.optimize.UglifyJsPlugin()
+        new CopyWebpackPlugin([
+            { from: './src/favicon.ico' },
+            { from: './src/mstile-150x150.png' },
+            { from: './src/android-chrome-192x192.png' },
+            { from: './src/android-chrome-256x256.png' },
+            { from: './src/browserconfig.xml' }
+        ]),
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true
+        }),
+        new webpack.DefinePlugin({
+            DEBUG: process.env.NODE_ENV !== 'production'
+        })
     ],
     devServer: {
         contentBase: path.resolve(__dirname, './docs'),
         historyApiFallback: true,
-        inline: true,
         open: true
-    }
+    },
+    devtool: 'source-map'
 };
+
+module.exports = config;
