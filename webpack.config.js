@@ -1,9 +1,8 @@
 const webpack = require('webpack');
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
@@ -16,41 +15,45 @@ const config = {
         publicPath: '/'
     },
     module: {
-        rules: [{
-            test: /\.js$/,
-            exclude: /node_modules(?!\/webpack-dev-server)/,
-            loader: 'babel-loader'
-        },
-        {
-            test: /\.less$/,
-            use: ExtractTextWebpackPlugin.extract({
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules(?!\/webpack-dev-server)/,
+                use: ['babel-loader', 'eslint-loader']
+            },
+            {
+                test: /\.less$/,
+                use: ExtractTextWebpackPlugin.extract({
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                sourceMap: true
+                            }
+                        },
+                        {
+                            loader: 'less-loader',
+                            options: {
+                                sourceMap: true
+                            }
+                        }
+                    ],
+                    fallback: 'style-loader'
+                })
+            },
+            {
+                test: /\.(png|jpg|gif|svg|xml|json|ico)$/,
                 use: [
                     {
-                        loader: 'css-loader',
+                        loader: 'file-loader',
                         options: {
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'less-loader',
-                        options: {
-                            sourceMap: true
+                            name: '[path][name].[ext]',
+                            context: path.resolve(__dirname, 'src')
                         }
                     }
-                ],
-                fallback: 'style-loader'
-            })
-        },
-        {
-            test: /\.(png|jpg|gif|svg|xml|json|ico)$/,
-            use: [{
-                loader: 'file-loader',
-                options: {
-                    name: '[path][name].[ext]',
-                    context: path.resolve(__dirname, 'src')
-                }
-            }]
-        }]
+                ]
+            }
+        ]
     },
     plugins: [
         new CleanWebpackPlugin(['docs']),

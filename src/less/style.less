@@ -20,26 +20,22 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 html, body {
     height: 100%;
-    -webkit-text-size-adjust: none;
+    -webkit-text-size-adjust: none; /* stylelint-disable-line */
 }
 
 body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 32px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: #333333;
     text-align: center;
 
     @media (min-width: 768px) {
-        text-align: left;
         font-size: 20px;
         line-height: 37px;
+        text-align: left;
     }
 }
 
@@ -54,9 +50,9 @@ a {
 
 h1,
 h2 {
-    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
-    font-weight: normal;
     margin: 0;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
 
 h3,
@@ -100,11 +96,11 @@ p {
    ========================================================================== */
 
 header {
+    padding-top: 30px;
     color: #ffffff;
-    background: url(../img/wood_2x.png) bottom left repeat-x #293440;
+    background: url("../img/wood_2x.png") bottom left repeat-x #293440;
     background-size: 450px 45px;
 
-    padding-top: 30px;
 
     .container {
         position: relative;
@@ -120,18 +116,18 @@ header {
 
     h1 {
         font-size: 44px;
-        line-height: 56px;
         font-weight: bold;
+        line-height: 56px;
     }
 
     h2 {
-        color: #8F9BA8;
-        text-transform: uppercase;
+        margin-bottom: 30px;
         font-size: 20px;
         line-height: 23px;
+        color: #8F9BA8;
+        text-transform: uppercase;
         letter-spacing: 3px;
 
-        margin-bottom: 30px;
     }
 
     @media (min-width: 768px) {
@@ -142,11 +138,11 @@ header {
         }
 
         .svg {
-            height: 349px;
-            width: 138px;
             position: absolute;
-            bottom: -163px;
             right: 30px;
+            bottom: -163px;
+            width: 138px;
+            height: 349px;
             margin: 0;
         }
     }
@@ -157,15 +153,15 @@ header {
    ========================================================================== */
 
 .sec-special {
+    background-color: #fbfbfb;
     border-color: #f1f1f1;
     border-style: solid;
     border-width: 1px 0 1px 0;
-    background-color: #fbfbfb;
 
     .work {
+        display: inline-block;
         width: 294px;
         height: 171px;
-        display: inline-block;
         margin-top: 10px;
         margin-bottom: 20px;
     }
@@ -173,10 +169,10 @@ header {
     @media (min-width: 768px) {
         .work {
             float: left;
-            margin: 0 40px 0 0;
-
             width: 422px;
             height: 244px;
+            margin: 0 40px 0 0;
+
         }
 
         .container {
@@ -232,17 +228,16 @@ footer {
 
 .label {
     display: inline-block;
-    border: 1px solid #26B255;
-    border-radius: 21px;
     padding: 0 14px;
     margin-bottom: 10px;
-
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     font-size: 16px;
-    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
     line-height: 42px;
     color: #26B255;
+    text-transform: uppercase;
+    border: 1px solid #26B255;
+    border-radius: 21px;
 
     &.label-s {
         font-size: 14px;
