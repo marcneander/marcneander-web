@@ -44,6 +44,7 @@
   "scripts": {
     "lint:css": "stylelint 'src/less/style.less'",
     "lint:js": "eslint src *.js",
+    "lint": "yarn run lint:css && yarn run lint:js",
     "build": "NODE_ENV=production webpack",
     "start": "NODE_ENV=development webpack-dev-server --hot --inline"
   }
