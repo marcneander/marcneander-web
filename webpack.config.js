@@ -28,7 +28,14 @@ const config = {
                         {
                             loader: 'css-loader',
                             options: {
-                                sourceMap: true
+                                sourceMap: true,
+                                importLoaders: 1
+                            }
+                        },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                sourceMap: true,
                             }
                         },
                         {
