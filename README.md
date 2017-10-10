@@ -17,5 +17,5 @@ Tasks:
 
 ## License
 Copyright © 2015-present Marc Neander. This source code is licensed under the MIT
-license found in the [LICENSE.txt](https://github.com/marcneander/marcneander.se/blob/master/LICENSE)
+license found in the [LICENSE.txt](https://github.com/marcneander/marcneander.se/blob/master/LICENSE.txt)
 file.
