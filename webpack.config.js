@@ -67,6 +67,7 @@ const config = {
         }),
         new CopyWebpackPlugin([
             { from: './src/favicon.ico' },
+            { from: './src/CNAME' },
             { from: './src/mstile-150x150.png' },
             { from: './src/android-chrome-192x192.png' },
             { from: './src/android-chrome-256x256.png' },
