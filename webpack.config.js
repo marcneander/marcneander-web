@@ -73,6 +73,7 @@ const config = {
             allChunks: true
         }),
         new CopyWebpackPlugin([
+            { from: './src/img/marc.png', to: './img/' },
             { from: './src/favicon.ico' },
             { from: './src/CNAME' },
             { from: './src/mstile-150x150.png' },
