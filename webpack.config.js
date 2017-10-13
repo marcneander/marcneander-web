@@ -66,7 +66,16 @@ const config = {
         new CleanWebpackPlugin(['docs']),
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            inject: false
+            inject: false,
+            minify: {
+                collapseWhitespace: true,
+                collapseInlineTagWhitespace: true,
+                minifyJS: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+            }
         }),
         new ExtractTextWebpackPlugin({
             filename: 'css/style.[contenthash:8].css',
