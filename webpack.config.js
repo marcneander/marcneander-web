@@ -69,7 +69,6 @@ const config = {
             inject: false,
             minify: {
                 collapseWhitespace: true,
-                collapseInlineTagWhitespace: true,
                 minifyJS: true,
                 removeComments: true,
                 removeRedundantAttributes: true,
