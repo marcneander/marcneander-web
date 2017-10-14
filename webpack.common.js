@@ -1,7 +1,5 @@
-const webpack = require('webpack');
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -19,7 +17,7 @@ const config = {
             {
                 test: /\.js$/,
                 exclude: /node_modules(?!\/webpack-dev-server)/,
-                use: ['babel-loader', 'eslint-loader']
+                use: ['babel-loader']
             },
             {
                 test: /\.less$/,
@@ -35,7 +33,7 @@ const config = {
                         {
                             loader: 'postcss-loader',
                             options: {
-                                sourceMap: true,
+                                sourceMap: true
                             }
                         },
                         {
@@ -49,7 +47,7 @@ const config = {
                 })
             },
             {
-                test: /\.(png|jpg|gif|svg|xml|json|ico)$/,
+                test: /\.(png|jpg|gif|svg|xml|ico)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -64,18 +62,6 @@ const config = {
     },
     plugins: [
         new CleanWebpackPlugin(['docs']),
-        new HtmlWebpackPlugin({
-            template: './src/index.html',
-            inject: false,
-            minify: {
-                collapseWhitespace: true,
-                minifyJS: true,
-                removeComments: true,
-                removeRedundantAttributes: true,
-                removeScriptTypeAttributes: true,
-                removeStyleLinkTypeAttributes: true,
-            }
-        }),
         new ExtractTextWebpackPlugin({
             filename: 'css/style.[contenthash:8].css',
             allChunks: true
@@ -83,24 +69,14 @@ const config = {
         new CopyWebpackPlugin([
             { from: './src/img/marc.png', to: './img/' },
             { from: './src/favicon.ico' },
+            { from: './src/manifest.json' },
             { from: './src/CNAME' },
             { from: './src/mstile-150x150.png' },
             { from: './src/android-chrome-192x192.png' },
             { from: './src/android-chrome-256x256.png' },
             { from: './src/browserconfig.xml' }
-        ]),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true
-        }),
-        new webpack.DefinePlugin({
-            DEBUG: process.env.NODE_ENV !== 'production'
-        })
+        ])
     ],
-    devServer: {
-        contentBase: path.resolve(__dirname, './docs'),
-        historyApiFallback: true,
-        open: true
-    },
     devtool: 'source-map'
 };
 

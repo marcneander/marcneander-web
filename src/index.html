@@ -22,21 +22,27 @@
         <link rel="apple-touch-icon" sizes="180x180" href="<%=require('./apple-touch-icon.png')%>">
         <link rel="icon" type="image/png" sizes="32x32" href="<%=require('./favicon-32x32.png')%>">
         <link rel="icon" type="image/png" sizes="16x16" href="<%=require('./favicon-16x16.png')%>">
-        <link rel="manifest" href="<%=require('./manifest.json')%>">
+        <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="<%=require('./safari-pinned-tab.svg')%>" color="#474747">
         <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:700,300">
     </head>
     <body>
         <header>
-            <div class="container">
-                <h1>Marc Neander</h1>
-                <h2>Frontend Developer</h2>
-                <p>I'm Marc from Stockholm.<br>I code things.</p>
-                <img src="<%=require('./img/marc.svg')%>" class="svg" alt="Marc Neander" />
+            <div class="header-title">
+                <h1 class="header-title-primary">Marc Neander</h1>
+                <h2 class="header-title-secondary">Frontend Developer</h2>
+            </div>
+            <div class="header-image-wrap">
+                <img src="<%=require('./img/marc.svg')%>" class="header-image" alt="Marc Neander" />
+            </div>
+            <div class="header-arrow-wrap">
+                <a href="#info" id="showMoreBtn">
+                    <i class="header-arrow"></i>
+                </a>
             </div>
         </header>
-        <section class="sec-p-l">
+        <section id="info">
             <div class="container">
                 <h3 class="fs24">Hello!</h3>
                 <p>Away from work I spend most my time rock climbing. If not that, I go running, traveling or simply having a beer.</p>
@@ -82,14 +88,14 @@
                 <p>For more, check out my <a href="https://github.com/marcneander">Github</a>.
             </div>
         </section>
-        <section class="sec-p-m sec-special">
+        <section class="work">
             <div class="container">
                 <img src="<%=require('./img/work_big_2x.png')%>" alt="Work content" class="work">
                 <h3>Where do I work?</h3>
                 <p>I'm a frontend developer at Schibsted Media Group. A media house owning a bunch of websites and services mostly in Norway and Sweden. Currently I'm working at <a href="http://www.bytbil.com/">Byt Bil Nordic AB</a>, a Swedish car vertical service.</p>
             </div>
         </section>
-        <footer class="sec-p-s">
+        <footer>
             <div class="container">
                 <img src="<%=require('./img/avatar.png')%>" alt="Avatar" class="avatar" height="108" width="108">
                 <h3>Wanna get in touch?</h3>
