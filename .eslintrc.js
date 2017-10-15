@@ -35,5 +35,6 @@ module.exports = {
                 printWidth: 120
             }
         ],
+        'import/no-extraneous-dependencies': 'off'
     }
 };
