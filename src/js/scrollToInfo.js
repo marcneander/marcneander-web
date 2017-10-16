@@ -12,7 +12,7 @@ const scrollToInfo = () => {
         showMoreBtn.addEventListener('click', event => {
             event.preventDefault();
 
-            animatedScrollTo(document.documentElement, target.offsetTop, 250);
+            animatedScrollTo(document.scrollingElement, target.offsetTop, 250);
         });
     }
 };
