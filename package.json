@@ -49,7 +49,7 @@
     "lint:css": "stylelint 'src/less/style.less'",
     "lint:js": "eslint src *.js",
     "lint": "yarn run lint:css && yarn run lint:js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "yarn run lint && webpack --config webpack.prod.js",
     "start": "webpack-dev-server --hot --inline --config webpack.dev.js"
   },
   "dependencies": {
