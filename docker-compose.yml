@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  web:
+    build: .
+    command: yarn _start
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./docs:/usr/src/app/docs
+    ports:
+      - 8000:8000
+    networks:
+      - default

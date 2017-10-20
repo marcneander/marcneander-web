@@ -46,11 +46,17 @@
     "webpack-merge": "^4.1.0"
   },
   "scripts": {
-    "lint:css": "stylelint 'src/less/style.less'",
-    "lint:js": "eslint src *.js",
-    "lint": "yarn run lint:css && yarn run lint:js",
-    "build": "yarn run lint && webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --hot --inline --config webpack.dev.js"
+    "_lint:css": "stylelint 'src/less/**/*.less'",
+    "_lint:js": "eslint src *.js",
+    "_lint": "yarn run _lint:css && yarn run _lint:js",
+    "_build": "yarn run _lint && webpack --config webpack.prod.js",
+    "_start": "webpack-dev-server --hot --inline --config webpack.dev.js",
+    "lint:css": "docker-compose exec web yarn run _lint:css",
+    "lint:js": "docker-compose exec web yarn run _lint:js",
+    "lint": "docker-compose exec web yarn run _lint",
+    "build": "docker-compose exec web yarn run _build",
+    "start": "docker-compose up",
+    "down": "docker-compose down"
   },
   "dependencies": {
     "animated-scrollto": "^1.1.0"

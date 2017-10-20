@@ -19,7 +19,8 @@ const config = merge(common, {
     devServer: {
         contentBase: path.resolve(__dirname, './docs'),
         historyApiFallback: true,
-        open: true
+        host: '0.0.0.0',
+        port: 8000
     }
 });
 

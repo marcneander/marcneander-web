@@ -2,18 +2,30 @@
 Small presentation website of myself
 
 ## Getting started
-- `yarn install && yarn start`
+
+You'll need [nodejs](https://nodejs.org/) and [yarn](https://yarnpkg.com) installed. If you also want to run the application in [Docker](https://www.docker.com/) you need to install that aswell.
+
+
+### Running locally
+
+- `yarn install && yarn _start`
+
+### Running in Docker
+
+- `yarn start --build`
 
 ## Taskrunner
-I'm using `yarn` as my taskrunner. You'll need [nodejs](https://nodejs.org/) and [yarn](https://yarnpkg.com) installed.
 
 Listing all tasks:
 - `yarn run`
 
-Tasks:
+All tasks prefixed with _ is meant for local use while the other tasks are meant for docker use.
+
+Commons tasks:
 - `yarn build` (Build application)
 - `yarn start` (Builds application and starts a webserver)
 - `yarn run lint` (Runs stylelint and eslint)
+- `yarn run down` (Closes down application)
 
 ## License
 Copyright © 2015-present Marc Neander. This source code is licensed under the MIT
