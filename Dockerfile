@@ -10,6 +10,8 @@ RUN apt-get install -y nodejs build-essential
 # Install yarn
 RUN npm install -g yarn
 
+# TODO: Move everything above to new base image
+
 # Copy package.json and yarn.lock
 COPY package.json /usr/src/app/package.json
 COPY yarn.lock /usr/src/app/yarn.lock
