@@ -19,7 +19,7 @@ You'll need [nodejs](https://nodejs.org/) and [yarn](https://yarnpkg.com) instal
 Listing all tasks:
 - `yarn run`
 
-All tasks prefixed with _ is meant for local use while the other tasks are meant for docker use. Docker is required for `test` tasks.
+All tasks prefixed with `_` is meant for local use while the other tasks are meant for docker use. Docker is required for `test` tasks.
 
 Commons tasks (Docker required):
 - `yarn build` (Build application)
