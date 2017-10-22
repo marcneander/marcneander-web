@@ -9,7 +9,6 @@ services:
       - ./docs:/usr/src/app/docs
       - ./test:/usr/src/app/test
       - ./package.json:/usr/src/app/package.json
-      - ./.gemini.conf.js:/usr/src/app/.gemini.conf.js
     ports:
       - 8000:8000
 
