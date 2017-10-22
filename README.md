@@ -19,12 +19,16 @@ You'll need [nodejs](https://nodejs.org/) and [yarn](https://yarnpkg.com) instal
 Listing all tasks:
 - `yarn run`
 
-All tasks prefixed with _ is meant for local use while the other tasks are meant for docker use.
+All tasks prefixed with _ is meant for local use while the other tasks are meant for docker use. Docker is required for `test:visual`.
 
-Commons tasks:
+Commons tasks (Docker required):
 - `yarn build` (Build application)
 - `yarn start` (Builds application and starts a webserver)
 - `yarn run lint` (Runs stylelint and eslint)
+- `yarn test` (Runs stylelint, eslint, nightwatch and gemini)
+- `yarn test:visual` (Runs gemini)
+- `yarn test:visual:update` (Updates gemini screenshots)
+- `yarn test:e2e` (Runs nightwatch)
 - `yarn run down` (Closes down application)
 
 ## License

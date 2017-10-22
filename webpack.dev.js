@@ -20,7 +20,8 @@ const config = merge(common, {
         contentBase: path.resolve(__dirname, './docs'),
         historyApiFallback: true,
         host: '0.0.0.0',
-        port: 8000
+        port: 8000,
+        disableHostCheck: true
     }
 });
 

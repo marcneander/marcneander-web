@@ -15,7 +15,7 @@ const CHROME_CONFIGURATION = {
 
 // default setting
 const DEFAULT_CONFIGURATION = {
-    launch_url: 'http://web:3001',
+    launch_url: 'http://web:8000',
     selenium_port: 4444,
     selenium_host: 'selenium-hub',
     silent: true,

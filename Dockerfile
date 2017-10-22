@@ -1,4 +1,14 @@
-FROM node:8.7-alpine
+# marcneander.se Dockerfile
+
+# Using python base because we need node-gyp for gemini
+FROM library/python:2.7
+
+# Install node.js
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN apt-get install -y nodejs build-essential
+
+# Install yarn
+RUN npm install -g yarn
 
 # Copy package.json and yarn.lock
 COPY package.json /usr/src/app/package.json
