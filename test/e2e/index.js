@@ -24,8 +24,8 @@ module.exports = {
 
         browser.execute(function() {
             return document.scrollingElement.scrollTop;
-        }, scollPosition => {
-            browser.assert.ok(scollPosition.value === 0, 'Check if we are at the top of the page.');
+        }, scrollPosition => {
+            browser.assert.ok(scrollPosition.value === 0, 'Check if we are at the top of the page.');
         });
 
         // Click the show more btn
@@ -33,8 +33,8 @@ module.exports = {
 
         browser.execute(function() {
             return document.scrollingElement.scrollTop;
-        }, scollPosition => {
-            browser.assert.ok(scollPosition.value > 0, 'Check if we are lower than top of the page.');
+        }, scrollPosition => {
+            browser.assert.ok(scrollPosition.value > 0, 'Check if we are lower than top of the page.');
         });
 
         browser.end();
