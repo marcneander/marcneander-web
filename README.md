@@ -1,37 +1,26 @@
-# marcneander.se
-Small presentation website of myself
+# gatsby-starter-default
+The default Gatsby starter.
 
-## Getting started
+For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
 
-You'll need [nodejs](https://nodejs.org/) and [yarn](https://yarnpkg.com) installed. If you also want to run the application in [Docker](https://www.docker.com/) you need to install that aswell.
+## Install
 
+Make sure that you have the Gatsby CLI program installed:
+```sh
+npm install --global gatsby-cli
+```
 
-### Running locally
+And run from your CLI:
+```sh
+gatsby new gatsby-example-site
+```
 
-- `yarn install && yarn _start`
+Then you can run it by:
+```sh
+cd gatsby-example-site
+gatsby develop
+```
 
-### Running in Docker
+## Deploy
 
-- `yarn start --build`
-
-## Taskrunner
-
-Listing all tasks:
-- `yarn run`
-
-All tasks prefixed with `_` is meant for local use while the other tasks are meant for docker use. Docker is required for `test` tasks.
-
-Commons tasks (Docker required):
-- `yarn build` (Build application)
-- `yarn start` (Builds application and starts a webserver)
-- `yarn run lint` (Runs stylelint and eslint)
-- `yarn test` (Runs stylelint, eslint, nightwatch and gemini)
-- `yarn test:visual` (Runs gemini)
-- `yarn test:visual:update` (Updates gemini screenshots)
-- `yarn test:e2e` (Runs nightwatch)
-- `yarn run down` (Closes down application)
-
-## License
-Copyright © 2015-present Marc Neander. This source code is licensed under the MIT
-license found in the [LICENSE.txt](https://github.com/marcneander/marcneander.se/blob/master/LICENSE.txt)
-file.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)

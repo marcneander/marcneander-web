@@ -1,4 +1,8 @@
+# Project dependencies
+.cache
 node_modules
-test/e2e/screenshots
-test/e2e/reports
-test/visual/report
+yarn-error.log
+
+# Build directory
+/public
+.DS_Store

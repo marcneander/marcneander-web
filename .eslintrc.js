@@ -3,13 +3,12 @@
 module.exports = {
     parser: 'babel-eslint',
     extends: [
+        'react-app',
         'airbnb',
-        'prettier'
+        'prettier',
+        'prettier/react'
     ],
     plugins: ['prettier'],
-    globals: {
-        DEBUG: true,
-    },
     env: {
         browser: true,
     },
@@ -26,6 +25,15 @@ module.exports = {
             },
         ],
         'comma-dangle': 'off',
+
+        // a11y removed rule, ignore them
+        'jsx-a11y/href-no-hash': 'off',
+
+        // Allow js files to use jsx syntax, too
+        'react/jsx-filename-extension': 'off',
+        "react/jsx-indent": ["error", 4],
+        'react/prefer-stateless-function': 'off',
+
         'prettier/prettier': [
             'error',
             {
@@ -34,7 +42,6 @@ module.exports = {
                 tabWidth: 4,
                 printWidth: 120
             }
-        ],
-        'import/no-extraneous-dependencies': 'off'
+        ]
     }
 };
