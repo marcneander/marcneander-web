@@ -12,6 +12,7 @@ module.exports = {
             options: {
                 component: require.resolve('./src/layout/index.js')
             }
-        }
+        },
+        'gatsby-plugin-offline'
     ]
 };
