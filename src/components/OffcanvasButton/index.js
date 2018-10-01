@@ -28,7 +28,6 @@ const IconBar = styled.span`
     }
 `;
 
-/* eslint-disable */
 const Button = styled.button`
     background-color: transparent;
     border-color: transparent;
@@ -40,20 +39,21 @@ const Button = styled.button`
     cursor: pointer;
 
     &.active {
-        ${IconBar}:nth-child(2) {
-            transform: rotate(-45deg);
-        }
+        ${/* sc-custom 'div' */ IconBar} {
+            &:nth-child(2) {
+                transform: rotate(-45deg);
+            }
 
-        ${IconBar}:nth-child(3) {
-            opacity: 0;
-        }
+            &:nth-child(3) {
+                opacity: 0;
+            }
 
-        ${IconBar}:nth-child(4) {
-            transform: rotate(45deg);
+            &:nth-child(4) {
+                transform: rotate(45deg);
+            }
         }
     }
 `;
-/* eslint-enable */
 
 class OffcanvasButton extends Component {
     constructor(props) {
