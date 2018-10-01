@@ -1,40 +1,26 @@
-// ESLint configuration
-// http://eslint.org/docs/user-guide/configuring
 module.exports = {
     parser: 'babel-eslint',
     extends: [
         'airbnb',
-        'prettier'
+        'prettier',
+        'prettier/react',
     ],
     plugins: ['prettier'],
-    globals: {
-        DEBUG: true,
-    },
     env: {
-        browser: true,
+        browser: true
     },
     rules: {
-        quotes: [
-            "error",
-            "single",
-            { "allowTemplateLiterals": true }
-        ],
-        'no-console': [
-            'error',
-            {
-                allow: ['warn', 'error', 'info'],
-            },
-        ],
+        'import/no-extraneous-dependencies': 'off',
         'comma-dangle': 'off',
-        'prettier/prettier': [
-            'error',
-            {
-                singleQuote: true,
-                trailingComma: 'none',
-                tabWidth: 4,
-                printWidth: 120
-            }
-        ],
-        'import/no-extraneous-dependencies': 'off'
+        'no-underscore-dangle': 'off',
+
+        // jsx-a11y
+        "jsx-a11y/click-events-have-key-events": 'off',
+
+        // react
+        "react/forbid-prop-types": 'off', // only here
+        'react/jsx-filename-extension': 'off',
+        'react/prefer-stateless-function': 'off',
+        "react/destructuring-assignment": 'never'
     }
 };
