@@ -2801,6 +2801,11 @@ confusing-browser-globals@2.0.0-next.66cc7a90:
   resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-2.0.0-next.66cc7a90.tgz#438e83bb16602abf1cd5c5aa9d6e4d61d924743e"
   integrity sha512-pVhpqs/CvjFgJm6pIamnHI7xxutxywZr4WaG7/g3+1uTrJldBS+jKe/4NvGv0etgAAY6z2+iaogt4pkXM+6wag==
 
+confusing-browser-globals@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-1.0.2.tgz#5251684a10877150b6ab59a80fdcfca8ed07e445"
+  integrity sha512-nT2OjamjPPGqA6/7WGdQVHX628UV1AKBDI3+6VJgKKQzZfDrYRoKpVr7cY1MQxCEGcp7UzdreDtSjmHwh+TxiA==
+
 connect-history-api-fallback@^1.3.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/connect-history-api-fallback/-/connect-history-api-fallback-1.5.0.tgz#b06873934bc5e344fef611a196a6faae0aee015a"
@@ -3867,10 +3872,12 @@ eslint-config-react-app@3.0.0-next.66cc7a90:
   dependencies:
     confusing-browser-globals "2.0.0-next.66cc7a90"
 
-eslint-config-react-app@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-react-app/-/eslint-config-react-app-2.1.0.tgz#23c909f71cbaff76b945b831d2d814b8bde169eb"
-  integrity sha512-8QZrKWuHVC57Fmu+SsKAVxnI9LycZl7NFQ4H9L+oeISuCXhYdXqsOOIVSjQFW6JF5MXZLFE+21Syhd7mF1IRZQ==
+eslint-config-react-app@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-react-app/-/eslint-config-react-app-3.0.2.tgz#0535b2396e9531b654b4c0a1599f24caeae80d4c"
+  integrity sha512-F0waN5G8pgbv/jpcEllNC7WYhYxjvm75TxlTn/7EqoLD1hKod0utuVhbOMYtvEYySM2vvZhDQh77CZfR9EmTXg==
+  dependencies:
+    confusing-browser-globals "^1.0.2"
 
 eslint-import-resolver-node@^0.3.1:
   version "0.3.2"
@@ -4785,10 +4792,10 @@ gatsby-cli@^2.4.2:
     yargs "^11.1.0"
     yurnalist "^0.2.1"
 
-gatsby-link@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.2.tgz#b131b281cd0acdfb9a64e87fefeb01499296fa29"
-  integrity sha512-0zfjuAwOyZQv3jeDL9c2omfKitVFWGdCfYU4YJLr2nvx+2I7VVQF+NugSdKIocYFQ1g12K/zzguMJpyRO99l3w==
+gatsby-link@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.3.tgz#7e560aade84661e0596b6e7aa965a886eb6ffbee"
+  integrity sha512-85TVtWwHw51+l+qGhxUd/sU1NCLXHdNdILkA0RUeWRnTbd73srQkwRMyNsJn+4xojdHj2XvZkIMPTL7OiZcdow==
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@reach/router" "^1.1.1"
@@ -4813,10 +4820,10 @@ gatsby-plugin-offline@2.0.5:
     lodash "^4.17.10"
     workbox-build "^3.4.1"
 
-gatsby-plugin-page-creator@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.0.0.tgz#be8b2ffa4c0a9de6e0db10acdfa4e26b27f81123"
-  integrity sha512-z1UEDPLa2/zdn6cEtES6xTSTy767C8F7KChnKlyCs3VO4S9z80Hxm2JUb1wK2MRF+6uMV6L5iSShaRP1CfLYzw==
+gatsby-plugin-page-creator@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.0.1.tgz#001b4ea35daccb1a10a96205cb742e05aaba9499"
+  integrity sha512-IFvVwKbM2ZFq4F4Qj+Jt9AE0r3Fxg2dJhgTy0mXkAlAMdUCeo3wImx1laFefbMlmPnfOHQE2/13l9TZ/myRgrw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
@@ -4850,10 +4857,10 @@ gatsby-react-router-scroll@^2.0.0:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.12:
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.12.tgz#54787e80ab8aa7a4017ba498652fae125d015dea"
-  integrity sha512-jmJCQxsxjFOPQZ1AFiPHOlghlOYrTmg+nw9xjHYvzihIURZvxMsgWlitNjaJ47fyxOeP8d/+BcWm806/9HyOJg==
+gatsby@2.0.14:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.14.tgz#cd7de9d27d9656d1da020a0562628a44643a6fac"
+  integrity sha512-TbzqAA9AlWwQ8BQCDibJMcsDi6Hks4son9DtHdyCpzpw+aouDgPR2Z+rVJ9UIkFqlmrT3MR4E50zftPlhQ6zjg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -4907,8 +4914,8 @@ gatsby@2.0.12:
     friendly-errors-webpack-plugin "^1.6.1"
     fs-extra "^5.0.0"
     gatsby-cli "^2.4.2"
-    gatsby-link "^2.0.2"
-    gatsby-plugin-page-creator "^2.0.0"
+    gatsby-link "^2.0.3"
+    gatsby-plugin-page-creator "^2.0.1"
     gatsby-react-router-scroll "^2.0.0"
     glob "^7.1.1"
     graphql "^0.13.2"
@@ -5531,10 +5538,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-husky@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-1.0.1.tgz#749bc6b3a14bdc9cab73d8cc827b92fcd691fac6"
-  integrity sha512-MxwLwwwgY7mqV4auSpGWKPTCkZ9RmsdGojQQBvRtr6vxnjSOyI5l/M58QdUz0vRKb0igTpbzBeoUsScx4XJwQg==
+husky@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-1.1.0.tgz#7271e85f5d98b54349788839b720c9a60cd95dba"
+  integrity sha512-jnUD0PK3xGLB5Jc3f3UEwl8qOZeLd0WiWABhVyHPS5R298HOccGZJMOMBSk3gFksAa1BeK9FQYYEfPNlqkfBxg==
   dependencies:
     cosmiconfig "^5.0.6"
     execa "^0.9.0"
