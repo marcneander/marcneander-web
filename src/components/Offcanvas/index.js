@@ -31,6 +31,8 @@ const StyledOffcanvas = styled.div`
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    /* stylelint-disable-next-line */
+    -webkit-backface-visibility: hidden;
     position: fixed;
     right: 0;
     top: 0;
