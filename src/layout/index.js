@@ -21,8 +21,8 @@ injectGlobal`
     /* rubik-regular - latin */
     @font-face {
         font-family: 'Rubik';
-        font-display: auto;
         font-style: normal;
+        font-display: auto;
         font-weight: 400;
         src: local('Rubik'), local('Rubik-Regular'),
             url(${Rubik400Woff2}) format('woff2'),
@@ -31,8 +31,8 @@ injectGlobal`
     /* rubik-700 - latin */
     @font-face {
         font-family: 'Rubik';
-        font-display: auto;
         font-style: normal;
+        font-display: auto;
         font-weight: 700;
         src: local('Rubik Bold'), local('Rubik-Bold'),
             url(${Rubik700Woff2}) format('woff2'),
