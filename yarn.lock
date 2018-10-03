@@ -4828,10 +4828,10 @@ gatsby-link@^2.0.4:
     prop-types "^15.6.1"
     ric "^1.3.0"
 
-gatsby-plugin-layout@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.0.0.tgz#9e4b11f26fa40acce703b0d452ea4f2ff572fc22"
-  integrity sha512-FG86qAEuORdCeoVHVRBwNKO1vbfreFPjfjRZZEG9XZmZUPmHWuzlJzeq5GZVrv5Cf+/ACMJ1arF/gns4kR200w==
+gatsby-plugin-layout@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.0.3.tgz#ffa63925f56cc68e2326ec8aca3e3da33d23c1ae"
+  integrity sha512-PtNke+NfJ4WVH6GxYQHZcR5cEnsQr0BmSEuFgN4QjkCR+5hjNQ+7eKg/jDZbEvvVnYnlPPLLEl1XBu9DIK+2zw==
   dependencies:
     "@babel/runtime" "^7.0.0"
 
