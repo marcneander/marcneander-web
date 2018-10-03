@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { injectGlobal } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { normalize } from 'polished';
 import Navigation from '../containers/Navigation';
@@ -14,24 +14,22 @@ import Rubik700Woff from '../fonts/rubik-700.woff';
 import Rubik700Woff2 from '../fonts/rubik-700.woff2';
 
 /* eslint-disable */
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
     /* ==========================================================================
     Fonts
     ========================================================================== */
-    /* rubik-regular - latin */
+
     @font-face {
         font-family: 'Rubik';
-        font-display: auto;
         font-style: normal;
         font-weight: 400;
         src: local('Rubik'), local('Rubik-Regular'),
             url(${Rubik400Woff2}) format('woff2'),
             url(${Rubik400Woff}) format('woff');
     }
-    /* rubik-700 - latin */
+
     @font-face {
         font-family: 'Rubik';
-        font-display: auto;
         font-style: normal;
         font-weight: 700;
         src: local('Rubik Bold'), local('Rubik-Bold'),
@@ -135,6 +133,7 @@ const Layout = props => {
 
     return (
         <React.Fragment>
+            <GlobalStyle />
             <Helmet defaultTitle="<MarcNeander /> - Javascript/Front-end engineer" titleTemplate="%s - <MarcNeander />">
                 <html lang="en" />
                 <meta name="description" content="Freelancing Javascript/Front-end engineer based in Stockholm. I make sure applications are accessible, performant, SEO optimized and user friendly." />

@@ -16,7 +16,7 @@ const defaultProps = {
 
 const IconBar = styled.span`
     transform-origin: 27px;
-    transition: transform 0.2s, -webkit-transform 0.2s;
+    transition: transform 0.2s;
     background-color: #fff;
     display: block;
     width: 29px;
