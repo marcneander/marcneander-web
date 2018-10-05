@@ -1,4 +1,3 @@
-import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
 
@@ -115,8 +114,4 @@ p {
 }
 `;
 
-export default () => {
-    console.log('yes?');
-
-    return <GlobalStyle />
-};
+export default GlobalStyle;
