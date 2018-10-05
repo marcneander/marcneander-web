@@ -10,6 +10,8 @@ const propTypes = {
 
 const StyledHeader = styled.header`
     background-color: ${colors.dark};
+    /* stylelint-disable-next-line */
+    -webkit-backface-visibility: hidden;
     padding: 0 20px;
     position: fixed;
     right: 0;
