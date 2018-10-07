@@ -788,10 +788,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.6.6.tgz#004b98298d04c7ca3b4f50ca2035d4f60d2eed1b"
   integrity sha512-h4t4jFjtm1YV7UirAFuSuFGyLa+NNxjdkq6DpFLANNQY5rHueFZHVY+8Cu1HYVP6DrheB0kv4m5xPjo7eKT7yQ==
 
-"@marcneander/eslint-config-react@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@marcneander/eslint-config-react/-/eslint-config-react-1.0.0.tgz#48dbc28d3fab2032c143b495852d7191ebd96035"
-  integrity sha512-7lOS8nrvolC94cnEezr44ddcDPQfau2r4aHsckVN0nYPtKSHo688cCqVC1Q8bxSIKDjdkOJLo9s/X0d7e2DfXg==
+"@marcneander/eslint-config-react@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@marcneander/eslint-config-react/-/eslint-config-react-1.0.1.tgz#0c18b10c40586d1d70da9602c0bee0350afbdbab"
+  integrity sha512-GR0p9DukVTB4nE2QmnpsQKGp29rjB+SCIvZtHT6EvE2p0vrCEcJ7dRewDjH2yU3Z040f47KABnRe/TbuqDI0qg==
   dependencies:
     babel-eslint "^10.0.1"
     eslint-config-airbnb "^17.1.0"
@@ -800,6 +800,22 @@
     eslint-plugin-jsx-a11y "^6.1.2"
     eslint-plugin-prettier "^3.0.0"
     eslint-plugin-react "^7.11.1"
+
+"@marcneander/stylelint-config-styled-components@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@marcneander/stylelint-config-styled-components/-/stylelint-config-styled-components-1.0.0.tgz#79fe689242f09e6c34ece8af7f9d5489a8035211"
+  integrity sha512-xDHBQKh5/mAKK/bOuP6cMP2ncUZpDvC/jp98nNkll2oH3ShIabno41fmaNEla54d3k5csqy2UT0APzDeFOUVGg==
+  dependencies:
+    "@marcneander/stylelint-config" "^1.0.0"
+    stylelint-config-styled-components "^0.1.1"
+    stylelint-processor-styled-components "^1.5.0"
+
+"@marcneander/stylelint-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@marcneander/stylelint-config/-/stylelint-config-1.0.0.tgz#6d75f08d557c0fc9ab22b107ff6279ec818b4b71"
+  integrity sha512-/mMkmyeXraTBmoOlBSbD5ol6ceT9M5euK6iTePd39IA2/LhmR9G+nR0mje50+x1kKm8YDzsRV25Lx99wvEtvSA==
+  dependencies:
+    stylelint-config-standard "^18.2.0"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -4902,10 +4918,10 @@ gatsby-react-router-scroll@^2.0.0:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.18:
-  version "2.0.18"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.18.tgz#a07d47b99812a69f49aa5b6a6fcb65b66722beab"
-  integrity sha512-E+8aFsfnZVUdO3WBcCUtI6ctsD+AJY1TAupSm0vg+a9/aKz8VZ3VWhtDWBC3kDqoh65hUGaUy1dUXj/sfilPPg==
+gatsby@2.0.19:
+  version "2.0.19"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.19.tgz#d59498567460d147f0ea0d9038a7d276e5994a49"
+  integrity sha512-l6AjOJALxPmydYS3JSbUr4FeVMyKCJ3nEC5Bx2tcaulzhZ+ypseXV/l7TZ9EWrYpAyIOV8GfiZJ6SCy9HV1WOA==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -5585,10 +5601,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-husky@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-1.1.0.tgz#7271e85f5d98b54349788839b720c9a60cd95dba"
-  integrity sha512-jnUD0PK3xGLB5Jc3f3UEwl8qOZeLd0WiWABhVyHPS5R298HOccGZJMOMBSk3gFksAa1BeK9FQYYEfPNlqkfBxg==
+husky@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-1.1.1.tgz#7179043184f68a4d1ffc975cbd1c6132ef1fd7b3"
+  integrity sha512-D8ly8eIZdWzWVG4mh4apaX1PP47uLSaN8CS0RyuuLtHJ20Gt6Ccky5pSecaPsqxNzQj0zon3x6QX/0kCc5/TOQ==
   dependencies:
     cosmiconfig "^5.0.6"
     execa "^0.9.0"
@@ -10111,10 +10127,10 @@ style-search@^0.1.0:
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
   integrity sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
 
-styled-components@^4.0.0-beta.9:
-  version "4.0.0-beta.9"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-4.0.0-beta.9.tgz#34d3fd57e9511a9da98f2007223e1aee1491429d"
-  integrity sha512-66WWtadIcH/fpPfRwt/b+eFbjgNxmsB+5a9AZa8EfeVZ40fm7qhfqjswuWxZDdcJYcCeNfW3letz1A/uNG1VLA==
+styled-components@^4.0.0-beta.10:
+  version "4.0.0-beta.8-unpure"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-4.0.0-beta.8-unpure.tgz#b172d9891ad50ecfd788380333d4cbab4d0f0457"
+  integrity sha512-oGdE/zN7UijS5K4c5wMTUQ8sdA+G99uZohGJQhbptU5ISel1UnXN6bC7RZV/dnk1kalKwTmAPtpttol63x1yPg==
   dependencies:
     "@emotion/is-prop-valid" "^0.6.8"
     css-to-react-native "^2.0.3"
@@ -10138,15 +10154,22 @@ stylelint-config-recommended@^2.1.0:
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-2.1.0.tgz#f526d5c771c6811186d9eaedbed02195fee30858"
   integrity sha512-ajMbivOD7JxdsnlS5945KYhvt7L/HwN6YeYF2BH6kE4UCLJR0YvXMf+2j7nQpJyYLZx9uZzU5G1ZOSBiWAc6yA==
 
+stylelint-config-standard@^18.2.0:
+  version "18.2.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-standard/-/stylelint-config-standard-18.2.0.tgz#6283149aba7f64f18731aef8f0abfb35cf619e06"
+  integrity sha512-07x0TaSIzvXlbOioUU4ORkCIM07kyIuojkbSVCyFWNVgXMXYHfhnQSCkqu+oHWJf3YADAnPGWzdJ53NxkoJ7RA==
+  dependencies:
+    stylelint-config-recommended "^2.1.0"
+
 stylelint-config-styled-components@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/stylelint-config-styled-components/-/stylelint-config-styled-components-0.1.1.tgz#b408388d7c687833ab4be4c4e6522d97d2827ede"
   integrity sha512-z5Xz/9GmvxO6e/DLzBMwkB85zHxEEjN6K7Cj80Bi+o/9vR9eS3GX3E9VuMnX9WLFYulqbqLtTapGGY28JBiy9Q==
 
-stylelint-processor-styled-components@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/stylelint-processor-styled-components/-/stylelint-processor-styled-components-1.4.0.tgz#7688a7965920b49ba287663b27d6715a9918688f"
-  integrity sha512-KEra3DLBCmxfh/Jb7ffJtG3r3EPqna+YaycUjdzboVYJ9x7RHKDHKvHDag476pdd8dHtQuizxBh8BK4sb7/+tw==
+stylelint-processor-styled-components@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/stylelint-processor-styled-components/-/stylelint-processor-styled-components-1.5.0.tgz#bf17ab1a263621015f2cab302f0e6cb174e6bd2a"
+  integrity sha512-mXgx0p3EMYmeo8qXnkXDuzhIojCpzsFdwBzZw2bieBUx5yBtduira/geC15Ug2RsqhePnuT0b7j9g/YtNTwkLg==
   dependencies:
     "@babel/parser" "^7.0.0"
     "@babel/traverse" "^7.0.0"
