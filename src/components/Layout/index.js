@@ -20,7 +20,10 @@ const Layout = props => {
         <React.Fragment>
             <Helmet defaultTitle="<MarcNeander /> - Javascript/Front-end engineer" titleTemplate="%s - <MarcNeander />">
                 <html lang="en" />
-                <meta name="description" content="Freelancing Javascript/Front-end engineer based in Stockholm. I make sure applications are accessible, performant, SEO optimized and user friendly." />
+                <meta
+                    name="description"
+                    content="Freelancing Javascript/Front-end engineer based in Stockholm. I make sure applications are accessible, performant, SEO optimized and user friendly."
+                />
 
                 {/* Favicon stuff */}
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
