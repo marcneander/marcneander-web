@@ -1,10 +1,7 @@
-/* eslint-disable react/prop-types */
-import React from 'react';
-import GlobalStyle from './src/components/GlobalStyle';
+import PageElement from './src/components/PageElement';
 
-export const wrapRootElement = ({ element }) => <React.Fragment><GlobalStyle />{element}</React.Fragment>;
+export const wrapPageElement = PageElement;
 
 export default {
-    wrapRootElement
+    wrapPageElement
 };
-

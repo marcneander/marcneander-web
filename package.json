@@ -9,7 +9,7 @@
     "url": "https://github.com/marcneander/marcneander.se"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
+    "src/**/*.js": [
       "yarn run lint",
       "git add"
     ]
@@ -27,14 +27,14 @@
     "build": "gatsby build",
     "serve": "gatsby serve -H 0.0.0.0",
     "develop": "gatsby develop -H 0.0.0.0",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.8.0",
     "classnames": "^2.2.6",
-    "gatsby": "2.0.19",
+    "gatsby": "2.0.21",
     "gatsby-plugin-layout": "1.0.3",
-    "gatsby-plugin-offline": "2.0.5",
+    "gatsby-plugin-offline": "2.0.6",
     "gatsby-plugin-react-helmet": "3.0.0",
     "gatsby-plugin-styled-components": "^3.0.0",
     "polished": "^2.2.0",
@@ -47,10 +47,10 @@
     "styled-components": "^4.0.0-beta.10"
   },
   "devDependencies": {
-    "@marcneander/eslint-config-react": "^1.0.1",
+    "@marcneander/eslint-config-react": "^1.0.2",
     "@marcneander/stylelint-config-styled-components": "^1.0.0",
     "eslint": "5.6.1",
-    "husky": "^1.1.1",
+    "husky": "^1.1.2",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
     "stylelint": "^9.6.0"
