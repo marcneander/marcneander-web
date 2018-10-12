@@ -32,9 +32,9 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.8.0",
     "classnames": "^2.2.6",
-    "gatsby": "2.0.19",
+    "gatsby": "2.0.21",
     "gatsby-plugin-layout": "1.0.3",
-    "gatsby-plugin-offline": "2.0.5",
+    "gatsby-plugin-offline": "2.0.6",
     "gatsby-plugin-react-helmet": "3.0.0",
     "gatsby-plugin-styled-components": "^3.0.0",
     "polished": "^2.2.0",
