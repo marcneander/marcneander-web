@@ -1,4 +1,4 @@
-/* eslint-disable import/prefer-default-export */
+import PageElement from './src/components/PageElement';
 import goodbyeTitle from './src/utils/goodbyeTitle';
 
 export const onClientEntry = () => {
@@ -12,3 +12,5 @@ export const onClientEntry = () => {
 
     goodbyeTitle();
 };
+
+export const wrapPageElement = PageElement;

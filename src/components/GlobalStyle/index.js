@@ -1,37 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
-
 import { colors } from '../../utils/cssVariables';
 
-import Rubik400Woff from '../../fonts/rubik-400.woff';
-import Rubik400Woff2 from '../../fonts/rubik-400.woff2';
-import Rubik700Woff from '../../fonts/rubik-700.woff';
-import Rubik700Woff2 from '../../fonts/rubik-700.woff2';
-
-
 const GlobalStyle = createGlobalStyle`
-/* ==========================================================================
-Fonts
-========================================================================== */
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Rubik'), local('Rubik-Regular'),
-        url(${Rubik400Woff2}) format('woff2'),
-        url(${Rubik400Woff}) format('woff');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Rubik Bold'), local('Rubik-Bold'),
-        url(${Rubik700Woff2}) format('woff2'),
-        url(${Rubik700Woff}) format('woff');
-}
-
 /* ==========================================================================
 Normalize
 ========================================================================== */
