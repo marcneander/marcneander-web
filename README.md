@@ -20,6 +20,7 @@
 
 You'll need `nodejs` and `yarn` installed.
 
+Here's all available tasks:
 ```
 yarn develop
 yarn build
@@ -27,3 +28,8 @@ yarn serve
 yarn test
 yarn lint
 ```
+
+## License
+
+Copyright © 2018 Marc Neander. This source code is licensed under the MIT
+license found in the [LICENSE](https://github.com/marcneander/marcneander.se/blob/master/LICENSE)
