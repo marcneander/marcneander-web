@@ -1,9 +1,6 @@
 <p align="center">
     <img src="https://raw.githubusercontent.com/marcneander/marcneander.se/master/src/images/m-dark.svg" alt="Marc Neander logotype" width="150"></a>
 </p>
-<h1 align="center">
-   marcneander.se
-</h1>
 <p align="center">
     <a href="https://greenkeeper.io/">
         <img src="https://badges.greenkeeper.io/marcneander/marcneander.se.svg?style=flat" alt="Greenkeeper badge">
@@ -15,6 +12,8 @@
         <img src="https://snyk.io/test/github/marcneander/marcneander.se/badge.svg?style=flat" alt="Known Vulnerabilities">
     </a>
 </p>
+
+# marcneander.se
 
 ## Getting started
 
