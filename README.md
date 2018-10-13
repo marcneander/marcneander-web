@@ -1,26 +1,34 @@
-# gatsby-starter-default
-The default Gatsby starter.
+<p align="center">
+    <img src="https://raw.githubusercontent.com/marcneander/marcneander.se/master/src/images/m-dark.svg" alt="Marc Neander logotype" width="150"></a>
+</p>
+<p align="center">
+    <a href="https://greenkeeper.io/">
+        <img src="https://badges.greenkeeper.io/marcneander/marcneander.se.svg?style=flat" alt="Greenkeeper badge">
+    </a>
+    <a href="https://travis-ci.com/marcneander/marcneander.se">
+        <img src="https://travis-ci.com/marcneander/marcneander.se.svg?branch=master?style=flat" alt="Build Status">
+    </a>
+    <a href="https://snyk.io/test/github/marcneander/marcneander.se">
+        <img src="https://snyk.io/test/github/marcneander/marcneander.se/badge.svg?style=flat" alt="Known Vulnerabilities">
+    </a>
+</p>
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+# marcneander.se
 
-## Install
+## Getting started
 
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
+You'll need `nodejs` and `yarn` installed.
+
+Here's all available tasks:
+```
+yarn develop
+yarn build
+yarn serve
+yarn test
+yarn lint
 ```
 
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
+## License
 
-Then you can run it by:
-```sh
-cd gatsby-example-site
-gatsby develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default) [![Greenkeeper badge](https://badges.greenkeeper.io/marcneander/marcneander.se.svg)](https://greenkeeper.io/)
+Copyright © 2018 Marc Neander. This source code is licensed under the MIT
+license found in the [LICENSE](https://github.com/marcneander/marcneander.se/blob/master/LICENSE)
