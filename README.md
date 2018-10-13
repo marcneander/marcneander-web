@@ -1,26 +1,23 @@
-# gatsby-starter-default
-The default Gatsby starter.
+<p align="center">
+    <img src="https://raw.githubusercontent.com/marcneander/marcneander.se/master/src/images/m-dark.svg" alt="Marc Neander logotype" width="150"></a>
+</p>
+<h1 align="center">
+   marcneander.se
+</h1>
+<p align="center">
+    [![Greenkeeper badge](https://badges.greenkeeper.io/marcneander/marcneander.se.svg)](https://greenkeeper.io/)
+    [![Build Status](https://travis-ci.com/marcneander/marcneander.se.svg?branch=master)](https://travis-ci.com/marcneander/marcneander.se)
+    [![Known Vulnerabilities](https://snyk.io/test/github/marcneander/marcneander.se/badge.svg)](https://snyk.io/test/github/marcneander/marcneander.se)
+</p>
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+## Getting started
 
-## Install
+You'll need `nodejs` and `yarn` installed.
 
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
 ```
-
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
+yarn develop
+yarn build
+yarn serve
+yarn test
+yarn lint
 ```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-gatsby develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default) [![Greenkeeper badge](https://badges.greenkeeper.io/marcneander/marcneander.se.svg)](https://greenkeeper.io/)
