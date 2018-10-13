@@ -6,13 +6,13 @@
 </h1>
 <p align="center">
     <a href="https://greenkeeper.io/">
-        <img src="https://badges.greenkeeper.io/marcneander/marcneander.se.svg" alt="Greenkeeper badge">
+        <img src="https://badges.greenkeeper.io/marcneander/marcneander.se.svg?style=flat" alt="Greenkeeper badge">
     </a>
     <a href="https://travis-ci.com/marcneander/marcneander.se">
-        <img src="https://travis-ci.com/marcneander/marcneander.se.svg?branch=master" alt="Build Status">
+        <img src="https://travis-ci.com/marcneander/marcneander.se.svg?branch=master?style=flat" alt="Build Status">
     </a>
     <a href="https://snyk.io/test/github/marcneander/marcneander.se">
-        <img src="https://snyk.io/test/github/marcneander/marcneander.se/badge.svg" alt="Known Vulnerabilities">
+        <img src="https://snyk.io/test/github/marcneander/marcneander.se/badge.svg?style=flat" alt="Known Vulnerabilities">
     </a>
 </p>
 
