@@ -1,9 +1,9 @@
+<br />
 <p align="center">
     <a href="https://marcneander.se">
         <img src="https://raw.githubusercontent.com/marcneander/marcneander.se/master/src/images/m-dark.png" alt="Marc Neander logotype" width="151" height="89">
     </a>
 </p>
-<br />
 <br />
 <p align="center">
     <a href="https://greenkeeper.io/">
