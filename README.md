@@ -13,12 +13,18 @@
 </p>
 
 # marcneander.se
+website about myself
 
 ## Getting started
 
 You'll need `nodejs` and `yarn` installed.
 
-Here's all available tasks:
+Start of with
+```
+yarn
+```
+
+Here's a couple of available tasks:
 ```
 yarn develop
 yarn build
