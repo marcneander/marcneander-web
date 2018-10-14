@@ -1,20 +1,15 @@
 <br />
 <p align="center">
     <a href="https://marcneander.se">
-        <img src="https://raw.githubusercontent.com/marcneander/marcneander.se/master/src/images/m-dark.png" alt="Marc Neander logotype" width="151" height="89">
+        <img src="https://raw.githubusercontent.com/marcneander/marcneander.se/master/src/images/m-dark.png" alt="Marc Neander logotype" width="120">
     </a>
 </p>
 <br />
 <p align="center">
     <a href="https://greenkeeper.io/">
-        <img src="https://badges.greenkeeper.io/marcneander/marcneander.se.svg" alt="Greenkeeper badge">
-    </a>
+        <img src="https://badges.greenkeeper.io/marcneander/marcneander.se.svg" alt="Greenkeeper badge"></a>
     <a href="https://travis-ci.com/marcneander/marcneander.se">
-        <img src="https://api.travis-ci.com/marcneander/marcneander.se.svg?branch=master" alt="Build Status">
-    </a>
-    <a href="https://snyk.io/test/github/marcneander/marcneander.se">
-        <img src="https://snyk.io/test/github/marcneander/marcneander.se/badge.svg" alt="Known Vulnerabilities">
-    </a>
+        <img src="https://api.travis-ci.com/marcneander/marcneander.se.svg?branch=master" alt="Build Status"></a>
 </p>
 
 # marcneander.se
