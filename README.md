@@ -1,8 +1,7 @@
 <br />
 <p align="center">
     <a href="https://marcneander.se">
-        <img src="https://raw.githubusercontent.com/marcneander/marcneander.se/master/src/images/m-dark.png" alt="Marc Neander logotype" width="151">
-    </a>
+        <img src="https://raw.githubusercontent.com/marcneander/marcneander.se/master/src/images/m-dark.png" alt="Marc Neander logotype" width="151"></a>
 </p>
 <br />
 <p align="center">
