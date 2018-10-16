@@ -14,13 +14,20 @@
       "git add"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "keywords": [
     "marcneander",
     "react",
     "gatsby"
   ],
+  "browserslist": [
+    "extends @marcneader/browserslist-config"
+  ],
   "scripts": {
-    "precommit": "lint-staged",
     "lint": "yarn run lint:css && yarn run lint:js",
     "lint:js": "eslint src",
     "lint:css": "stylelint './src/**/*.js'",
@@ -47,12 +54,19 @@
     "styled-components": "^4.0.0-beta.10"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@marcneander/browserslist-config": "^1.0.0",
     "@marcneander/eslint-config-react": "^1.0.2",
     "@marcneander/stylelint-config-styled-components": "^1.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "enzyme": "^3.7.0",
     "eslint": "5.6.1",
     "husky": "^1.1.2",
+    "jest": "^23.6.0",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
+    "regenerator-runtime": "^0.12.1",
     "stylelint": "^9.6.0"
   }
 }

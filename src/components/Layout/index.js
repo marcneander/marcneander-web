@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import Navigation from '../../containers/Navigation';
-import Footer from '../../containers/Footer';
+import Footer from '../Footer';
 
 const PageWrapper = styled.div`
     flex-grow: 1;
