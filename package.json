@@ -25,7 +25,7 @@
     "gatsby"
   ],
   "browserslist": [
-    "extends @marcneader/browserslist-config"
+    "extends @marcneander/browserslist-config"
   ],
   "scripts": {
     "lint": "yarn run lint:css && yarn run lint:js",
