@@ -39,7 +39,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.8.0",
     "classnames": "^2.2.6",
-    "gatsby": "2.0.25",
+    "gatsby": "2.0.28",
     "gatsby-plugin-layout": "1.0.3",
     "gatsby-plugin-offline": "2.0.7",
     "gatsby-plugin-react-helmet": "3.0.0",
@@ -51,11 +51,11 @@
     "react-dom": "^16.5.2",
     "react-helmet": "^5.2.0",
     "react-transition-group": "^2.5.0",
-    "styled-components": "^4.0.0"
+    "styled-components": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
-    "@marcneander/babel-preset-all": "^1.0.2",
+    "@marcneander/babel-preset-all": "^1.0.3",
     "@marcneander/browserslist-config": "^1.0.0",
     "@marcneander/eslint-config-react": "^1.0.2",
     "@marcneander/stylelint-config-styled-components": "^1.0.0",

@@ -820,10 +820,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.6.6.tgz#004b98298d04c7ca3b4f50ca2035d4f60d2eed1b"
   integrity sha512-h4t4jFjtm1YV7UirAFuSuFGyLa+NNxjdkq6DpFLANNQY5rHueFZHVY+8Cu1HYVP6DrheB0kv4m5xPjo7eKT7yQ==
 
-"@marcneander/babel-preset-all@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@marcneander/babel-preset-all/-/babel-preset-all-1.0.2.tgz#da8f783c005b5bc6391a1073a0986ac0250c0958"
-  integrity sha512-nmSESwAHVXCC8uBqi5gbr/noWAuAC6yfw433/mGdnjhRljtQDNY5mi6W6fzbdh1OBjCd0ewGykRai+h43U++qA==
+"@marcneander/babel-preset-all@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@marcneander/babel-preset-all/-/babel-preset-all-1.0.3.tgz#8577b9f2eabad0ce575111f6a8ae5daae1784bf5"
+  integrity sha512-VxmktoYIrQnEGruESfDwJGtboh8HtS/INUSzdHj9nT5WsYEUlNrIT1sJTtC4wgyyNLPRF8jZZv1Fnn9ByQ/WcQ==
   dependencies:
     "@babel/core" "^7.1.2"
     "@babel/helper-plugin-utils" "^7.0.0"
@@ -5288,10 +5288,10 @@ gatsby-react-router-scroll@^2.0.0:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.25:
-  version "2.0.25"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.25.tgz#ec4ad24585a06b700b39fe81c197caf01f2e170d"
-  integrity sha512-OLj0PrywrFNxt3SglotvB/iNVVgI2QndpF43MXJfWWCGeMB6D8H81PSPj3H3d9DvJ3SE5k2pMZZH+pRYNSKofw==
+gatsby@2.0.28:
+  version "2.0.28"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.28.tgz#022ccee54c1b61d43842da33c7098a4044159736"
+  integrity sha512-sZ+w+ETgsinOqyGwTVZgg3PEkDfHEcSklc3vcVEFoUYGkG9NzHXWNC1TlO40dlz3BpQ1kvRvEpJ63XsrvQieQg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -11278,10 +11278,10 @@ style-search@^0.1.0:
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
   integrity sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
 
-styled-components@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-4.0.0.tgz#bd37d79408246302051cd63f52a3539f70aa3197"
-  integrity sha512-+SXoKjaXmApQHjQXNY5pxuRpnabR7vnL6J59Gtcj118ll8gsg9MM8gkjWu6Ahc0NB9kLjh3O9Ho2iun6uLunVA==
+styled-components@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-4.0.2.tgz#7d4409ada019cdd34c25ba68c4577ea95dbcf0c5"
+  integrity sha512-VTNCmBLNx0OS2GRaYk0yRAnQVDBCGnnxGkR6+BCmkKVv9VgICO7bEn3UDjlnwCw8hgIyecMzVLOPl+p1zqUxog==
   dependencies:
     "@emotion/is-prop-valid" "^0.6.8"
     babel-plugin-styled-components ">= 1"

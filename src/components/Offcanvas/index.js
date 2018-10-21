@@ -16,10 +16,7 @@ const defaultProps = {
     children: undefined
 };
 
-const timeout = {
-    enter: 430,
-    exit: 240
-};
+const timeout = 180;
 
 const StyledOffcanvas = styled.div`
     background-color: ${colors.dark};
@@ -43,28 +40,22 @@ const StyledOffcanvas = styled.div`
     &.offcanvas-enter,
     &.offcanvas-exit,
     &.offcanvas-enter-done {
+        opacity: 0;
         display: block;
     }
 
     &.offcanvas-enter-active {
-        animation-name: ${sneakIn};
-        animation-duration: 430ms;
-        animation-timing-function: linear;
-        animation-direction: normal;
-        animation-delay: 0s;
+        animation: ${sneakIn} ${timeout}ms ease-in-out;
+        animation-fill-mode: forwards;
     }
 
     &.offcanvas-exit-active {
-        animation-name: ${sneakOut};
-        animation-duration: 240ms;
-        animation-timing-function: linear;
-        animation-direction: normal;
-        animation-delay: 0s;
+        animation: ${sneakOut} ${timeout}ms linear;
         animation-fill-mode: forwards;
     }
 
     &.offcanvas-enter-done {
-        transform: translate(0, 0);
+        opacity: 1;
     }
 `;
 

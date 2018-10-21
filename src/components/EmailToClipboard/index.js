@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import CopyToClipboard from './copyToClipboard';
 
-import copyIcon from '../../images/icons/copy-solid.svg';
 import emailIcon from '../../images/icons/envelope-solid.svg';
 
 import { colors, media } from '../../utils/cssVariables';
@@ -36,7 +35,7 @@ const LinksWrap = styled.div`
     border-top: 1px solid ${colors.borderLight};
 `;
 
-const Link = styled.a`
+export const Link = styled.a`
     color: ${colors.dark};
     font-weight: 700;
     line-height: 18px;
@@ -49,68 +48,33 @@ const Link = styled.a`
     }
 `;
 
-const LinkText = styled.span`
+export const LinkText = styled.span`
     display: inline-block;
     font-size: 12px;
     padding-left: 6px;
     text-transform: uppercase;
 `;
 
-const Icon = styled.img`
+export const Icon = styled.img`
     height: 18px;
     vertical-align: middle;
     display: inline-block;
 `;
 
-class EmailToClipboard extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.onCopy = this.onCopy.bind(this);
-
-        this.state = {
-            copied: false
-        };
-    }
-
-    onCopy() {
-        clearTimeout(this.timeout);
-        this.setState({
-            copied: true
-        });
-
-        this.timeout = setTimeout(() => {
-            this.setState({
-                copied: false
-            });
-        }, 3500);
-    }
-
-    render() {
-        const { email } = this.props;
-        const { copied } = this.state;
-
-        return (
-            <Wrap>
-                <EmailWrap>
-                    <Email>{email}</Email>
-                </EmailWrap>
-                <LinksWrap>
-                    <Link href={`mailto:${email}`}>
-                        <Icon src={emailIcon} alt="Email icon" />
-                        <LinkText>Email</LinkText>
-                    </Link>
-                    <CopyToClipboard text={email} onCopy={this.onCopy}>
-                        <Link href="#copy" onClick={e => e.preventDefault()}>
-                            <Icon src={copyIcon} alt="Copy icon" />
-                            <LinkText>{copied ? 'Copied!' : 'Copy'}</LinkText>
-                        </Link>
-                    </CopyToClipboard>
-                </LinksWrap>
-            </Wrap>
-        );
-    }
-}
+const EmailToClipboard = ({ email }) => (
+    <Wrap>
+        <EmailWrap>
+            <Email>{email}</Email>
+        </EmailWrap>
+        <LinksWrap>
+            <Link href={`mailto:${email}`}>
+                <Icon src={emailIcon} alt="Email icon" />
+                <LinkText>Email</LinkText>
+            </Link>
+            <CopyToClipboard email={email} />
+        </LinksWrap>
+    </Wrap>
+);
 
 EmailToClipboard.propTypes = propTypes;
 

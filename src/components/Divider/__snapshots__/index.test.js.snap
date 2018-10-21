@@ -2,7 +2,7 @@
 
 exports[`<Divider> should render correctly 1`] = `
 <span
-  class="sc-bdVaJa kwgnQB"
+  class="sc-bdVaJa eOeOIj"
   style="width:20px"
 />
 `;
