@@ -1,6 +1,6 @@
 {
+  "private": true,
   "name": "marcneander.se",
-  "version": "1.0.0",
   "description": "Freelancing front-end engineer",
   "author": "Marc Neander <marcneander@gmail.com>",
   "license": "MIT",
@@ -24,9 +24,18 @@
     "react",
     "gatsby"
   ],
+  "eslintConfig": {
+    "extends": "@marcneander/react"
+  },
+  "stylelint": {
+    "extends": "@marcneander/stylelint-config-styled-components"
+  },
   "browserslist": [
     "extends @marcneander/browserslist-config"
   ],
+  "babel": {
+    "presets": ["@marcneander/all"]
+  },
   "scripts": {
     "lint": "yarn run lint:css && yarn run lint:js",
     "lint:js": "eslint src",
@@ -55,7 +64,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
-    "@marcneander/babel-preset-all": "^1.0.6",
+    "@marcneander/babel-preset-all": "^1.0.7",
     "@marcneander/browserslist-config": "^1.0.0",
     "@marcneander/eslint-config-react": "^1.0.2",
     "@marcneander/stylelint-config-styled-components": "^1.0.0",
@@ -70,7 +79,6 @@
     "jsdom": "^12.2.0",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
-    "regenerator-runtime": "^0.12.1",
     "stylelint": "^9.6.0"
   }
 }

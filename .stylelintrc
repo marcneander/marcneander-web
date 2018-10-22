@@ -1,5 +1,0 @@
-{
-    "extends": [
-        "@marcneander/stylelint-config-styled-components"
-    ]
-}
