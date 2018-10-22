@@ -820,10 +820,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.6.6.tgz#004b98298d04c7ca3b4f50ca2035d4f60d2eed1b"
   integrity sha512-h4t4jFjtm1YV7UirAFuSuFGyLa+NNxjdkq6DpFLANNQY5rHueFZHVY+8Cu1HYVP6DrheB0kv4m5xPjo7eKT7yQ==
 
-"@marcneander/babel-preset-all@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@marcneander/babel-preset-all/-/babel-preset-all-1.0.4.tgz#0a16393d995390f5eb94b28d3430bceb25924566"
-  integrity sha512-T4mBJpMozTLMSpy1q2g7Q4Jp+f60jSAKKSZ95eCqbe6KzttE176Z+6DiaB4DwiJSMTn/g6kuyPDooaJZ8znXEA==
+"@marcneander/babel-preset-all@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@marcneander/babel-preset-all/-/babel-preset-all-1.0.5.tgz#262c1b907c8d2014faf997793f022f39050a41f1"
+  integrity sha512-+xYCbVBcXfxy7GGLOzf1MhKba2HCeiciEbPOvKrvaNi9CWrztnxzT/Qo5Icv1Mc9CFmf8t9cRFRLe4BFeT+LWg==
   dependencies:
     "@babel/core" "^7.1.2"
     "@babel/helper-plugin-utils" "^7.0.0"

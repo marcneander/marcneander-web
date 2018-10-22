@@ -3,7 +3,7 @@ module.exports = {
         [
             '@marcneander/all',
             {
-                node: true,
+                node: false,
                 react: true
             }
         ]
