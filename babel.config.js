@@ -7,5 +7,15 @@ module.exports = {
                 react: true
             }
         ]
+    ],
+    plugins: [
+        'babel-plugin-macros',
+        [
+            '@babel/plugin-transform-runtime',
+            {
+                helpers: true,
+                regenerator: true
+            }
+        ]
     ]
 };
