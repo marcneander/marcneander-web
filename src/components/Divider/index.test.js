@@ -5,8 +5,8 @@ import Divider from './index';
 
 describe('<Divider>', () => {
     it('should render correctly', () => {
-        const tree = render(<Divider />);
+        const wrapper = render(<Divider width={30} />);
 
-        expect(tree).toMatchSnapshot();
+        expect(wrapper).toMatchSnapshot();
     });
 });

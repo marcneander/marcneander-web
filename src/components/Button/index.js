@@ -2,12 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { omit } from '../../utils';
-
 import { colors } from '../../utils/cssVariables';
 
 const propTypes = {
-    active: PropTypes.bool,
-    block: PropTypes.bool,
     className: PropTypes.string,
     children: PropTypes.node.isRequired,
     disabled: PropTypes.bool,
@@ -16,15 +13,13 @@ const propTypes = {
 };
 
 const defaultProps = {
-    active: false,
-    block: false,
     className: '',
     disabled: false,
     onClick: () => {},
     component: 'button'
 };
 
-class Button extends React.Component {
+class Button extends React.PureComponent {
     constructor(props) {
         super(props);
 
@@ -45,7 +40,7 @@ class Button extends React.Component {
     }
 
     render() {
-        const { active, block, className, children, disabled, ...attributes } = omit(this.props, ['component']);
+        const { className, children, disabled, ...attributes } = omit(this.props, ['component']);
         let { component: Component } = this.props;
 
         if (attributes.href && Component === 'button') {

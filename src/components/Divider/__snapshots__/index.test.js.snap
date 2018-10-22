@@ -3,6 +3,6 @@
 exports[`<Divider> should render correctly 1`] = `
 <span
   class="sc-bdVaJa eOeOIj"
-  style="width:20px"
+  style="width:30px"
 />
 `;
