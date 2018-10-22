@@ -1,12 +1,12 @@
 {
   "private": true,
-  "name": "marcneander.se",
+  "name": "marcneander.io",
   "description": "Freelancing front-end engineer",
   "author": "Marc Neander <marcneander@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcneander/marcneander.se"
+    "url": "https://github.com/marcneander/marcneander.io"
   },
   "lint-staged": {
     "src/**/*.js": [

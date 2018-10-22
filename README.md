@@ -1,17 +1,17 @@
 <br />
 <p align="center">
-    <a href="https://marcneander.se">
-        <img src="https://raw.githubusercontent.com/marcneander/marcneander.se/master/src/images/m-dark.png" alt="Marc Neander logotype" width="151"></a>
+    <a href="https://marcneander.io">
+        <img src="https://raw.githubusercontent.com/marcneander/marcneander.io/master/src/images/m-dark.png" alt="Marc Neander logotype" width="151"></a>
 </p>
 <br />
 <p align="center">
     <a href="https://greenkeeper.io/">
-        <img src="https://badges.greenkeeper.io/marcneander/marcneander.se.svg" alt="Greenkeeper badge"></a>
-    <a href="https://travis-ci.com/marcneander/marcneander.se">
-        <img src="https://api.travis-ci.com/marcneander/marcneander.se.svg?branch=master" alt="Build Status"></a>
+        <img src="https://badges.greenkeeper.io/marcneander/marcneander.io.svg" alt="Greenkeeper badge"></a>
+    <a href="https://travis-ci.com/marcneander/marcneander.io">
+        <img src="https://api.travis-ci.com/marcneander/marcneander.io.svg?branch=master" alt="Build Status"></a>
 </p>
 
-# marcneander.se
+# marcneander.io
 website about myself
 
 ## Getting started
@@ -35,4 +35,4 @@ yarn lint
 ## License
 
 Copyright © 2018 Marc Neander. This source code is licensed under the MIT
-license found in the [LICENSE](https://github.com/marcneander/marcneander.se/blob/master/LICENSE)
+license found in the [LICENSE](https://github.com/marcneander/marcneander.io/blob/master/LICENSE)

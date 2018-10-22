@@ -43,8 +43,8 @@ const Layout = props => {
                 I make sure applications are accessible, performant, SEO optimized and user friendly."
                 />
                 <meta property="og:title" content="Marc Neander - Front-end/Javascript engineer" />
-                <meta property="og:url" content="https://marcneander.se" />
-                <meta property="og:image" content="https://marcneander.se/og-image.jpg" />
+                <meta property="og:url" content="https://marcneander.io" />
+                <meta property="og:image" content="https://marcneander.io/og-image.jpg" />
             </Helmet>
             <Navigation />
             <PageWrapper>{children}</PageWrapper>
