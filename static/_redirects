@@ -1,0 +1,6 @@
+# Redirect domain aliases to primary domain
+https://marcneander.se/* https://marcneander.io/:splat 301!
+https://marcneander.com/* https://marcneander.io/:splat 301!
+
+# Redirect default Netlify subdomain to primary domain
+https://marcneander.netlify.com/* https://marcneander.io/:splat 301!
