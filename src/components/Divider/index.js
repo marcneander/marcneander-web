@@ -19,6 +19,8 @@ const StyledDivider = styled.span`
     background-color: ${props => (props.inverse ? '#fdf6e3' : '#293440')};
 `;
 
+StyledDivider.displayName = 'StyledDivider';
+
 const Divider = props => {
     const { width, inverse } = props;
 

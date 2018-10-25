@@ -1,12 +1,15 @@
 /* global it, expect, describe */
 import React from 'react';
-import { render } from 'enzyme';
+import { mount } from 'enzyme';
 import Divider from './index';
 
 describe('<Divider>', () => {
     it('should render correctly', () => {
-        const wrapper = render(<Divider width={30} />);
+        const wrapper = mount(<Divider width={30} inverse />);
 
-        expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find('span').props().children).toEqual(undefined);
+        expect(wrapper.find('span').props().style).toEqual({ width: 30 });
+        expect(wrapper.find('span').props().inverse).toEqual(undefined);
+        expect(wrapper.find('StyledDivider').props().inverse).toEqual(true);
     });
 });
