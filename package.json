@@ -34,7 +34,9 @@
     "extends @marcneander/browserslist-config"
   ],
   "babel": {
-    "presets": ["@marcneander/all"]
+    "presets": [
+      "@marcneander/all"
+    ]
   },
   "scripts": {
     "lint": "yarn run lint:css && yarn run lint:js",
@@ -48,16 +50,16 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.8.0",
     "classnames": "^2.2.6",
+    "gatsby": "2.0.31",
     "gatsby-plugin-layout": "1.0.4",
-    "gatsby": "2.0.30",
     "gatsby-plugin-offline": "2.0.9",
     "gatsby-plugin-react-helmet": "3.0.0",
     "gatsby-plugin-styled-components": "^3.0.0",
     "polished": "^2.3.0",
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
+    "react": "^16.6.0",
     "react-copy-to-clipboard": "^5.0.1",
-    "react-dom": "^16.5.2",
+    "react-dom": "^16.6.0",
     "react-helmet": "^5.2.0",
     "react-transition-group": "^2.5.0",
     "styled-components": "^4.0.2"
