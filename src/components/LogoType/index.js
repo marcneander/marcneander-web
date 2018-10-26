@@ -10,11 +10,11 @@ const defaultProps = {
     className: ''
 };
 
-const LogoType = props => {
+const LogoType = React.memo(props => {
     const { className } = props;
 
     return <img className={className} src={logo} alt="Marc Neander logotype" />;
-};
+});
 
 LogoType.propTypes = propTypes;
 LogoType.defaultProps = defaultProps;

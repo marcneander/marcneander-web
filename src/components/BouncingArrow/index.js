@@ -1,8 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
 import { bounce } from '../../utils/keyframes';
 
-const StyledBouncingArrow = styled.i`
+const BouncingArrow = styled.i`
     display: block;
     width: 30px;
     height: 30px;
@@ -10,7 +9,5 @@ const StyledBouncingArrow = styled.i`
     background-size: contain;
     animation: ${bounce} 1s infinite;
 `;
-
-const BouncingArrow = () => <StyledBouncingArrow />;
 
 export default BouncingArrow;

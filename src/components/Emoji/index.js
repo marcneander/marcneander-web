@@ -6,11 +6,11 @@ const propTypes = {
     label: PropTypes.string.isRequired
 };
 
-const Emoji = ({ symbol, label }) => (
+const Emoji = React.memo(({ symbol, label }) => (
     <span role="img" aria-label={label || ''} aria-hidden={label ? 'false' : 'true'}>
         {symbol}
     </span>
-);
+));
 
 Emoji.propTypes = propTypes;
 
