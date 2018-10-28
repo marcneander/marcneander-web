@@ -33,7 +33,7 @@ const SubTitle = styled.h2`
     font-weight: 400;
 `;
 
-const StyledButton = styled(Button.type)`
+const StyledButton = styled(Button)`
     display: block;
     margin-left: auto;
     margin-right: auto;

@@ -42,7 +42,7 @@ const Title = styled.h1`
     `};
 `;
 
-const StyledButton = styled(Button.type)`
+const StyledButton = styled(Button)`
     display: block;
     margin-left: auto;
     margin-right: auto;
