@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styled from 'styled-components';
@@ -56,7 +56,7 @@ const Button = styled.button`
     }
 `;
 
-class OffcanvasButton extends Component {
+class OffcanvasButton extends PureComponent {
     constructor(props) {
         super(props);
 

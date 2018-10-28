@@ -49,7 +49,7 @@ const ButtonWrapper = styled.div`
     margin-top: 36px;
 `;
 
-const Home = () => (
+const Home = React.memo(() => (
     <Section>
         <Container>
             <Title>
@@ -71,6 +71,6 @@ const Home = () => (
             </ButtonWrapper>
         </Container>
     </Section>
-);
+));
 
 export default Home;
