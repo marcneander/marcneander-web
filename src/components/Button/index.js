@@ -58,7 +58,7 @@ class Button extends React.PureComponent {
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;
 
-const StyledButton = styled(Button)`
+const StyledButton = React.memo(styled(Button)`
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -85,6 +85,6 @@ const StyledButton = styled(Button)`
         background-color: ${colors.yellowHover};
         text-decoration: none;
     }
-`;
+`);
 
 export default StyledButton;

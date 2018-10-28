@@ -33,7 +33,7 @@ const SubTitle = styled.h2`
     font-weight: 400;
 `;
 
-const StyledButton = styled(Button)`
+const StyledButton = styled(Button.type)`
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -49,7 +49,7 @@ const ButtonWrapper = styled.div`
     margin-top: 36px;
 `;
 
-const Home = () => (
+const Home = React.memo(() => (
     <Section>
         <Container>
             <Title>
@@ -71,6 +71,6 @@ const Home = () => (
             </ButtonWrapper>
         </Container>
     </Section>
-);
+));
 
 export default Home;

@@ -42,7 +42,7 @@ const Title = styled.h1`
     `};
 `;
 
-const StyledButton = styled(Button)`
+const StyledButton = styled(Button.type)`
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -61,13 +61,13 @@ const SubTitle = styled.h2`
     font-weight: 700;
 `;
 
-const StyledContainer = styled(Container)`
+const StyledContainer = styled(Container.type)`
     ${media.md`
         width: 600px;
     `};
 `;
 
-const Profile = () => (
+const Profile = React.memo(() => (
     <React.Fragment>
         <Helmet>
             <title>Profile</title>
@@ -211,6 +211,6 @@ const Profile = () => (
             </StyledContainer>
         </Section>
     </React.Fragment>
-);
+));
 
 export default Profile;

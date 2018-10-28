@@ -1,7 +1,8 @@
+import React from 'react';
 import styled from 'styled-components';
 import { media } from '../../utils/cssVariables';
 
-const Container = styled.div`
+const Container = React.memo(styled.div`
     margin-right: auto;
     margin-left: auto;
     padding-left: 16px;
@@ -10,6 +11,6 @@ const Container = styled.div`
     ${media.lg`
         width: 960px;
     `};
-`;
+`);
 
 export default Container;
