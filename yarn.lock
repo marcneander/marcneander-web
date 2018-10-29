@@ -4563,9 +4563,9 @@ gatsby-plugin-layout@1.0.5:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-offline@2.0.9:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.0.9.tgz#ca4cb733a3fd6c411da347dbfa7f9f1ceb5fe2e1"
+gatsby-plugin-offline@2.0.10:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.0.10.tgz#23882293df3890f1237f8485b6816f6ca0a591a8"
   dependencies:
     "@babel/runtime" "^7.0.0"
     cheerio "^1.0.0-rc.2"
