@@ -4568,9 +4568,9 @@ gatsby-link@^2.0.6:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-plugin-layout@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.0.5.tgz#4fe31f03772cc61681dec609cacee1755b0e0e80"
+gatsby-plugin-layout@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.0.6.tgz#be3e2b6e89baeea27dd2747b4c8e1451fdc7754a"
   dependencies:
     "@babel/runtime" "^7.0.0"
 
