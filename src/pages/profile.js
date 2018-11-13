@@ -54,17 +54,22 @@ const StyledButton = styled(Button)`
 `;
 
 const SubTitle = styled.h2`
+    display: inline-block;
     font-size: 20px;
-    margin-top: 24px;
-    margin-bottom: 8px;
+    margin-top: 48px;
+    margin-bottom: 14px;
     line-height: 1.5;
     font-weight: 700;
 `;
 
-const StyledContainer = styled(Container.type)`
+const StyledContainer = styled(Container)`
     ${media.md`
         width: 600px;
     `};
+`;
+
+const JobWrapper = styled.div`
+    display: block;
 `;
 
 const Profile = React.memo(() => (
@@ -88,44 +93,41 @@ const Profile = React.memo(() => (
                     performance, aesthetics, user experience and accessibility. Ability to lead projects and people.
                 </p>
                 <p>Off work I’m a dad, rock-climber, tech-enthusiast and golf-nerd.</p>
-                <br />
                 <SubTitle>
                     <Underline borderSize={3}>Skills</Underline>
                 </SubTitle>
                 <p>
-                    <Pill>HTML</Pill>
-                    <Pill>CSS</Pill>
-                    <Pill>JavaScript</Pill>
-                    <br />
+                    Solid JavaScript, CSS & HTML foundation. Problemsolving. Performance optimization. Code quality.
+                    Pixelperfect. Progressive enhancement.
+                </p>
+                <p>
                     <Pill>React</Pill>
-                    <Pill>Angular</Pill>
-                    <Pill>Sass</Pill>
-                    <Pill>Less</Pill>
+                    <Pill>Apollo</Pill>
                     <Pill>Redux</Pill>
-                    <Pill>Webpack</Pill>
-                    <Pill>Docker</Pill>
-                    <Pill>jQuery</Pill>
-                    <Pill>DevTools</Pill>
-                    <Pill>Gatsby</Pill>
-                    <Pill>Styled components</Pill>
-                    <Pill>GraphQL</Pill>
-                    <Pill>Lerna</Pill>
-                    <Pill>Express</Pill>
                     <Pill>Jest</Pill>
-                    <Pill>Redis</Pill>
-                    <Pill>MongoDB</Pill>
-                    <Pill>PostgreSQL</Pill>
-                    <Pill>MySQL</Pill>
+                    <Pill>Sass</Pill>
+                    <Pill>styled-components</Pill>
+                    <Pill>Less</Pill>
+                    <Pill>Angular</Pill>
+                    <Pill>jQuery</Pill>
+                    <Pill>Docker</Pill>
+                    <Pill>Webpack</Pill>
+                    <Pill>Rollup</Pill>
+                    <Pill>Lerna</Pill>
+                    <Pill>Gatsby</Pill>
+                    <Pill>Express</Pill>
+                    <Pill>GraphQL</Pill>
+                    <Pill>Prisma</Pill>
+                    <Pill>json:api</Pill>
+                    <Pill>DevTools</Pill>
                     <Pill>Git</Pill>
-                    <Pill>Command Line</Pill>
                     <br />
                     <Pill>...</Pill>
                 </p>
-                <br />
                 <SubTitle>
                     <Underline borderSize={3}>Experience</Underline>
                 </SubTitle>
-                <div>
+                <JobWrapper>
                     <Job
                         logo={blocket}
                         alt="Blocket logo"
@@ -204,7 +206,7 @@ const Profile = React.memo(() => (
                             <li>Debug and support customers with their Joomla website</li>
                         </ul>
                     </Job>
-                </div>
+                </JobWrapper>
                 <StyledButton component={Link} to="contact">
                     Contact me
                 </StyledButton>

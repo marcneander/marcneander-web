@@ -56,10 +56,12 @@ const Home = React.memo(() => (
                 <Underline>I&apos;m</Underline> Marc Neander
             </Title>
             <SubTitle>
-                Freelancing Javascript/Front-end engineer based in <strong>Stockholm</strong>. I have been improving the
+                Consultant Javascript/Front-end engineer based in <strong>Stockholm</strong>. I have been improving the
                 web since 2006.
                 <br />I make sure applications are <strong>accessible</strong>, <strong>performant</strong>,{' '}
-                <strong>SEO optimized</strong> and <strong>user friendly</strong>.
+                <strong>SEO optimized</strong> and <strong>user friendly</strong>.<br />
+                <br />
+                {`I'm`} <strong>available</strong> starting January 14th, 2019.
             </SubTitle>
             <ButtonWrapper>
                 <StyledButton component={Link} to="contact">

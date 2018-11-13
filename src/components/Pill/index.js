@@ -9,7 +9,7 @@ const Pill = React.memo(styled.span`
     background: ${colors.dark};
     border-radius: 3px;
     font-weight: 700;
-    margin: 4px;
+    margin: 2px;
 `);
 
 export default Pill;

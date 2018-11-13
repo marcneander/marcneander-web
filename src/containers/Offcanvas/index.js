@@ -44,23 +44,17 @@ const StyledLink = styled(Link)`
 `;
 
 class Navigation extends PureComponent {
-    constructor(props) {
-        super(props);
+    state = {
+        offcanvasOpen: false
+    };
 
-        this.toggleOffcanvas = this.toggleOffcanvas.bind(this);
-
-        this.state = {
-            offcanvasOpen: false
-        };
-    }
-
-    toggleOffcanvas() {
+    toggleOffcanvas = () => {
         this.setState(prevState => ({
             offcanvasOpen: !prevState.offcanvasOpen
         }));
-    }
+    };
 
-    render() {
+    render = () => {
         const { offcanvasOpen } = this.state;
 
         return (
@@ -90,7 +84,7 @@ class Navigation extends PureComponent {
                 </Offcanvas>
             </React.Fragment>
         );
-    }
+    };
 }
 
 export default Navigation;
