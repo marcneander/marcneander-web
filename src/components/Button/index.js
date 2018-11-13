@@ -4,29 +4,23 @@ import styled from 'styled-components';
 import { omit } from '../../utils';
 import { colors } from '../../utils/cssVariables';
 
-const propTypes = {
-    className: PropTypes.string,
-    children: PropTypes.node.isRequired,
-    disabled: PropTypes.bool,
-    onClick: PropTypes.func,
-    component: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
-};
-
-const defaultProps = {
-    className: '',
-    disabled: false,
-    onClick: () => {},
-    component: 'button'
-};
-
 class Button extends React.PureComponent {
-    constructor(props) {
-        super(props);
+    static propTypes = {
+        className: PropTypes.string,
+        children: PropTypes.node.isRequired,
+        disabled: PropTypes.bool,
+        onClick: PropTypes.func,
+        component: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
+    };
 
-        this.onClick = this.onClick.bind(this);
-    }
+    static defaultProps = {
+        className: '',
+        disabled: false,
+        onClick: () => {},
+        component: 'button'
+    };
 
-    onClick(e) {
+    onClick = e => {
         const { disabled, onClick } = this.props;
 
         if (disabled) {
@@ -37,9 +31,9 @@ class Button extends React.PureComponent {
         if (onClick) {
             onClick(e);
         }
-    }
+    };
 
-    render() {
+    render = () => {
         const { className, children, disabled, ...attributes } = omit(this.props, ['component']);
         let { component: Component } = this.props;
 
@@ -52,11 +46,8 @@ class Button extends React.PureComponent {
                 {children}
             </Component>
         );
-    }
+    };
 }
-
-Button.propTypes = propTypes;
-Button.defaultProps = defaultProps;
 
 const StyledButton = styled(Button)`
     display: inline-block;
