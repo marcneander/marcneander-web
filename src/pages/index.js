@@ -53,7 +53,7 @@ const Home = React.memo(() => (
     <Section>
         <Container>
             <Title>
-                <Underline>I&apos;m</Underline> Marc Neander
+                <Underline>I’m</Underline> Marc Neander
             </Title>
             <SubTitle>
                 Consultant Javascript/Front-end engineer based in <strong>Stockholm</strong>. I have been improving the

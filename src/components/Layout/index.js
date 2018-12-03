@@ -14,7 +14,7 @@ const propTypes = {
 };
 
 const Layout = React.memo(props => {
-    const { children } = props;
+    const { children, pageContext } = props;
 
     return (
         <React.Fragment>
@@ -46,9 +46,9 @@ const Layout = React.memo(props => {
                 <meta property="og:url" content="https://marcneander.io" />
                 <meta property="og:image" content="https://marcneander.io/og-image.jpg" />
             </Helmet>
-            <Navigation />
+            {!pageContext.hideLayout ? <Navigation /> : ''}
             <PageWrapper>{children}</PageWrapper>
-            <Footer />
+            {!pageContext.hideLayout ? <Footer /> : ''}
         </React.Fragment>
     );
 });

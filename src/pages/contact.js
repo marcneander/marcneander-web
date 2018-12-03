@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import Container from '../components/Container';
+import Title from '../components/Title';
 import EmailToClipboard from '../components/EmailToClipboard';
 import Underline from '../components/Underline';
 
@@ -14,16 +15,6 @@ const Section = styled.section`
 
     ${media.lg`
         padding-top: 120px;
-    `};
-`;
-
-const Title = styled.h1`
-    font-size: 48px;
-    margin-bottom: 75px;
-    letter-spacing: -3px;
-
-    ${media.lg`
-        font-size: 80px;
     `};
 `;
 
