@@ -48,39 +48,39 @@
     "test": "jest"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.8.0",
+    "babel-plugin-styled-components": "^1.9.4",
     "classnames": "^2.2.6",
     "gatsby": "2.0.67",
     "gatsby-plugin-layout": "1.0.10",
     "gatsby-plugin-offline": "2.0.19",
     "gatsby-plugin-react-helmet": "3.0.4",
     "gatsby-plugin-styled-components": "^3.0.4",
-    "polished": "^2.3.0",
+    "polished": "^2.3.1",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
-    "react-transition-group": "^2.5.0",
-    "styled-components": "^4.1.1"
+    "react-transition-group": "^2.5.1",
+    "styled-components": "^4.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.5",
+    "@babel/core": "^7.2.0",
     "@marcneander/babel-preset-all": "^1.0.7",
     "@marcneander/browserslist-config": "^1.0.0",
     "@marcneander/eslint-config-react": "^1.0.2",
     "@marcneander/stylelint-config-styled-components": "^1.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.7.0",
-    "enzyme-to-json": "^3.3.4",
-    "eslint": "5.9.0",
-    "husky": "^1.1.4",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "5.10.0",
+    "husky": "^1.2.1",
     "jest": "^23.6.0",
     "jsdom": "^13.0.0",
-    "lint-staged": "^8.0.4",
-    "prettier": "^1.15.2",
-    "stylelint": "^9.8.0"
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "stylelint": "^9.9.0"
   }
 }
