@@ -4,9 +4,7 @@ import styled from 'styled-components';
 import { colors } from '../../utils/cssVariables';
 
 import githubIcon from '../../images/icons/github-brands.svg';
-import codepenIcon from '../../images/icons/codepen-brands.svg';
-import linkedinIcon from '../../images/icons/linkedin-brands.svg';
-import dockerIcon from '../../images/icons/docker-brands.svg';
+import npmIcon from '../../images/icons/npm-brands.svg';
 import twitterIcon from '../../images/icons/twitter-brands.svg';
 
 const StyledFooter = styled.footer`
@@ -37,27 +35,21 @@ const Link = styled.a`
     }
 `;
 
-const Footer = () => (
+const Footer = React.memo(() => (
     <StyledFooter>
         <Paragraph>
             <Link href="https://github.com/marcneander/" target="_blank" rel="noopener noreferrer">
                 <Icon src={githubIcon} alt="Github Icon" />
             </Link>
-            <Link href="https://codepen.io/marcneander/" target="_blank" rel="noopener noreferrer">
-                <Icon src={codepenIcon} alt="Codepen Icon" />
-            </Link>
-            <Link href="https://www.linkedin.com/in/marc-neander-789b8570/" target="_blank" rel="noopener noreferrer">
-                <Icon src={linkedinIcon} alt="LinkedIn Icon" />
+            <Link href="https://www.npmjs.com/~marcneander" target="_blank" rel="noopener noreferrer">
+                <Icon src={npmIcon} alt="npmjs Icon" />
             </Link>
             <Link href="https://twitter.com/marcneander" target="_blank" rel="noopener noreferrer">
                 <Icon src={twitterIcon} alt="Twitter Icon" />
             </Link>
-            <Link href="https://hub.docker.com/u/marcneander/" target="_blank" rel="noopener noreferrer">
-                <Icon src={dockerIcon} alt="Docker Icon" />
-            </Link>
         </Paragraph>
         <Paragraph>&copy; Marc Neander 2018</Paragraph>
     </StyledFooter>
-);
+));
 
 export default Footer;

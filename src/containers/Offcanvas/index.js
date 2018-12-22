@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import LogoType from '../../components/LogoType';
@@ -14,7 +14,7 @@ const StyledOffcanvasButton = styled(OffcanvasButton)`
     z-index: 505;
 `;
 
-const StyledOffcanvasLogoType = styled(LogoType)`
+const StyledOffcanvasLogoType = styled(LogoType.type)`
     width: 40px;
     height: 23px;
 `;
@@ -43,24 +43,18 @@ const StyledLink = styled(Link)`
     }
 `;
 
-class Navigation extends Component {
-    constructor(props) {
-        super(props);
+class Navigation extends PureComponent {
+    state = {
+        offcanvasOpen: false
+    };
 
-        this.toggleOffcanvas = this.toggleOffcanvas.bind(this);
-
-        this.state = {
-            offcanvasOpen: false
-        };
-    }
-
-    toggleOffcanvas() {
+    toggleOffcanvas = () => {
         this.setState(prevState => ({
             offcanvasOpen: !prevState.offcanvasOpen
         }));
-    }
+    };
 
-    render() {
+    render = () => {
         const { offcanvasOpen } = this.state;
 
         return (
@@ -79,7 +73,7 @@ class Navigation extends Component {
                             </StyledLink>
                         </li>
                         <li>
-                            <Divider inverse width={30} />
+                            <Divider inverse style={{ width: 30 }} />
                         </li>
                         <li>
                             <StyledLink to="/" onClick={this.toggleOffcanvas}>
@@ -90,7 +84,7 @@ class Navigation extends Component {
                 </Offcanvas>
             </React.Fragment>
         );
-    }
+    };
 }
 
 export default Navigation;

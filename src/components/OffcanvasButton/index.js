@@ -1,18 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styled from 'styled-components';
-
-const propTypes = {
-    className: PropTypes.string,
-    onClick: PropTypes.func.isRequired,
-    isOpen: PropTypes.bool
-};
-
-const defaultProps = {
-    className: '',
-    isOpen: false
-};
 
 const IconBar = styled.span`
     transform-origin: 27px;
@@ -56,22 +45,27 @@ const Button = styled.button`
     }
 `;
 
-class OffcanvasButton extends Component {
-    constructor(props) {
-        super(props);
+class OffcanvasButton extends PureComponent {
+    static propTypes = {
+        className: PropTypes.string,
+        onClick: PropTypes.func.isRequired,
+        isOpen: PropTypes.bool
+    };
 
-        this.onClick = this.onClick.bind(this);
-    }
+    static defaultProps = {
+        className: '',
+        isOpen: false
+    };
 
-    onClick(e) {
+    onClick = e => {
         const { onClick } = this.props;
 
         e.preventDefault();
 
         onClick();
-    }
+    };
 
-    render() {
+    render = () => {
         const { className, isOpen } = this.props;
 
         const classNames = classnames(className, isOpen && 'active');
@@ -84,10 +78,7 @@ class OffcanvasButton extends Component {
                 <IconBar />
             </Button>
         );
-    }
+    };
 }
-
-OffcanvasButton.propTypes = propTypes;
-OffcanvasButton.defaultProps = defaultProps;
 
 export default OffcanvasButton;

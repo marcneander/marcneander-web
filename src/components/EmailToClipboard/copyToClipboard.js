@@ -4,26 +4,20 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Link, LinkText, Icon } from './index';
 import copyIcon from '../../images/icons/copy-solid.svg';
 
-const propTypes = {
-    email: PropTypes.string.isRequired
-};
-
 class EmailToClipboard extends React.PureComponent {
-    static preventDefault(e) {
+    static propTypes = {
+        email: PropTypes.string.isRequired
+    };
+
+    static preventDefault = e => {
         e.preventDefault();
-    }
+    };
 
-    constructor(props) {
-        super(props);
+    state = {
+        copied: false
+    };
 
-        this.onCopy = this.onCopy.bind(this);
-
-        this.state = {
-            copied: false
-        };
-    }
-
-    onCopy() {
+    onCopy = () => {
         clearTimeout(this.timeout);
         this.setState({
             copied: true
@@ -34,9 +28,9 @@ class EmailToClipboard extends React.PureComponent {
                 copied: false
             });
         }, 3500);
-    }
+    };
 
-    render() {
+    render = () => {
         const { email } = this.props;
         const { copied } = this.state;
 
@@ -48,9 +42,7 @@ class EmailToClipboard extends React.PureComponent {
                 </Link>
             </CopyToClipboard>
         );
-    }
+    };
 }
-
-EmailToClipboard.propTypes = propTypes;
 
 export default EmailToClipboard;
