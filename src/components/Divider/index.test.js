@@ -3,13 +3,18 @@ import React from 'react';
 import { mount } from 'enzyme';
 import Divider from './index';
 
-describe('<Divider>', () => {
+describe('<Divider />', () => {
     it('should render correctly', () => {
-        const wrapper = mount(<Divider width={30} inverse />);
+        const wrapper = mount(<Divider />);
 
-        expect(wrapper.find('span').props().children).toEqual(undefined);
-        expect(wrapper.find('span').props().style).toEqual({ width: 30 });
-        expect(wrapper.find('span').props().inverse).toEqual(undefined);
-        expect(wrapper.find('StyledDivider').props().inverse).toEqual(true);
+        expect(wrapper.props().children).toEqual(undefined);
+        expect(wrapper.props().inverse).toEqual(undefined);
+        expect(wrapper).toHaveStyleRule('background-color', '#293440');
+    });
+
+    it('should render correctly when inversed', () => {
+        const wrapper = mount(<Divider inverse />);
+
+        expect(wrapper).toHaveStyleRule('background-color', '#fdf6e3');
     });
 });

@@ -1,7 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { configure } from 'enzyme';
+import 'jest-styled-components';
 import Adapter from 'enzyme-adapter-react-16';
 import { JSDOM } from 'jsdom';
+import { configure } from 'enzyme';
 
 configure({ adapter: new Adapter() });
 
