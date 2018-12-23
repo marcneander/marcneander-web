@@ -1,12 +1,12 @@
 /* global it, expect, describe */
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import Button from './index';
 
-describe('<Button>', () => {
+describe('<Button />', () => {
     it('should render children prop', () => {
-        const wrapper = shallow(<Button>child</Button>);
+        const wrapper = mount(<Button>Text</Button>);
 
-        expect(wrapper.children().text()).toBe('child');
+        expect(wrapper.children().text()).toBe('Text');
     });
 });
