@@ -71,7 +71,7 @@ class OffcanvasButton extends PureComponent {
         const classNames = classnames(className, isOpen && 'active');
 
         return (
-            <Button type="button" onClick={this.onClick} className={classNames}>
+            <Button type="button" onClick={this.onClick} className={classNames} data-cy="offcanvas-btn">
                 <span className="sr-only">Toggle navigation</span>
                 <IconBar />
                 <IconBar />

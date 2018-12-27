@@ -18,7 +18,7 @@ const StyledLogoType = styled(LogoType.type)`
 const Navigation = React.memo(
     () => (
         <Header>
-            <StyledLogoTypeLink to="/">
+            <StyledLogoTypeLink to="/" data-cy="logo-link">
                 <StyledLogoType />
             </StyledLogoTypeLink>
             <Offcanvas />

@@ -63,12 +63,12 @@ class Navigation extends PureComponent {
                 <Offcanvas isOpen={offcanvasOpen}>
                     <List>
                         <li>
-                            <StyledLink to="/profile" onClick={this.toggleOffcanvas}>
+                            <StyledLink to="/profile" onClick={this.toggleOffcanvas} data-cy="offcanvas-profile-link">
                                 Profile
                             </StyledLink>
                         </li>
                         <li>
-                            <StyledLink to="/contact" onClick={this.toggleOffcanvas}>
+                            <StyledLink to="/contact" onClick={this.toggleOffcanvas} data-cy="offcanvas-contact-link">
                                 Contact
                             </StyledLink>
                         </li>
@@ -76,7 +76,7 @@ class Navigation extends PureComponent {
                             <Divider inverse style={{ width: 30 }} />
                         </li>
                         <li>
-                            <StyledLink to="/" onClick={this.toggleOffcanvas}>
+                            <StyledLink to="/" onClick={this.toggleOffcanvas} data-cy="offcanvas-home-link">
                                 <StyledOffcanvasLogoType />
                             </StyledLink>
                         </li>

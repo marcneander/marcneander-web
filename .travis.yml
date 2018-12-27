@@ -3,5 +3,11 @@ node_js:
   - 'lts/*'
 cache:
   directories:
-    - "node_modules"
+    - node_modules
+    - ~/.cache
   yarn: true
+script:
+  - yarn run build
+  - yarn run serve &
+  - yarn run test
+  - kill $(jobs -p) || true
