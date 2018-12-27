@@ -7,12 +7,12 @@ context('Navigation', () => {
         it('can navigate to contact page', () => {
             cy.get('[data-cy=contact-link]').click();
 
-            cy.location('pathname').should('eq', '/contact');
+            cy.location('pathname').should('include', 'contact');
         });
 
         it('can navigate to profile page and back', () => {
             cy.get('[data-cy=profile-link]').click();
-            cy.location('pathname').should('eq', '/profile');
+            cy.location('pathname').should('include', 'profile');
 
             cy.get('[data-cy=logo-link]').click();
             cy.location('pathname').should('eq', '/');
@@ -36,13 +36,13 @@ context('Navigation', () => {
 
             cy.get('@offcanvasBtn').click();
             cy.get('[data-cy=offcanvas-contact-link]').click();
-            cy.location('pathname').should('eq', '/contact');
+            cy.location('pathname').should('include', 'contact');
         });
 
         it('can navigate to profile', () => {
             cy.get('@offcanvasBtn').click();
             cy.get('[data-cy=offcanvas-profile-link]').click();
-            cy.location('pathname').should('eq', '/profile');
+            cy.location('pathname').should('include', 'profile');
         });
 
         it('can navigate to home', () => {
@@ -59,7 +59,7 @@ context('Navigation', () => {
 
         it('can navigate to contact page', () => {
             cy.get('[data-cy=contact-link]').click();
-            cy.location('pathname').should('eq', '/contact');
+            cy.location('pathname').should('include', 'contact');
         });
     });
 });
