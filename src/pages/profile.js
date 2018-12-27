@@ -207,7 +207,7 @@ const Profile = React.memo(() => (
                         </ul>
                     </Job>
                 </JobWrapper>
-                <StyledButton component={Link} to="contact">
+                <StyledButton component={Link} to="contact" data-cy="contact-link">
                     Contact me
                 </StyledButton>
             </StyledContainer>
