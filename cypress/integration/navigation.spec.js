@@ -35,24 +35,24 @@ context('Navigation', () => {
             cy.visit('http://localhost:8000');
 
             cy.get('@offcanvasBtn').click();
-            cy.get('[data-cy=offcanvas-contact-link]')
-                .wait(200)
+            cy.wait(300)
+                .get('[data-cy=offcanvas-contact-link]')
                 .click();
             cy.location('pathname').should('include', 'contact');
         });
 
         it('can navigate to profile', () => {
             cy.get('@offcanvasBtn').click();
-            cy.get('[data-cy=offcanvas-profile-link]')
-                .wait(200)
+            cy.wait(300)
+                .get('[data-cy=offcanvas-profile-link]')
                 .click();
             cy.location('pathname').should('include', 'profile');
         });
 
         it('can navigate to home', () => {
             cy.get('@offcanvasBtn').click();
-            cy.get('[data-cy=offcanvas-home-link]')
-                .wait(200)
+            cy.wait(300)
+                .get('[data-cy=offcanvas-home-link]')
                 .click();
             cy.location('pathname').should('eq', '/');
         });
