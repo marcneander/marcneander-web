@@ -87,40 +87,63 @@ const Profile = React.memo(() => (
                     <Underline borderSize={3}>About</Underline>
                 </SubTitle>
                 <p>
-                    Self-taught front-end engineer with 10 years of professional experience. I make{' '}
+                    Front-end engineer with 10 years of professional experience. I make{' '}
                     <Underline borderSize={2}>front-ends</Underline> with <strong>React</strong> and{' '}
                     <Underline borderSize={2}>back-ends</Underline> with <strong>Node.js</strong>. Passionate about
-                    performance, aesthetics, user experience and accessibility. Ability to lead projects and people.
+                    performance, aesthetics, user experience and accessibility. I’m a social and quality driven team
+                    player. Able to lead projects and people.
                 </p>
-                <p>Off work I’m a dad, rock-climber, tech-enthusiast and golf-nerd.</p>
+                <p>Off work I’m a dad, rock-climber, tech and golf enthusiast.</p>
                 <SubTitle>
                     <Underline borderSize={3}>Skills</Underline>
                 </SubTitle>
                 <p>
-                    Solid JavaScript, CSS & HTML foundation. Problemsolving. Performance optimization. Code quality.
-                    Pixelperfect. Progressive enhancement.
+                    Solid JavaScript, CSS & HTML foundation. I’m a problemsolver, performance optimizater and code
+                    quality advocate. Smooth animations and pixel perfection is a given.
+                </p>
+                <p>
+                    Excited about GraphQL, monitoring, error tracking, loging, tests, tooling and the developer
+                    experience.
                 </p>
                 <p>
                     <Pill>React</Pill>
                     <Pill>Apollo</Pill>
                     <Pill>Redux</Pill>
+                    <Pill>Immer</Pill>
+                    <Pill>NodeJS</Pill>
                     <Pill>Jest</Pill>
+                    <Pill>Cypress</Pill>
+                    <Pill>Bootstrap</Pill>
                     <Pill>Sass</Pill>
                     <Pill>styled-components</Pill>
                     <Pill>Less</Pill>
-                    <Pill>Angular</Pill>
+                    <Pill>AngularJS</Pill>
                     <Pill>jQuery</Pill>
+                    <Pill>Express</Pill>
+                </p>
+                <p>
                     <Pill>Docker</Pill>
                     <Pill>Webpack</Pill>
                     <Pill>Rollup</Pill>
                     <Pill>Lerna</Pill>
                     <Pill>Gatsby</Pill>
-                    <Pill>Express</Pill>
-                    <Pill>GraphQL</Pill>
+                    <Pill>ESLint</Pill>
+                    <Pill>Stylelint</Pill>
+                    <Pill>Stylelint</Pill>
                     <Pill>Prisma</Pill>
-                    <Pill>json:api</Pill>
                     <Pill>DevTools</Pill>
-                    <Pill>Git</Pill>
+                    <Pill>VSCode</Pill>
+                    <Pill>Sublime</Pill>
+                    <Pill>Vim</Pill>
+                    <Pill>Sentry</Pill>
+                    <Pill>Contentful</Pill>
+                    <Pill>Netlify</Pill>
+                    <Pill>Snyk</Pill>
+                    <Pill>Greenkeeper</Pill>
+                    <Pill>Travis</Pill>
+                    <Pill>Jenkins</Pill>
+                    <Pill>Datadog</Pill>
+                    <Pill>Sumologic</Pill>
                     <br />
                     <Pill>...</Pill>
                 </p>
