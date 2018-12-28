@@ -53,7 +53,7 @@ const Home = React.memo(() => (
     <Section>
         <Container>
             <Title>
-                <Underline>I&apos;m</Underline> Marc Neander
+                <Underline>I’m</Underline> Marc Neander
             </Title>
             <SubTitle>
                 Consultant Javascript/Front-end engineer based in <strong>Stockholm</strong>. I have been improving the
@@ -61,7 +61,7 @@ const Home = React.memo(() => (
                 <br />I make sure applications are <strong>accessible</strong>, <strong>performant</strong>,{' '}
                 <strong>SEO optimized</strong> and <strong>user friendly</strong>.<br />
                 <br />
-                {`I'm`} <strong>available</strong> starting January 14th, 2019.
+                <strong>Unavailable</strong> for hire until after summer, 2019.
             </SubTitle>
             <ButtonWrapper>
                 <StyledButton component={Link} to="contact" data-cy="contact-link">
