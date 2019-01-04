@@ -34,11 +34,6 @@
     "> 1%",
     "not dead"
   ],
-  "babel": {
-    "presets": [
-      "@marcneander/all"
-    ]
-  },
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
@@ -49,8 +44,11 @@
       ".cache",
       "cypress"
     ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(gatsby)/)"
+    ],
     "transform": {
-      "^.+\\.(js|ts|tsx)$": "babel-jest"
+      "^.+\\.(js|ts|tsx)$": "<rootDir>/src/utils/jestPreprocess.js"
     }
   },
   "scripts": {
@@ -89,6 +87,7 @@
     "@marcneander/stylelint-config-styled-components": "^1.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
+    "babel-preset-gatsby": "^0.1.6",
     "cypress": "^3.1.4",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
