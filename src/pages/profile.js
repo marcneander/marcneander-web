@@ -98,8 +98,8 @@ const Profile = React.memo(() => (
                     <Underline borderSize={3}>Skills</Underline>
                 </SubTitle>
                 <p>
-                    Solid JavaScript, CSS & HTML foundation. I’m a problemsolver, performance optimizater and code
-                    quality advocate. Smooth animations and pixel perfection is a given.
+                    Solid JavaScript, CSS & HTML foundation. I’m a problemsolver, performance optimizer and code quality
+                    advocate. Smooth animations and pixel perfection is a given.
                 </p>
                 <p>
                     Excited about GraphQL, monitoring, error tracking, loging, tests, tooling and the developer
@@ -128,7 +128,6 @@ const Profile = React.memo(() => (
                     <Pill>Lerna</Pill>
                     <Pill>Gatsby</Pill>
                     <Pill>ESLint</Pill>
-                    <Pill>Stylelint</Pill>
                     <Pill>Stylelint</Pill>
                     <Pill>Prisma</Pill>
                     <Pill>DevTools</Pill>
