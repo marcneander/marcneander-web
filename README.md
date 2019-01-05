@@ -34,5 +34,5 @@ yarn lint
 
 ## License
 
-Copyright © 2018 Marc Neander. This source code is licensed under the MIT
+Copyright © Marc Neander. This source code is licensed under the MIT
 license found in the [LICENSE](https://github.com/marcneander/marcneander.io/blob/master/LICENSE)
