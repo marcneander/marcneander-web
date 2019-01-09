@@ -51,6 +51,15 @@
       "^.+\\.(js|ts|tsx)$": "<rootDir>/src/utils/jestPreprocess.js"
     }
   },
+  "renovate": {
+    "extends": [
+        "config:base"
+    ],
+    "automerge": true,
+    "major": {
+        "automerge": false
+    }
+  },
   "scripts": {
     "lint": "yarn run lint:css && yarn run lint:js",
     "lint:js": "eslint src",
