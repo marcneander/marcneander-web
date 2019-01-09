@@ -55,10 +55,13 @@
     "extends": [
         "config:base"
     ],
+    "rebaseStalePrs": true,
     "automerge": true,
-    "major": {
-        "automerge": false
-    }
+    "packageRules": [{
+      "depTypeList": ["dependencies"],
+      "updateTypes": ["major"],
+      "automerge": false
+    }]
   },
   "scripts": {
     "lint": "yarn run lint:css && yarn run lint:js",
