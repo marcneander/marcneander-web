@@ -5338,10 +5338,10 @@ gatsby-plugin-layout@1.0.11:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-offline@2.0.20:
-  version "2.0.20"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.0.20.tgz#bd1bedb73e85ea49beed8834d3964b294080a3a9"
-  integrity sha512-6kVHEHAQJdwjgzX1NvIRNRFlffMWioM4IzclT+3n/NtL4cO1Zb8wuKk6WGjnLPN2GkxM2d/1i2kvsQuQKSgPHQ==
+gatsby-plugin-offline@2.0.21:
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.0.21.tgz#d4637aef5dc6022eb9bd6031123788e73447d3d7"
+  integrity sha512-14tEGldSf95v5pxrELtF1cgjKgAUm+SDoTWD9/PJYoRv1Qvu/YkcWPa3iJmNTHMfyUA5ZEsC0SzUPnqFfAuHOw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     cheerio "^1.0.0-rc.2"
@@ -5387,10 +5387,10 @@ gatsby-react-router-scroll@^2.0.2:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.86:
-  version "2.0.86"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.86.tgz#d21a56f8199150775d862c054efd702374274ed9"
-  integrity sha512-CzBc9UuROSP5x6vASvldUzhjFksGX0UGRNfhj4k+Ud2gQm6HvFF8DR+zjFtBK662WHwH3xrh3jx27BkfwcbrRg==
+gatsby@2.0.89:
+  version "2.0.89"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.89.tgz#0cb16395b5db14430e643d0280fa1c8f9ac93815"
+  integrity sha512-iSdleTusTX/436gFx08P9h3zVCcEpTEA6xlH36+4Kbn5RW4ZUiIL5bBFepVCEh74FZcQ4DkLhaoqCexbNVxkIQ==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
