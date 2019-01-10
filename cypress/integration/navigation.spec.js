@@ -1,7 +1,7 @@
 context('Navigation', () => {
     context('Home', () => {
         beforeEach(() => {
-            cy.visit('http://localhost:8000');
+            cy.visit('http://localhost:8000').wait(200);
         });
 
         it('can navigate to contact page', () => {
@@ -20,6 +20,10 @@ context('Navigation', () => {
     });
 
     context('Offcanvas', () => {
+        before(() => {
+            cy.visit('http://localhost:8000').wait(200);
+        });
+
         beforeEach(() => {
             cy.get('[data-cy=offcanvas-btn]').as('offcanvasBtn');
         });
@@ -28,15 +32,12 @@ context('Navigation', () => {
             cy.get('@offcanvasBtn')
                 .should('not.have.class', 'active')
                 .click()
-                .should('have.class', 'active');
+                .should('have.class', 'active')
+                .click();
         });
 
         it('can navigate to contact', () => {
-            cy.visit('http://localhost:8000');
-
-            cy.get('@offcanvasBtn')
-                .wait(500)
-                .click();
+            cy.get('@offcanvasBtn').click();
             cy.get('[data-cy=offcanvas-contact-link]').click();
             cy.location('pathname').should('include', 'contact');
         });
