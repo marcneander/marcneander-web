@@ -57,11 +57,9 @@
     ],
     "rebaseStalePrs": true,
     "automerge": true,
-    "packageRules": [{
-      "depTypeList": ["dependencies"],
-      "updateTypes": ["major"],
-      "automerge": false
-    }]
+    "major": {
+        "automerge": false
+    }
   },
   "scripts": {
     "lint": "yarn run lint:css && yarn run lint:js",
