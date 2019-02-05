@@ -75,7 +75,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "1.10.0",
     "classnames": "2.2.6",
-    "gatsby": "2.0.114",
+    "gatsby": "2.0.115",
     "gatsby-plugin-layout": "1.0.12",
     "gatsby-plugin-offline": "2.0.22",
     "gatsby-plugin-react-helmet": "3.0.6",
