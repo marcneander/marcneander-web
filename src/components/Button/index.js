@@ -9,7 +9,7 @@ const propTypes = {
     children: PropTypes.node.isRequired,
     disabled: PropTypes.bool,
     onClick: PropTypes.func,
-    component: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
+    component: PropTypes.oneOfType([PropTypes.object])
 };
 
 const defaultProps = {
@@ -20,9 +20,10 @@ const defaultProps = {
 };
 
 const Button = props => {
-    const buttonOnClick = e => {
-        const { disabled, onClick } = props;
+    const { className, children, onClick, disabled, ...attributes } = omit(props, ['component']);
+    let { component: Component } = props;
 
+    const buttonOnClick = e => {
         if (disabled) {
             e.preventDefault();
             return;
@@ -32,9 +33,6 @@ const Button = props => {
             onClick(e);
         }
     };
-
-    const { className, children, disabled, ...attributes } = omit(props, ['component']);
-    let { component: Component } = props;
 
     if (attributes.href && Component === 'button') {
         Component = 'a';

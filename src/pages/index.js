@@ -64,10 +64,10 @@ const Home = React.memo(() => (
                 <strong>Unavailable</strong> for hire until after summer, 2019.
             </SubTitle>
             <ButtonWrapper>
-                <StyledButton component={Link} to="contact" data-cy="contact-link">
+                <StyledButton component={Link} to="/contact" data-cy="contact-link">
                     Get in touch?
                 </StyledButton>
-                <StyledButton component={Link} to="profile" data-cy="profile-link">
+                <StyledButton component={Link} to="/profile" data-cy="profile-link">
                     View profile
                 </StyledButton>
             </ButtonWrapper>
