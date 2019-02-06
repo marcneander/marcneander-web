@@ -7,6 +7,7 @@ import Underline from '../components/Underline';
 import Pill from '../components/Pill';
 import Job from '../components/Job';
 import Button from '../components/Button';
+import FadeInImage from '../components/FadeInImage';
 
 import marc from '../images/marc.svg';
 import blocket from '../images/blocket.png';
@@ -27,7 +28,7 @@ const Section = styled.section`
     `};
 `;
 
-const Image = styled.img`
+const StyledFadeInImage = styled(FadeInImage)`
     display: block;
     margin: 50px auto;
     height: 300px;
@@ -82,7 +83,7 @@ const Profile = React.memo(() => (
                 <Title>
                     <Underline>Profile</Underline>
                 </Title>
-                <Image src={marc} alt="Marc Neander cartoon" />
+                <StyledFadeInImage src={marc} alt="Marc Neander cartoon" />
                 <SubTitle>
                     <Underline borderSize={3}>About</Underline>
                 </SubTitle>
@@ -229,7 +230,7 @@ const Profile = React.memo(() => (
                         </ul>
                     </Job>
                 </JobWrapper>
-                <StyledButton component={Link} to="contact" data-cy="contact-link">
+                <StyledButton component={Link} to="/contact" data-cy="contact-link">
                     Contact me
                 </StyledButton>
             </StyledContainer>
