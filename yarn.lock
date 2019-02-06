@@ -838,10 +838,10 @@
   resolved "https://registry.yarnpkg.com/@marcneander/browserslist-config/-/browserslist-config-1.0.0.tgz#19b990427902ca9b3d8ef292a2cbce2c3131e6c6"
   integrity sha512-S0Vlr1byOgwrXFnPJItUWYExAPFzOHG5P0a4mHgmB1vBcNyCRXi7EQTHRnjTErf7QKvyLFbpmUl5v1ejGsrZNA==
 
-"@marcneander/eslint-config-react@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@marcneander/eslint-config-react/-/eslint-config-react-1.0.2.tgz#133028262cbd5a746f69a49e2b3258c85c0a4900"
-  integrity sha512-QMWXyzVYCGvWeE45c6qw70Dhi0wv9Zz5nMe+Xsb27qPXxTCQmh/AXA/P55vKo+uV+f34SIOov3lo2MTCIsFPtw==
+"@marcneander/eslint-config-react@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@marcneander/eslint-config-react/-/eslint-config-react-1.0.3.tgz#d9b442d087368e3f66d44957fad492562691b9c5"
+  integrity sha512-LCpYb/CuXXyzss36932/IyaVcYUGeswkbs/kJX2LVhhvS3iferpLMN67Q5PEAVrNe09ExQQwYbcBVb+/y5p6Gg==
   dependencies:
     babel-eslint "^10.0.1"
     eslint-config-airbnb "^17.1.0"
@@ -850,6 +850,7 @@
     eslint-plugin-jsx-a11y "^6.1.2"
     eslint-plugin-prettier "^3.0.0"
     eslint-plugin-react "^7.11.1"
+    eslint-plugin-react-hooks "^1.0.1"
 
 "@marcneander/stylelint-config-styled-components@1.0.0":
   version "1.0.0"
@@ -4198,6 +4199,11 @@ eslint-plugin-prettier@^3.0.0:
   integrity sha512-4g11opzhqq/8+AMmo5Vc2Gn7z9alZ4JqrbZ+D4i8KlSyxeQhZHlmIrY8U9Akf514MoEhogPa87Jgkq87aZ2Ohw==
   dependencies:
     prettier-linter-helpers "^1.0.0"
+
+eslint-plugin-react-hooks@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.0.1.tgz#76b6fb4edafab02eab0090078977687157605dd9"
+  integrity sha512-yNhvY7EFBp0mq0Bt8BHoS57GwJ4e1qSYdvDFSfPnjmiSmyGUfQFQGcQs4K0JQFDGopWkURWq58psbUJIhWZ2Kg==
 
 eslint-plugin-react@^7.11.1, eslint-plugin-react@^7.8.2:
   version "7.11.1"
