@@ -38,7 +38,7 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/src/utils/setupTests.js",
+    "setupFilesAfterEnv": ["<rootDir>/src/utils/setupTests.js"],
     "testPathIgnorePatterns": [
       "/node_modules/",
       ".cache",

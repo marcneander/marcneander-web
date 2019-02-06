@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styled from 'styled-components';
@@ -45,40 +45,38 @@ const Button = styled.button`
     }
 `;
 
-class OffcanvasButton extends PureComponent {
-    static propTypes = {
-        className: PropTypes.string,
-        onClick: PropTypes.func.isRequired,
-        isOpen: PropTypes.bool
-    };
+const propTypes = {
+    className: PropTypes.string,
+    onClick: PropTypes.func.isRequired,
+    isOpen: PropTypes.bool
+};
 
-    static defaultProps = {
-        className: '',
-        isOpen: false
-    };
+const defaultProps = {
+    className: '',
+    isOpen: false
+};
 
-    onClick = e => {
-        const { onClick } = this.props;
+const OffcanvasButton = React.memo(props => {
+    const { className, isOpen, onClick } = props;
+    const classNames = classnames(className, isOpen && 'active');
 
+    const buttonOnClick = e => {
         e.preventDefault();
 
         onClick();
     };
 
-    render = () => {
-        const { className, isOpen } = this.props;
+    return (
+        <Button type="button" onClick={buttonOnClick} className={classNames} data-cy="offcanvas-btn">
+            <span className="sr-only">Toggle navigation</span>
+            <IconBar />
+            <IconBar />
+            <IconBar />
+        </Button>
+    );
+});
 
-        const classNames = classnames(className, isOpen && 'active');
-
-        return (
-            <Button type="button" onClick={this.onClick} className={classNames} data-cy="offcanvas-btn">
-                <span className="sr-only">Toggle navigation</span>
-                <IconBar />
-                <IconBar />
-                <IconBar />
-            </Button>
-        );
-    };
-}
+OffcanvasButton.propTypes = propTypes;
+OffcanvasButton.defaultProps = defaultProps;
 
 export default OffcanvasButton;

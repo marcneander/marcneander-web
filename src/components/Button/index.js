@@ -4,24 +4,24 @@ import styled from 'styled-components';
 import { omit } from '../../utils';
 import { colors } from '../../utils/cssVariables';
 
-class Button extends React.PureComponent {
-    static propTypes = {
-        className: PropTypes.string,
-        children: PropTypes.node.isRequired,
-        disabled: PropTypes.bool,
-        onClick: PropTypes.func,
-        component: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
-    };
+const propTypes = {
+    className: PropTypes.string,
+    children: PropTypes.node.isRequired,
+    disabled: PropTypes.bool,
+    onClick: PropTypes.func,
+    component: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
+};
 
-    static defaultProps = {
-        className: '',
-        disabled: false,
-        onClick: () => {},
-        component: 'button'
-    };
+const defaultProps = {
+    className: '',
+    disabled: false,
+    onClick: () => {},
+    component: 'button'
+};
 
-    onClick = e => {
-        const { disabled, onClick } = this.props;
+const Button = props => {
+    const buttonOnClick = e => {
+        const { disabled, onClick } = props;
 
         if (disabled) {
             e.preventDefault();
@@ -33,21 +33,22 @@ class Button extends React.PureComponent {
         }
     };
 
-    render = () => {
-        const { className, children, disabled, ...attributes } = omit(this.props, ['component']);
-        let { component: Component } = this.props;
+    const { className, children, disabled, ...attributes } = omit(props, ['component']);
+    let { component: Component } = props;
 
-        if (attributes.href && Component === 'button') {
-            Component = 'a';
-        }
+    if (attributes.href && Component === 'button') {
+        Component = 'a';
+    }
 
-        return (
-            <Component disabled={disabled} className={className} onClick={this.onClick} {...attributes}>
-                {children}
-            </Component>
-        );
-    };
-}
+    return (
+        <Component disabled={disabled} className={className} onClick={buttonOnClick} {...attributes}>
+            {children}
+        </Component>
+    );
+};
+
+Button.propTypes = propTypes;
+Button.defaultProps = defaultProps;
 
 const StyledButton = styled(Button)`
     display: inline-block;

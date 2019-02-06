@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import LogoType from '../../components/LogoType';
@@ -43,48 +43,40 @@ const StyledLink = styled(Link)`
     }
 `;
 
-class Navigation extends PureComponent {
-    state = {
-        offcanvasOpen: false
+const OffcanvasContainer = () => {
+    const [offcanvas, setOffcanvas] = useState(false);
+
+    const toggleOffcanvas = () => {
+        setOffcanvas(!offcanvas);
     };
 
-    toggleOffcanvas = () => {
-        this.setState(prevState => ({
-            offcanvasOpen: !prevState.offcanvasOpen
-        }));
-    };
+    return (
+        <React.Fragment>
+            <StyledOffcanvasButton onClick={toggleOffcanvas} isOpen={offcanvas} />
+            <Offcanvas isOpen={offcanvas}>
+                <List>
+                    <li>
+                        <StyledLink to="/profile" onClick={toggleOffcanvas} data-cy="offcanvas-profile-link">
+                            Profile
+                        </StyledLink>
+                    </li>
+                    <li>
+                        <StyledLink to="/contact" onClick={toggleOffcanvas} data-cy="offcanvas-contact-link">
+                            Contact
+                        </StyledLink>
+                    </li>
+                    <li>
+                        <Divider inverse style={{ width: 30 }} />
+                    </li>
+                    <li>
+                        <StyledLink to="/" onClick={toggleOffcanvas} data-cy="offcanvas-home-link">
+                            <StyledOffcanvasLogoType />
+                        </StyledLink>
+                    </li>
+                </List>
+            </Offcanvas>
+        </React.Fragment>
+    );
+};
 
-    render = () => {
-        const { offcanvasOpen } = this.state;
-
-        return (
-            <React.Fragment>
-                <StyledOffcanvasButton onClick={this.toggleOffcanvas} isOpen={offcanvasOpen} />
-                <Offcanvas isOpen={offcanvasOpen}>
-                    <List>
-                        <li>
-                            <StyledLink to="/profile" onClick={this.toggleOffcanvas} data-cy="offcanvas-profile-link">
-                                Profile
-                            </StyledLink>
-                        </li>
-                        <li>
-                            <StyledLink to="/contact" onClick={this.toggleOffcanvas} data-cy="offcanvas-contact-link">
-                                Contact
-                            </StyledLink>
-                        </li>
-                        <li>
-                            <Divider inverse style={{ width: 30 }} />
-                        </li>
-                        <li>
-                            <StyledLink to="/" onClick={this.toggleOffcanvas} data-cy="offcanvas-home-link">
-                                <StyledOffcanvasLogoType />
-                            </StyledLink>
-                        </li>
-                    </List>
-                </Offcanvas>
-            </React.Fragment>
-        );
-    };
-}
-
-export default Navigation;
+export default OffcanvasContainer;
