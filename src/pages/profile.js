@@ -15,6 +15,7 @@ import schibsted from '../images/schibsted.png';
 import pixpro from '../images/pixpro.png';
 import bytbil from '../images/bytbil.png';
 import tripwell from '../images/tripwell.png';
+import mojang from '../images/mojang.png';
 
 import { media } from '../utils/cssVariables';
 
@@ -108,6 +109,7 @@ const Profile = React.memo(() => (
                 </p>
                 <p>
                     <Pill>React</Pill>
+                    <Pill>React</Pill>
                     <Pill>Apollo</Pill>
                     <Pill>Redux</Pill>
                     <Pill>Immer</Pill>
@@ -152,11 +154,22 @@ const Profile = React.memo(() => (
                 </SubTitle>
                 <JobWrapper>
                     <Job
+                        logo={mojang}
+                        alt="Mojang Logo"
+                        title="Front-end Developer"
+                        location="Mojang AB"
+                        duration="Jan 2019 - present"
+                    >
+                        <ul>
+                            <li>Design new front-end stack and platform for the Minecraft launcher.</li>
+                        </ul>
+                    </Job>
+                    <Job
                         logo={blocket}
                         alt="Blocket logo"
                         title="JavaScript Developer"
                         location="Blocket AB"
-                        duration="Jan 2018 - Present"
+                        duration="Jan 2018 - Jan 2019"
                     >
                         <ul>
                             <li>Develop and maintain services, both front-end and back-end</li>
