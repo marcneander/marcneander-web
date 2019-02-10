@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { CSSTransition } from 'react-transition-group';
 
@@ -21,12 +21,20 @@ const Img = styled.img`
 `;
 
 const FadeInImage = props => {
+    const imageRef = useRef(null);
     const [loaded, setLoaded] = useState(false);
+
+    useEffect(() => {
+        if (imageRef.current.complete) {
+            setLoaded(true);
+        }
+    }, []);
 
     return (
         <CSSTransition in={loaded} timeout={timeout} classNames="fadein-img">
             {() => (
                 <Img
+                    ref={imageRef}
                     {...props}
                     alt={props.alt}
                     onLoad={() => {
