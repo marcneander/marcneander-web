@@ -35,7 +35,7 @@ const Link = styled.a`
     }
 `;
 
-const Footer = React.memo(() => (
+const Footer = () => (
     <StyledFooter>
         <Paragraph>
             <Link href="https://github.com/marcneander/" target="_blank" rel="noopener noreferrer">
@@ -50,6 +50,6 @@ const Footer = React.memo(() => (
         </Paragraph>
         <Paragraph>&copy; Marc Neander 2018</Paragraph>
     </StyledFooter>
-));
+);
 
 export default Footer;

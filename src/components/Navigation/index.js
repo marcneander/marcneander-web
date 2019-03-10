@@ -9,22 +9,19 @@ const StyledLogoTypeLink = styled(Link)`
     float: left;
 `;
 
-const StyledLogoType = styled(LogoType.type)`
+const StyledLogoType = styled(LogoType)`
     float: left;
     margin: 16px 0;
     height: 28px;
 `;
 
-const Navigation = React.memo(
-    () => (
-        <Header>
-            <StyledLogoTypeLink to="/" data-cy="logo-link">
-                <StyledLogoType />
-            </StyledLogoTypeLink>
-            <Offcanvas />
-        </Header>
-    ),
-    () => true
+const Navigation = () => (
+    <Header>
+        <StyledLogoTypeLink to="/" data-cy="logo-link">
+            <StyledLogoType />
+        </StyledLogoTypeLink>
+        <Offcanvas />
+    </Header>
 );
 
 export default Navigation;

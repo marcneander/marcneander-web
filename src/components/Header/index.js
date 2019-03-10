@@ -1,9 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
-
 import { colors } from '../../utils/cssVariables';
 
-const Header = React.memo(styled.header`
+const Header = styled.header`
     background-color: ${colors.dark};
     /* stylelint-disable-next-line */
     -webkit-backface-visibility: hidden;
@@ -12,6 +10,6 @@ const Header = React.memo(styled.header`
     right: 0;
     left: 0;
     z-index: 503;
-`);
+`;
 
 export default Header;
