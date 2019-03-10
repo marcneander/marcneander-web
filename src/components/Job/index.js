@@ -74,7 +74,7 @@ const JobDescription = styled.div`
     }
 `;
 
-const Job = React.memo(props => {
+const Job = props => {
     const { logo, alt, title, location, duration, children } = props;
 
     return (
@@ -88,7 +88,7 @@ const Job = React.memo(props => {
             </JobInfo>
         </StyledJob>
     );
-});
+};
 
 Job.propTypes = propTypes;
 

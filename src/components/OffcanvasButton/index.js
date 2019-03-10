@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styled from 'styled-components';
@@ -56,15 +56,15 @@ const defaultProps = {
     isOpen: false
 };
 
-const OffcanvasButton = React.memo(props => {
+const OffcanvasButton = props => {
     const { className, isOpen, onClick } = props;
     const classNames = classnames(className, isOpen && 'active');
 
-    const buttonOnClick = e => {
+    const buttonOnClick = useCallback(e => {
         e.preventDefault();
 
         onClick();
-    };
+    });
 
     return (
         <Button type="button" onClick={buttonOnClick} className={classNames} data-cy="offcanvas-btn">
@@ -74,7 +74,7 @@ const OffcanvasButton = React.memo(props => {
             <IconBar />
         </Button>
     );
-});
+};
 
 OffcanvasButton.propTypes = propTypes;
 OffcanvasButton.defaultProps = defaultProps;

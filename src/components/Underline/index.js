@@ -29,11 +29,11 @@ const StyledUnderline = styled.span`
     }
 `;
 
-const Underline = React.memo(props => {
+const Underline = props => {
     const { children, borderSize } = props;
 
     return <StyledUnderline borderSize={borderSize}>{children}</StyledUnderline>;
-});
+};
 
 Underline.propTypes = propTypes;
 Underline.defaultProps = defaultProps;

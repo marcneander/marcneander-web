@@ -27,7 +27,7 @@ const Title = styled.h1`
     `};
 `;
 
-const FouroFour = React.memo(() => (
+const FouroFour = () => (
     <React.Fragment>
         <Helmet>
             <title>404</title>
@@ -45,6 +45,6 @@ const FouroFour = React.memo(() => (
             </Container>
         </Section>
     </React.Fragment>
-));
+);
 
 export default FouroFour;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Link, LinkText, Icon } from './index';
@@ -8,17 +8,20 @@ const propTypes = {
     email: PropTypes.string.isRequired
 };
 
-const EmailToClipboard = React.memo(({ email }) => {
+const EmailToClipboard = ({ email }) => {
     const [copied, setCopied] = useState(false);
-    let timeout;
+    const timeout = useRef(null);
 
-    const onCopy = () => {
-        clearTimeout(timeout);
+    const onCopy = useCallback(() => {
+        if (timeout.current) {
+            clearTimeout(timeout.current);
+        }
+
         setCopied(true);
-        timeout = setTimeout(() => {
+        timeout.current = setTimeout(() => {
             setCopied(false);
         }, 3500);
-    };
+    }, [timeout]);
 
     return (
         <CopyToClipboard text={email} onCopy={onCopy}>
@@ -33,7 +36,7 @@ const EmailToClipboard = React.memo(({ email }) => {
             </Link>
         </CopyToClipboard>
     );
-});
+};
 
 EmailToClipboard.propTypes = propTypes;
 

@@ -74,7 +74,7 @@ const JobWrapper = styled.div`
     display: block;
 `;
 
-const Profile = React.memo(() => (
+const Profile = () => (
     <React.Fragment>
         <Helmet>
             <title>Profile</title>
@@ -249,6 +249,6 @@ const Profile = React.memo(() => (
             </StyledContainer>
         </Section>
     </React.Fragment>
-));
+);
 
 export default Profile;

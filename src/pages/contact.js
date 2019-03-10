@@ -27,7 +27,7 @@ const Title = styled.h1`
     `};
 `;
 
-const Contact = React.memo(() => (
+const Contact = () => (
     <React.Fragment>
         <Helmet>
             <title>Contact</title>
@@ -41,6 +41,6 @@ const Contact = React.memo(() => (
             </Container>
         </Section>
     </React.Fragment>
-));
+);
 
 export default Contact;

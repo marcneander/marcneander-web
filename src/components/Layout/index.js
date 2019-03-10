@@ -13,7 +13,7 @@ const propTypes = {
     children: PropTypes.node.isRequired
 };
 
-const Layout = React.memo(props => {
+const Layout = props => {
     const { children } = props;
 
     return (
@@ -51,7 +51,7 @@ const Layout = React.memo(props => {
             <Footer />
         </React.Fragment>
     );
-});
+};
 
 Layout.propTypes = propTypes;
 

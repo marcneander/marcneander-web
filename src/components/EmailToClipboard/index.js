@@ -61,7 +61,7 @@ export const Icon = styled.img`
     display: inline-block;
 `;
 
-const EmailToClipboard = React.memo(({ email }) => (
+const EmailToClipboard = ({ email }) => (
     <Wrap>
         <EmailWrap>
             <Email>{email}</Email>
@@ -74,7 +74,7 @@ const EmailToClipboard = React.memo(({ email }) => (
             <CopyToClipboard email={email} />
         </LinksWrap>
     </Wrap>
-));
+);
 
 EmailToClipboard.propTypes = propTypes;
 

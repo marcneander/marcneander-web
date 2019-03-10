@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { omit } from '../../utils';
@@ -23,16 +23,19 @@ const Button = props => {
     const { className, children, onClick, disabled, ...attributes } = omit(props, ['component']);
     let { component: Component } = props;
 
-    const buttonOnClick = e => {
-        if (disabled) {
-            e.preventDefault();
-            return;
-        }
+    const buttonOnClick = useCallback(
+        e => {
+            if (disabled) {
+                e.preventDefault();
+                return;
+            }
 
-        if (onClick) {
-            onClick(e);
-        }
-    };
+            if (onClick) {
+                onClick(e);
+            }
+        },
+        [disabled, onClick]
+    );
 
     if (attributes.href && Component === 'button') {
         Component = 'a';

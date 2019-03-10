@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import LogoType from '../../components/LogoType';
@@ -14,7 +14,7 @@ const StyledOffcanvasButton = styled(OffcanvasButton)`
     z-index: 505;
 `;
 
-const StyledOffcanvasLogoType = styled(LogoType.type)`
+const StyledOffcanvasLogoType = styled(LogoType)`
     width: 40px;
     height: 23px;
 `;
@@ -46,9 +46,9 @@ const StyledLink = styled(Link)`
 const OffcanvasContainer = () => {
     const [offcanvas, setOffcanvas] = useState(false);
 
-    const toggleOffcanvas = () => {
+    const toggleOffcanvas = useCallback(() => {
         setOffcanvas(!offcanvas);
-    };
+    });
 
     return (
         <React.Fragment>

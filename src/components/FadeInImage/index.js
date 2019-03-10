@@ -36,7 +36,6 @@ const FadeInImage = props => {
                 <Img
                     ref={imageRef}
                     {...props}
-                    alt={props.alt}
                     onLoad={() => {
                         setLoaded(true);
                     }}
