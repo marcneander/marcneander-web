@@ -76,10 +76,10 @@
   "dependencies": {
     "babel-plugin-styled-components": "1.10.0",
     "classnames": "2.2.6",
-    "gatsby": "2.3.11",
+    "gatsby": "2.3.13",
     "gatsby-plugin-layout": "1.0.14",
     "gatsby-plugin-offline": "2.0.25",
-    "gatsby-plugin-react-helmet": "3.0.11",
+    "gatsby-plugin-react-helmet": "3.0.12",
     "gatsby-plugin-styled-components": "3.0.7",
     "polished": "3.2.0",
     "prop-types": "15.7.2",
