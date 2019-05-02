@@ -93,7 +93,7 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@marcneander/babel-preset-all": "1.0.7",
-    "@marcneander/browserslist-config": "1.0.0",
+    "@marcneander/browserslist-config": "1.0.1",
     "@marcneander/eslint-config-react": "1.0.3",
     "@marcneander/stylelint-config-styled-components": "1.0.0",
     "babel-core": "7.0.0-bridge.0",

@@ -1317,10 +1317,10 @@
     "@babel/preset-env" "^7.1.0"
     "@babel/preset-react" "^7.0.0"
 
-"@marcneander/browserslist-config@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@marcneander/browserslist-config/-/browserslist-config-1.0.0.tgz#19b990427902ca9b3d8ef292a2cbce2c3131e6c6"
-  integrity sha512-S0Vlr1byOgwrXFnPJItUWYExAPFzOHG5P0a4mHgmB1vBcNyCRXi7EQTHRnjTErf7QKvyLFbpmUl5v1ejGsrZNA==
+"@marcneander/browserslist-config@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@marcneander/browserslist-config/-/browserslist-config-1.0.1.tgz#31c89f3bcf4368ec7966c4064718cd8ec6bf47a2"
+  integrity sha512-FWffqc2mEbKl/vfxX16s8lEPhE9QPLpqCDJh28K5ZYHVt2169YpLk+RM5SQ2Xrv2YbM93vlzeD7wC+kQFYQvEQ==
 
 "@marcneander/eslint-config-react@1.0.3":
   version "1.0.3"
