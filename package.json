@@ -111,6 +111,6 @@
     "jsdom": "14.1.0",
     "lint-staged": "8.1.6",
     "prettier": "1.17.0",
-    "stylelint": "9.10.1"
+    "stylelint": "10.0.1"
   }
 }
