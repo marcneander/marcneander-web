@@ -38,7 +38,9 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
-    "setupFilesAfterEnv": ["<rootDir>/src/utils/setupTests.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/utils/setupTests.js"
+    ],
     "testPathIgnorePatterns": [
       "/node_modules/",
       ".cache",
@@ -71,7 +73,9 @@
     "develop": "gatsby develop -H 0.0.0.0",
     "jest": "jest",
     "cypress": "cypress",
-    "test": "yarn run jest && yarn run cypress run"
+    "test": "yarn run jest && yarn run cypress run",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-plugin-styled-components": "1.10.0",
@@ -88,7 +92,8 @@
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
     "react-transition-group": "4.1.1",
-    "styled-components": "4.3.1"
+    "styled-components": "4.3.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
@@ -112,5 +117,6 @@
     "lint-staged": "8.2.0",
     "prettier": "1.18.2",
     "stylelint": "10.1.0"
-  }
+  },
+  "snyk": true
 }
