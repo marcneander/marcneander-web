@@ -85,7 +85,7 @@
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-copy-to-clipboard": "5.0.1",
-    "react-dom": "16.8.6",
+    "react-dom": "16.10.1",
     "react-helmet": "5.2.1",
     "react-transition-group": "4.1.1",
     "styled-components": "4.3.1"
