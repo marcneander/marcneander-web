@@ -105,7 +105,7 @@
     "enzyme-to-json": "3.3.5",
     "eslint": "5.16.0",
     "eslint-plugin-cypress": "2.2.1",
-    "husky": "2.4.1",
+    "husky": "4.0.3",
     "jest": "24.8.0",
     "jest-styled-components": "6.3.1",
     "jsdom": "15.1.1",
