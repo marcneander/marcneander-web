@@ -74,7 +74,7 @@
     "test": "yarn run jest && yarn run cypress run"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "1.10.0",
+    "babel-plugin-styled-components": "1.10.7",
     "classnames": "2.2.6",
     "gatsby": "2.9.0",
     "gatsby-plugin-layout": "1.0.15",
