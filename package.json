@@ -43,8 +43,9 @@
     "lint:js": "eslint src",
     "lint:css": "stylelint './src/**/*.js'",
     "build": "gatsby build",
-    "serve": "gatsby serve -p 8000 -H 0.0.0.0",
-    "develop": "gatsby develop -H 0.0.0.0",
+    "serve": "gatsby serve",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
     "jest": "jest",
     "test": "yarn run jest"
   },

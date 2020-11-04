@@ -1,18 +1,5 @@
-<br />
-<p align="center">
-    <a href="https://marcneander.io">
-        <img src="https://raw.githubusercontent.com/marcneander/marcneander.io/master/src/images/m-dark.png" alt="Marc Neander logotype" width="151"></a>
-</p>
-<br />
-<p align="center">
-    <a href="https://renovatebot.com">
-        <img src="https://badges.renovateapi.com/github/marcneander/marcneander.io" alt="Renovate badge"></a>
-    <a href="https://travis-ci.com/marcneander/marcneander.io">
-        <img src="https://api.travis-ci.com/marcneander/marcneander.io.svg?branch=master" alt="Build Status"></a>
-</p>
-
-# marcneander.io
-website about myself
+# marcneander.com
+my website
 
 ## Getting started
 
