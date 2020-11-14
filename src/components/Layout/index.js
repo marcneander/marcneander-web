@@ -1,24 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
-import Navigation from '../Navigation';
-import Footer from '../Footer';
+import Header from '../Header';
+import GlobalStyle from '../GlobalStyle';
+import '../../font.css';
 
-const PageWrapper = styled.div`
-    flex-grow: 1;
+const Banner = styled.div`
+    width: 100%;
+    height: 8px;
+    background: #424250;
 `;
 
-const propTypes = {
-    children: PropTypes.node.isRequired
-};
-
-const Layout = props => {
+const Layout = (props) => {
     const { children } = props;
 
     return (
         <React.Fragment>
-            <Helmet defaultTitle="<MarcNeander /> - Javascript/Front-end engineer" titleTemplate="%s - <MarcNeander />">
+            <GlobalStyle />
+            <Helmet defaultTitle="Marc Neander - Javascript/Front-end engineer" titleTemplate="%s - marcneander.com">
                 <html lang="en" />
                 <meta
                     name="description"
@@ -30,13 +29,11 @@ const Layout = props => {
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
                 <link rel="manifest" href="/site.webmanifest" />
-                <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#24292e" />
-                <meta name="msapplication-TileColor" content="#fae62d" />
-                <meta name="theme-color" content="#fae62d" />
+                <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#33343d" />
+                <meta name="msapplication-TileColor" content="#ffffff" />
+                <meta name="theme-color" content="#ffffff" />
 
                 {/* Open graph */}
-                <meta property="og:image:width" content="1333" />
-                <meta property="og:image:height" content="2000" />
                 <meta
                     property="og:description"
                     content="Freelancing Javascript/Front-end engineer based in Stockholm. I have been improving the web since 2006.
@@ -44,15 +41,12 @@ const Layout = props => {
                 />
                 <meta property="og:title" content="Marc Neander - Front-end/Javascript engineer" />
                 <meta property="og:url" content="https://marcneander.io" />
-                <meta property="og:image" content="https://marcneander.io/og-image.jpg" />
             </Helmet>
-            <Navigation />
-            <PageWrapper>{children}</PageWrapper>
-            <Footer />
+            <Banner />
+            <Header />
+            {children}
         </React.Fragment>
     );
 };
-
-Layout.propTypes = propTypes;
 
 export default Layout;

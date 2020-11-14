@@ -1,22 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { colors, media } from '../../utils/cssVariables';
-
-const propTypes = {
-    logo: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    duration: PropTypes.string.isRequired,
-    children: PropTypes.node.isRequired
-};
+import { media } from '../../utils/cssVariables';
 
 const JobInfo = styled.div`
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid ${colors.borderLight};
     flex: 1;
 `;
 
@@ -24,14 +13,8 @@ const StyledJob = styled.div`
     display: flex;
     flex-direction: row;
     text-align: left;
-    color: ${colors.dark};
-    background: #fff;
     border-radius: 3px;
-    margin: 18px 0px;
-
-    &:last-child ${JobInfo} {
-        border-bottom: none;
-    }
+    margin-bottom: 30px;
 `;
 
 const JobLogo = styled.img`
@@ -74,7 +57,7 @@ const JobDescription = styled.div`
     }
 `;
 
-const Job = props => {
+const Job = (props) => {
     const { logo, alt, title, location, duration, children } = props;
 
     return (
@@ -89,7 +72,5 @@ const Job = props => {
         </StyledJob>
     );
 };
-
-Job.propTypes = propTypes;
 
 export default Job;

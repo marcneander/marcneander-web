@@ -17,14 +17,16 @@ html {
 }
 
 body {
+    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Rubik', Helvetica, sans-serif;
+    font-family: 'Rubik', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-    color: ${colors.dark};
+    color: #fff;
+    background-color: ${colors.primary};
 }
 
 #___gatsby,
@@ -32,6 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
 }
 
 .sr-only {
@@ -50,7 +53,7 @@ Typeography
 ========================================================================== */
 
 a {
-    color: ${colors.linkColor};
+    color: ${colors.link};
     text-decoration: none;
 
     &:hover,
