@@ -5,7 +5,7 @@
  */
 export function omit(obj, omitKeys) {
     const result = {};
-    Object.keys(obj).forEach(key => {
+    Object.keys(obj).forEach((key) => {
         if (omitKeys.indexOf(key) === -1) {
             result[key] = obj[key];
         }

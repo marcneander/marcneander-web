@@ -12,7 +12,6 @@ module.exports = {
             options: {
                 component: require.resolve('./src/components/Layout')
             }
-        },
-        'gatsby-plugin-offline'
+        }
     ]
 };

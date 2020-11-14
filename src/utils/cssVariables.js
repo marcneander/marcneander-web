@@ -17,9 +17,7 @@ export const media = Object.keys(breakpoints).reduce((acc, label) => {
 }, {});
 
 export const colors = {
-    dark: '#24292e',
-    yellow: '#fae62d',
-    yellowHover: '#d8c305',
-    borderLight: '#e4e4e4',
-    linkColor: '20a2ff'
+    link: '#10e094',
+    primary: '#33343d',
+    secondary: '#1fb980'
 };

@@ -1,15 +1,34 @@
+import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { colors } from '../../utils/cssVariables';
+import LogoType from '../LogoType';
+import Navigation from '../Navigation';
 
-const Header = styled.header`
-    background-color: ${colors.dark};
-    /* stylelint-disable-next-line */
-    -webkit-backface-visibility: hidden;
-    padding: 0 20px;
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 503;
+const Wrap = styled.header`
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
 `;
+
+const LogotypeLink = styled(Link)`
+    display: inline-block;
+    padding: 7px;
+    margin-right: 16px;
+
+    img {
+        display: block;
+    }
+`;
+
+const Header = () => {
+    return (
+        <Wrap>
+            <LogotypeLink to="/">
+                <LogoType />
+            </LogotypeLink>
+            <Navigation />
+        </Wrap>
+    );
+};
 
 export default Header;
