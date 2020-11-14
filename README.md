@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/45d051f6-0755-471d-9b1b-979179ae850d/deploy-status)](https://app.netlify.com/sites/marcneander/deploys)
+
 # marcneander.com
 my website
 
