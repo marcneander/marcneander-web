@@ -12,14 +12,13 @@ npm install
 
 Here's a couple of available tasks:
 ```
-npm run develop
+npm run dev
 npm run build
-npm run serve
-npm run test
+npm run start
 npm run lint
 ```
 
 ## License
 
 Copyright © Marc Neander. This source code is licensed under the MIT
-license found in the [LICENSE](https://github.com/marcneander/marcneander-wen/blob/main/LICENSE)
+license found in the [LICENSE](https://github.com/marcneander/marcneander-web/blob/main/LICENSE)

@@ -1,14 +1,15 @@
 import { Metadata } from "next"
-import { Center, Container, styled } from "../../styled-system/jsx"
+import { Center, Container, styled } from "../../../styled-system/jsx"
 import { Nav } from "@/components/Nav"
 import Image from "next/image"
+import { ExternalLink } from "@/components/ExternalLink"
 
-const pathname = "/"
+const pathname = "/contact"
 export const metadata: Metadata = {
-  title: "Home / Marc Neander",
+  title: "Contact",
 }
 
-export default function Home() {
+export default function Contact() {
   return (
     <styled.div display="flex" flexDirection="column" h="100%">
       <Nav pathname={pathname} />
@@ -24,13 +25,13 @@ export default function Home() {
             }}
             _hover={{
               "& img": {
-                transform: "scale(1.1)",
+                transform: "scale(1.2)",
               },
             }}
           >
             <Image
-              src="/home.png"
               priority
+              src="/contact.png"
               width={240}
               height={240}
               alt="Climbing in the mountains"
@@ -38,15 +39,40 @@ export default function Home() {
           </styled.div>
         </Center>
         <styled.h1 fontWeight="700" fontSize="xl" mb="4">
-          Hello!
+          Contact
         </styled.h1>
         <styled.p mb="4">
-          I’m Marc Neander, a freelancing Full Stack Engineer based in <strong>Stockholm</strong>.
-          I’ve been improving the web since 2006.
+          If you’re thinking of getting in touch with me I’m available on the following channels:
         </styled.p>
         <styled.p>
-          I make sure applications are <strong>performant</strong>, <strong>accessible</strong>,{" "}
-          <strong>SEO optimized</strong> and <strong>user friendly</strong>.
+          <ExternalLink href="mailto:marcneander@gmail.com">marcneander@gmail.com</ExternalLink>
+        </styled.p>
+        <styled.p>
+          <ExternalLink
+            href="https://www.linkedin.com/in/marc-neander-789b8570/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </ExternalLink>
+        </styled.p>
+        <styled.p>
+          <ExternalLink
+            href="https://github.com/marcneander/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </ExternalLink>
+        </styled.p>
+        <styled.p>
+          <ExternalLink
+            href="https://twitter.com/marcneander"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </ExternalLink>
         </styled.p>
       </Container>
       <styled.footer textAlign="center" py="6" mt="6">
