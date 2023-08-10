@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <styled.div display="flex" flexDirection="column" h="100%">
+    <styled.div display="flex" flexDirection="column" minH="100%">
       <Nav pathname={pathname} />
       <Container maxW="xl" w="100%" textAlign="center" mt="14" flexGrow="1">
         <Center mb="10">
