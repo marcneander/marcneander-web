@@ -11,7 +11,7 @@ const StyledLink = styled(Link)
 
 export function Nav({ pathname }: Props) {
   return (
-    <styled.header
+    <styled.nav
       borderBottom="1px solid rgb(47, 51, 54)"
       position="sticky"
       top="0"
@@ -53,6 +53,6 @@ export function Nav({ pathname }: Props) {
           </HStack>
         </Center>
       </Container>
-    </styled.header>
+    </styled.nav>
   )
 }

@@ -12,6 +12,15 @@ import {
   ExperienceTextWrap,
   ExperienceTitle,
 } from "@/components/Experience"
+import profileImage from "../../images/profile.png"
+import efuelLogotype from "../../images/efuel.svg"
+import tibberLogotype from "../../images/tibber.png"
+import mojangLogotype from "../../images/mojang.svg"
+import blocketLogotype from "../../images/blocket.png"
+import bytbilLogotype from "../../images/bytbil.jpg"
+import tripwellLogotype from "../../images/tripwell.png"
+import schibstedLogotype from "../../images/schibsted.png"
+import pixproLogotype from "../../images/pixpro.png"
 
 const pathname = "/profile"
 export const metadata: Metadata = {
@@ -34,23 +43,21 @@ export default function Profile() {
               },
             }}
             _hover={{
-              "& img": {
-                transform: "scale(1.05)",
-              },
-            }}
-            _active={{
-              "& img": {
-                transform: "scale(1.05)",
+              lg: {
+                "& img": {
+                  transform: "scale(1.05)",
+                },
               },
             }}
           >
             <Image
               priority
-              src="/profile.png"
+              src={profileImage}
               width={240}
               height={241}
               alt="Marc Neander portrait"
               style={{ borderRadius: "9999px" }}
+              placeholder="blur"
             />
           </styled.div>
         </Center>
@@ -107,7 +114,7 @@ export default function Profile() {
           </styled.h1>
           <Experience>
             <ExperienceImageWrap>
-              <Image src="/efuel.svg" width={66} height={66} alt="EFUEL logotype" />
+              <Image src={efuelLogotype} width={66} height={66} alt="EFUEL logotype" />
             </ExperienceImageWrap>
             <ExperienceInfoWrap>
               <ExperienceTitle>Full Stack Developer</ExperienceTitle>
@@ -135,7 +142,7 @@ export default function Profile() {
           </Experience>
           <Experience>
             <ExperienceImageWrap>
-              <Image src="/tibber.png" width={66} height={66} alt="Tibber logotype" />
+              <Image src={tibberLogotype} width={66} height={66} alt="Tibber logotype" />
             </ExperienceImageWrap>
             <ExperienceInfoWrap>
               <ExperienceTitle>Full Stack Developer</ExperienceTitle>
@@ -155,7 +162,7 @@ export default function Profile() {
           </Experience>
           <Experience>
             <ExperienceImageWrap>
-              <Image src="/mojang.svg" width={66} height={66} alt="Mojang logotype" />
+              <Image src={mojangLogotype} width={66} height={66} alt="Mojang logotype" />
             </ExperienceImageWrap>
             <ExperienceInfoWrap>
               <ExperienceTitle>Front-end Developer</ExperienceTitle>
@@ -175,7 +182,7 @@ export default function Profile() {
           </Experience>
           <Experience>
             <ExperienceImageWrap>
-              <Image src="/blocket.png" width={66} height={66} alt="Blocket logotype" />
+              <Image src={blocketLogotype} width={66} height={66} alt="Blocket logotype" />
             </ExperienceImageWrap>
             <ExperienceInfoWrap>
               <ExperienceTitle>Full Stack Developer</ExperienceTitle>
@@ -191,7 +198,7 @@ export default function Profile() {
           </Experience>
           <Experience>
             <ExperienceImageWrap>
-              <Image src="/bytbil.jpg" width={66} height={66} alt="Bytbil logotype" />
+              <Image src={bytbilLogotype} width={66} height={66} alt="Bytbil logotype" />
             </ExperienceImageWrap>
             <ExperienceInfoWrap>
               <ExperienceTitle>Front-end Developer</ExperienceTitle>
@@ -212,7 +219,7 @@ export default function Profile() {
           </Experience>
           <Experience>
             <ExperienceImageWrap>
-              <Image src="/tripwell.png" width={66} height={66} alt="Tripwell logotype" />
+              <Image src={tripwellLogotype} width={66} height={66} alt="Tripwell logotype" />
             </ExperienceImageWrap>
             <ExperienceInfoWrap>
               <ExperienceTitle>Front-end Developer</ExperienceTitle>
@@ -227,7 +234,7 @@ export default function Profile() {
           </Experience>
           <Experience>
             <ExperienceImageWrap>
-              <Image src="/schibsted.png" width={66} height={66} alt="Schibsted logotype" />
+              <Image src={schibstedLogotype} width={66} height={66} alt="Schibsted logotype" />
             </ExperienceImageWrap>
             <ExperienceInfoWrap>
               <ExperienceTitle>Lead Front-end Developer</ExperienceTitle>
@@ -244,7 +251,7 @@ export default function Profile() {
           </Experience>
           <Experience>
             <ExperienceImageWrap>
-              <Image src="/schibsted.png" width={66} height={66} alt="Schibsted logotype" />
+              <Image src={schibstedLogotype} width={66} height={66} alt="Schibsted logotype" />
             </ExperienceImageWrap>
             <ExperienceInfoWrap>
               <ExperienceTitle>Front-end Developer</ExperienceTitle>
@@ -264,7 +271,7 @@ export default function Profile() {
           </Experience>
           <Experience>
             <ExperienceImageWrap>
-              <Image src="/pixpro.png" width={66} height={66} alt="Pixpro logotype" />
+              <Image src={pixproLogotype} width={66} height={66} alt="Pixpro logotype" />
             </ExperienceImageWrap>
             <ExperienceInfoWrap>
               <ExperienceTitle>Developer</ExperienceTitle>

@@ -3,6 +3,7 @@ import { Center, Container, styled } from "../../../styled-system/jsx"
 import { Nav } from "@/components/Nav"
 import Image from "next/image"
 import { ExternalLink } from "@/components/ExternalLink"
+import contactImage from "../../images/contact.png"
 
 const pathname = "/contact"
 export const metadata: Metadata = {
@@ -25,23 +26,21 @@ export default function Contact() {
               },
             }}
             _hover={{
-              "& img": {
-                transform: "scale(1.15)",
-              },
-            }}
-            _active={{
-              "& img": {
-                transform: "scale(1.15)",
+              lg: {
+                "& img": {
+                  transform: "scale(1.15)",
+                },
               },
             }}
           >
             <Image
               priority
-              src="/contact.png"
+              src={contactImage}
               width={240}
               height={240}
               alt="Climbing in the mountains"
               style={{ borderRadius: "9999px" }}
+              placeholder="blur"
             />
           </styled.div>
         </Center>

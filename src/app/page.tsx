@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import { Center, Container, styled } from "../../styled-system/jsx"
 import { Nav } from "@/components/Nav"
 import Image from "next/image"
+import homeImage from "../images/home.png"
 
 const pathname = "/"
 export const metadata: Metadata = {
@@ -24,23 +25,21 @@ export default function Home() {
               },
             }}
             _hover={{
-              "& img": {
-                transform: "scale(1.05)",
-              },
-            }}
-            _active={{
-              "& img": {
-                transform: "scale(1.05)",
+              lg: {
+                "& img": {
+                  transform: "scale(1.05)",
+                },
               },
             }}
           >
             <Image
-              src="/home.png"
+              src={homeImage}
               priority
               width={240}
               height={240}
               alt="Climbing in the mountains"
               style={{ borderRadius: "9999px" }}
+              placeholder="blur"
             />
           </styled.div>
         </Center>
