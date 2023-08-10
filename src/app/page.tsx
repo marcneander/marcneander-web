@@ -17,6 +17,7 @@ export default function Home() {
           <styled.div
             borderRadius="9999px"
             overflow="hidden"
+            transform="translateZ(0)"
             {...{
               "& img": {
                 transition: "transform .2s ease-in-out",
@@ -24,7 +25,7 @@ export default function Home() {
             }}
             _hover={{
               "& img": {
-                transform: "scale(1.1)",
+                transform: "scale(1.05)",
               },
             }}
           >
@@ -34,6 +35,7 @@ export default function Home() {
               width={240}
               height={240}
               alt="Climbing in the mountains"
+              style={{ borderRadius: "9999px" }}
             />
           </styled.div>
         </Center>

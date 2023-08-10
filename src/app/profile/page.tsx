@@ -27,6 +27,7 @@ export default function Profile() {
           <styled.div
             borderRadius="9999px"
             overflow="hidden"
+            transform="translateZ(0)"
             {...{
               "& img": {
                 transition: "transform .2s ease-in-out",
@@ -44,6 +45,7 @@ export default function Profile() {
               width={240}
               height={241}
               alt="Marc Neander portrait"
+              style={{ borderRadius: "9999px" }}
             />
           </styled.div>
         </Center>
@@ -119,23 +121,8 @@ export default function Profile() {
                   </li>
                   <li>Designing and developing multiple back-end services.</li>
                   <li>
-                    Built an ecommerce front-end in Next.js using{" "}
-                    <ExternalLink
-                      href="https://www.shopify.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Shopify
-                    </ExternalLink>{" "}
-                    headless and{" "}
-                    <ExternalLink
-                      href="https://www.algolia.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Algolia
-                    </ExternalLink>{" "}
-                    as the search engine.
+                    Built an ecommerce front-end in Next.js using Shopify headless and Algolia as
+                    the search engine.
                   </li>
                 </ul>
               </ExperienceTextWrap>
@@ -152,32 +139,7 @@ export default function Profile() {
               <ExperienceTextWrap>
                 <ul>
                   <li>Researching, designing and devloping a new scaleable ecommerce platform.</li>
-                  <li>
-                    Developing integrations with{" "}
-                    <ExternalLink
-                      href="https://www.klarna.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Klarna
-                    </ExternalLink>
-                    ,{" "}
-                    <ExternalLink
-                      href="https://www.adyen.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Adyen
-                    </ExternalLink>{" "}
-                    &{" "}
-                    <ExternalLink
-                      href="https://www.ingrid.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Ingrid
-                    </ExternalLink>
-                  </li>
+                  <li>Developing integrations with Klarna, Adyen & Ingrid</li>
                   <li>
                     Developing a hyperdynamic multilingual website connected to a headless CMS with
                     a complex setup

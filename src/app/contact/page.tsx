@@ -18,6 +18,7 @@ export default function Contact() {
           <styled.div
             borderRadius="9999px"
             overflow="hidden"
+            transform="translateZ(0)"
             {...{
               "& img": {
                 transition: "transform .2s ease-in-out",
@@ -25,7 +26,7 @@ export default function Contact() {
             }}
             _hover={{
               "& img": {
-                transform: "scale(1.2)",
+                transform: "scale(1.15)",
               },
             }}
           >
@@ -35,6 +36,7 @@ export default function Contact() {
               width={240}
               height={240}
               alt="Climbing in the mountains"
+              style={{ borderRadius: "9999px" }}
             />
           </styled.div>
         </Center>
