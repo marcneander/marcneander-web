@@ -145,6 +145,7 @@ export default function Profile() {
             <ExperienceBadgeWrap>
               <ExperienceBadge>TypeScript</ExperienceBadge>
               <ExperienceBadge>GCP</ExperienceBadge>
+              <ExperienceBadge>Terraform</ExperienceBadge>
               <ExperienceBadge>React</ExperienceBadge>
               <ExperienceBadge>Next.js</ExperienceBadge>
               <ExperienceBadge>Kubernetes</ExperienceBadge>
