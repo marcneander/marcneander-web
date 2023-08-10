@@ -28,6 +28,11 @@ export default function Home() {
                 transform: "scale(1.05)",
               },
             }}
+            _active={{
+              "& img": {
+                transform: "scale(1.05)",
+              },
+            }}
           >
             <Image
               src="/home.png"

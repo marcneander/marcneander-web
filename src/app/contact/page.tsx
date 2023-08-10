@@ -29,6 +29,11 @@ export default function Contact() {
                 transform: "scale(1.15)",
               },
             }}
+            _active={{
+              "& img": {
+                transform: "scale(1.15)",
+              },
+            }}
           >
             <Image
               priority

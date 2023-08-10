@@ -38,6 +38,11 @@ export default function Profile() {
                 transform: "scale(1.05)",
               },
             }}
+            _active={{
+              "& img": {
+                transform: "scale(1.05)",
+              },
+            }}
           >
             <Image
               priority
