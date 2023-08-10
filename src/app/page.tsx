@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import { Center, Container, styled } from "../../styled-system/jsx"
 import { Nav } from "@/components/Nav"
 import Image from "next/image"
-import homeImage from "../images/home.png"
+import homeImage from "../assets/images/home.png"
 
 const pathname = "/"
 export const metadata: Metadata = {

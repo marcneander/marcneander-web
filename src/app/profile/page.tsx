@@ -5,6 +5,8 @@ import Image from "next/image"
 import { ExternalLink } from "@/components/ExternalLink"
 import {
   Experience,
+  ExperienceBadge,
+  ExperienceBadgeWrap,
   ExperienceExtraInfoTitle,
   ExperienceImageWrap,
   ExperienceInfoWrap,
@@ -12,15 +14,16 @@ import {
   ExperienceTextWrap,
   ExperienceTitle,
 } from "@/components/Experience"
-import profileImage from "../../images/profile.png"
-import efuelLogotype from "../../images/efuel.svg"
-import tibberLogotype from "../../images/tibber.png"
-import mojangLogotype from "../../images/mojang.svg"
-import blocketLogotype from "../../images/blocket.png"
-import bytbilLogotype from "../../images/bytbil.jpg"
-import tripwellLogotype from "../../images/tripwell.png"
-import schibstedLogotype from "../../images/schibsted.png"
-import pixproLogotype from "../../images/pixpro.png"
+import profileImage from "../../assets/images/profile.png"
+import efuelLogotype from "../../assets/images/efuel.svg"
+import tibberLogotype from "../../assets/images/tibber.png"
+import mojangLogotype from "../../assets/icons/mojang.svg"
+import blocketLogotype from "../../assets/images/blocket.png"
+import bytbilLogotype from "../../assets/images/bytbil.jpg"
+import tripwellLogotype from "../../assets/images/tripwell.png"
+import schibstedLogotype from "../../assets/images/schibsted.png"
+import pixproLogotype from "../../assets/images/pixpro.png"
+import phpIcon from "../../assets/icons/php.svg"
 
 const pathname = "/profile"
 export const metadata: Metadata = {
@@ -139,6 +142,26 @@ export default function Profile() {
                 </ul>
               </ExperienceTextWrap>
             </ExperienceInfoWrap>
+            <ExperienceBadgeWrap>
+              <ExperienceBadge>TypeScript</ExperienceBadge>
+              <ExperienceBadge>GCP</ExperienceBadge>
+              <ExperienceBadge>React</ExperienceBadge>
+              <ExperienceBadge>Next.js</ExperienceBadge>
+              <ExperienceBadge>Kubernetes</ExperienceBadge>
+              <ExperienceBadge>GraphQL</ExperienceBadge>
+              <ExperienceBadge>NestJS</ExperienceBadge>
+              <ExperienceBadge>gRPC</ExperienceBadge>
+              <ExperienceBadge>Strapi</ExperienceBadge>
+              <ExperienceBadge>Algolia</ExperienceBadge>
+              <ExperienceBadge>Prisma</ExperienceBadge>
+              <ExperienceBadge>PostgreSQL</ExperienceBadge>
+              <ExperienceBadge>MongoDB</ExperienceBadge>
+              <ExperienceBadge>Github Actions</ExperienceBadge>
+              <ExperienceBadge>Shopify</ExperienceBadge>
+              <ExperienceBadge>Zustand</ExperienceBadge>
+              <ExperienceBadge>Sentry</ExperienceBadge>
+              <ExperienceBadge>Redis</ExperienceBadge>
+            </ExperienceBadgeWrap>
           </Experience>
           <Experience>
             <ExperienceImageWrap>
@@ -153,12 +176,25 @@ export default function Profile() {
                   <li>Researching, designing and devloping a new scaleable ecommerce platform.</li>
                   <li>Developing integrations with Klarna, Adyen & Ingrid</li>
                   <li>
-                    Developing a hyperdynamic multilingual website connected to a headless CMS with
-                    a complex setup
+                    Developing a hyperdynamic multilingual website using Contentful CMS with a
+                    complex setup
                   </li>
                 </ul>
               </ExperienceTextWrap>
             </ExperienceInfoWrap>
+            <ExperienceBadgeWrap>
+              <ExperienceBadge>TypeScript</ExperienceBadge>
+              <ExperienceBadge>React</ExperienceBadge>
+              <ExperienceBadge>Next.js</ExperienceBadge>
+              <ExperienceBadge>GraphQL</ExperienceBadge>
+              <ExperienceBadge>Algolia</ExperienceBadge>
+              <ExperienceBadge>Contentful</ExperienceBadge>
+              <ExperienceBadge>Docker</ExperienceBadge>
+              <ExperienceBadge>AWS</ExperienceBadge>
+              <ExperienceBadge>Github Actions</ExperienceBadge>
+              <ExperienceBadge>Redux Toolkit</ExperienceBadge>
+              <ExperienceBadge>Redis</ExperienceBadge>
+            </ExperienceBadgeWrap>
           </Experience>
           <Experience>
             <ExperienceImageWrap>
@@ -179,6 +215,17 @@ export default function Profile() {
                 </ul>
               </ExperienceTextWrap>
             </ExperienceInfoWrap>
+            <ExperienceBadgeWrap>
+              <ExperienceBadge>TypeScript</ExperienceBadge>
+              <ExperienceBadge>React</ExperienceBadge>
+              <ExperienceBadge>Three.js</ExperienceBadge>
+              <ExperienceBadge>Webpack</ExperienceBadge>
+              <ExperienceBadge>Sentry</ExperienceBadge>
+              <ExperienceBadge>Contentful</ExperienceBadge>
+              <ExperienceBadge>Docker</ExperienceBadge>
+              <ExperienceBadge>Azure Cloud</ExperienceBadge>
+              <ExperienceBadge>Azure Pipelines</ExperienceBadge>
+            </ExperienceBadgeWrap>
           </Experience>
           <Experience>
             <ExperienceImageWrap>
@@ -195,6 +242,20 @@ export default function Profile() {
                 </ul>
               </ExperienceTextWrap>
             </ExperienceInfoWrap>
+            <ExperienceBadgeWrap>
+              <ExperienceBadge>JavaScript</ExperienceBadge>
+              <ExperienceBadge>React</ExperienceBadge>
+              <ExperienceBadge>Node.js</ExperienceBadge>
+              <ExperienceBadge>Prisma</ExperienceBadge>
+              <ExperienceBadge>GraphQL</ExperienceBadge>
+              <ExperienceBadge>Webpack</ExperienceBadge>
+              <ExperienceBadge>Sentry</ExperienceBadge>
+              <ExperienceBadge>Express</ExperienceBadge>
+              <ExperienceBadge>Docker</ExperienceBadge>
+              <ExperienceBadge>AWS</ExperienceBadge>
+              <ExperienceBadge>Jenkins</ExperienceBadge>
+              <ExperienceBadge>Redis</ExperienceBadge>
+            </ExperienceBadgeWrap>
           </Experience>
           <Experience>
             <ExperienceImageWrap>
@@ -216,6 +277,16 @@ export default function Profile() {
                 </ul>
               </ExperienceTextWrap>
             </ExperienceInfoWrap>
+            <ExperienceBadgeWrap>
+              <ExperienceBadge>JavaScript</ExperienceBadge>
+              <ExperienceBadge>React</ExperienceBadge>
+              <ExperienceBadge>Redux</ExperienceBadge>
+              <ExperienceBadge>Webpack</ExperienceBadge>
+              <ExperienceBadge>CSS</ExperienceBadge>
+              <ExperienceBadge>Python</ExperienceBadge>
+              <ExperienceBadge>Docker</ExperienceBadge>
+              <ExperienceBadge>Jenkins</ExperienceBadge>
+            </ExperienceBadgeWrap>
           </Experience>
           <Experience>
             <ExperienceImageWrap>
@@ -231,6 +302,13 @@ export default function Profile() {
                 </ul>
               </ExperienceTextWrap>
             </ExperienceInfoWrap>
+            <ExperienceBadgeWrap>
+              <ExperienceBadge>JavaScript</ExperienceBadge>
+              <ExperienceBadge>jQuery</ExperienceBadge>
+              <ExperienceBadge>Webpack</ExperienceBadge>
+              <ExperienceBadge>CSS</ExperienceBadge>
+              <ExperienceBadge>Python</ExperienceBadge>
+            </ExperienceBadgeWrap>
           </Experience>
           <Experience>
             <ExperienceImageWrap>
@@ -248,6 +326,13 @@ export default function Profile() {
                 </ul>
               </ExperienceTextWrap>
             </ExperienceInfoWrap>
+            <ExperienceBadgeWrap>
+              <ExperienceBadge>JavaScript</ExperienceBadge>
+              <ExperienceBadge>AngularJS</ExperienceBadge>
+              <ExperienceBadge>Gulp</ExperienceBadge>
+              <ExperienceBadge>PostgreSQL</ExperienceBadge>
+              <ExperienceBadge>CSS</ExperienceBadge>
+            </ExperienceBadgeWrap>
           </Experience>
           <Experience>
             <ExperienceImageWrap>
@@ -268,6 +353,14 @@ export default function Profile() {
                 </ul>
               </ExperienceTextWrap>
             </ExperienceInfoWrap>
+            <ExperienceBadgeWrap>
+              <ExperienceBadge>HTML</ExperienceBadge>
+              <ExperienceBadge>CSS</ExperienceBadge>
+              <ExperienceBadge>JavaScript</ExperienceBadge>
+              <ExperienceBadge>jQuery</ExperienceBadge>
+              <ExperienceBadge>PHP</ExperienceBadge>
+              <ExperienceBadge>PostgreSQL</ExperienceBadge>
+            </ExperienceBadgeWrap>
           </Experience>
           <Experience>
             <ExperienceImageWrap>
@@ -285,6 +378,15 @@ export default function Profile() {
                 </ul>
               </ExperienceTextWrap>
             </ExperienceInfoWrap>
+            <ExperienceBadgeWrap>
+              <ExperienceBadge>HTML</ExperienceBadge>
+              <ExperienceBadge>CSS</ExperienceBadge>
+              <ExperienceBadge>JavaScript</ExperienceBadge>
+              <ExperienceBadge>MooTools</ExperienceBadge>
+              <ExperienceBadge>Joomla</ExperienceBadge>
+              <ExperienceBadge>PHP</ExperienceBadge>
+              <ExperienceBadge>MySQL</ExperienceBadge>
+            </ExperienceBadgeWrap>
           </Experience>
         </styled.section>
       </Container>

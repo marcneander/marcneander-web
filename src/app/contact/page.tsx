@@ -3,7 +3,7 @@ import { Center, Container, styled } from "../../../styled-system/jsx"
 import { Nav } from "@/components/Nav"
 import Image from "next/image"
 import { ExternalLink } from "@/components/ExternalLink"
-import contactImage from "../../images/contact.png"
+import contactImage from "../../assets/images/contact.png"
 
 const pathname = "/contact"
 export const metadata: Metadata = {

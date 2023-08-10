@@ -7,6 +7,7 @@ export function Experience({ children }: { children: React.ReactNode }) {
       display="flex"
       bg="rgb(32, 35, 39)"
       borderRadius="16px"
+      flexWrap="wrap"
       p={{ base: 4, md: 5 }}
       mb="6"
     >
@@ -61,5 +62,37 @@ export function ExperienceImageWrap({ children }: { children: React.ReactNode })
 }
 
 export function ExperienceInfoWrap({ children }: { children: React.ReactNode }) {
-  return <styled.div>{children}</styled.div>
+  return <styled.div flex="1">{children}</styled.div>
+}
+
+export function ExperienceBadgeWrap({ children }: { children: React.ReactNode }) {
+  return (
+    <>
+      <styled.div flexBasis="100%" height="0" />
+      <styled.div width="100%" mt="4">
+        {children}
+      </styled.div>
+    </>
+  )
+}
+
+export function ExperienceBadge({ children }: { children: React.ReactNode }) {
+  return (
+    <styled.span
+      display="inline-flex"
+      justifyContent="center"
+      alignItems="center"
+      bg="rgba(255, 255, 255, 0.1)"
+      borderRadius="4px"
+      px="2"
+      py="1"
+      fontSize="xs"
+      fontWeight="500"
+      color="rgba(255, 255, 255, 0.7)"
+      mt="2"
+      mr="2"
+    >
+      {children}
+    </styled.span>
+  )
 }
