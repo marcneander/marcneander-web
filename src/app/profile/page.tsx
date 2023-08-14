@@ -108,7 +108,7 @@ export default function Profile() {
           </styled.p>
           <styled.p mb="4">
             I’ve been a mentor for several developers during my career and I’m always happy to share
-            what I know and don´t.
+            what I know and don’t.
           </styled.p>
         </styled.section>
         <styled.section mb="14">
