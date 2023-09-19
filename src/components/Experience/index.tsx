@@ -11,6 +11,7 @@ export function Experience({ children }: { children: React.ReactNode }) {
       p={{ base: 4, md: 5 }}
       _print={{
         p: "0",
+        pageBreakInside: "avoid",
       }}
       mb="6"
     >

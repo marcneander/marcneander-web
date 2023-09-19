@@ -38,7 +38,7 @@ export default function Profile() {
         maxW="xl"
         w="100%"
         textAlign="center"
-        _print={{ textAlign: "left", maxW: "100%", mt: "0" }}
+        _print={{ textAlign: "left", maxW: "100%", mt: "0", fontSize: "sm" }}
         mt="14"
       >
         <Center mb="10" _print={{ justifyContent: "flex-start" }}>
@@ -97,7 +97,7 @@ export default function Profile() {
           </VStack>
         </Center>
         <styled.section
-          mb="7"
+          mb="4"
           display="none"
           _print={{
             display: "block",
@@ -108,10 +108,11 @@ export default function Profile() {
           </styled.h1>
         </styled.section>
         <styled.section
-          mb="14"
           display="none"
           _print={{
             display: "block",
+            pageBreakInside: "avoid",
+            mb: "8",
           }}
         >
           <styled.h1 fontWeight="700" fontSize="xl" mb="4">
@@ -125,7 +126,13 @@ export default function Profile() {
             <li>Devops</li>
           </styled.ul>
         </styled.section>
-        <styled.section mb="14">
+        <styled.section
+          mb="14"
+          _print={{
+            pageBreakInside: "avoid",
+            mb: "8",
+          }}
+        >
           <styled.h1 fontWeight="700" fontSize="xl" mb="4">
             About
           </styled.h1>
@@ -150,7 +157,13 @@ export default function Profile() {
             still strong and I try to get out as often as I can.
           </styled.p>
         </styled.section>
-        <styled.section mb="12">
+        <styled.section
+          mb="14"
+          _print={{
+            pageBreakInside: "avoid",
+            mb: "8",
+          }}
+        >
           <styled.h2 fontWeight="700" fontSize="xl" mb="4">
             Skill
           </styled.h2>
@@ -173,7 +186,13 @@ export default function Profile() {
             what I know and what I don’t.
           </styled.p>
         </styled.section>
-        <styled.section mb="14">
+        <styled.section
+          mb="14"
+          _print={{
+            pageBreakInside: "avoid",
+            mb: "8",
+          }}
+        >
           <styled.h1 fontWeight="700" fontSize="xl" mb="4">
             Experience
           </styled.h1>
