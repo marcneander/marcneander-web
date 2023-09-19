@@ -17,6 +17,9 @@ export function Nav({ pathname }: Props) {
       top="0"
       zIndex="1"
       bg="#000"
+      _print={{
+        display: "none",
+      }}
     >
       <Container maxW="xl" w="100%" py="2">
         <Center>

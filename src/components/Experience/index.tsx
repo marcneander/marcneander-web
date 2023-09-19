@@ -9,6 +9,9 @@ export function Experience({ children }: { children: React.ReactNode }) {
       borderRadius="16px"
       flexWrap="wrap"
       p={{ base: 4, md: 5 }}
+      _print={{
+        p: "0",
+      }}
       mb="6"
     >
       {children}
@@ -30,7 +33,7 @@ export function ExperienceSubTitle({ children }: { children: React.ReactNode }) 
 
 export function ExperienceExtraInfoTitle({ children }: { children: React.ReactNode }) {
   return (
-    <styled.h4 fontSize="sm" color="rgba(255, 255, 255, 0.7)">
+    <styled.h4 fontSize="sm" color="rgba(255, 255, 255, 0.7)" _print={{ color: "#000" }}>
       {children}
     </styled.h4>
   )
@@ -91,6 +94,10 @@ export function ExperienceBadge({ children }: { children: React.ReactNode }) {
       color="rgba(255, 255, 255, 0.7)"
       mt="2"
       mr="2"
+      _print={{
+        color: "#000",
+        border: "1px solid rgba(0, 0, 0, 0.1)",
+      }}
     >
       {children}
     </styled.span>

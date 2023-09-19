@@ -55,7 +55,7 @@ export default function Contact() {
         </styled.p>
         <styled.p>
           <ExternalLink
-            href="https://www.linkedin.com/in/marc-neander-789b8570/"
+            href="https://www.linkedin.com/in/marc-neander/"
             target="_blank"
             rel="noopener noreferrer"
           >

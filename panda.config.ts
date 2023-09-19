@@ -26,6 +26,10 @@ export default defineConfig({
       color: "#e7e9ea",
       minHeight: "100%",
       height: "100%",
+      _print: {
+        backgroundColor: "#fff",
+        color: "#000",
+      },
     },
     html: {
       height: "100%",

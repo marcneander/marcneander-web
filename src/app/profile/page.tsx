@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Center, Container, styled } from "../../../styled-system/jsx"
+import { Center, Container, HStack, Stack, VStack, styled } from "../../../styled-system/jsx"
 import { Nav } from "@/components/Nav"
 import Image from "next/image"
 import { ExternalLink } from "@/components/ExternalLink"
@@ -34,8 +34,14 @@ export default function Profile() {
   return (
     <styled.div display="flex" flexDirection="column" minH="100%">
       <Nav pathname={pathname} />
-      <Container maxW="xl" w="100%" textAlign="center" mt="14">
-        <Center mb="10">
+      <Container
+        maxW="xl"
+        w="100%"
+        textAlign="center"
+        _print={{ textAlign: "left", maxW: "100%", mt: "0" }}
+        mt="14"
+      >
+        <Center mb="10" _print={{ justifyContent: "flex-start" }}>
           <styled.div
             borderRadius="9999px"
             overflow="hidden"
@@ -63,13 +69,68 @@ export default function Profile() {
               placeholder="blur"
             />
           </styled.div>
+          <VStack ml="5" display="none" _print={{ display: "flex" }}>
+            <styled.div w="100%">
+              <styled.p>Stockholm, Sweden</styled.p>
+            </styled.div>
+            <styled.div w="100%">
+              <styled.p>+46 73 916 26 50</styled.p>
+            </styled.div>
+            <styled.div w="100%">
+              <styled.p>
+                <ExternalLink href="mailto:marcneander@gmail.com">
+                  marcneander@gmail.com
+                </ExternalLink>
+              </styled.p>
+            </styled.div>
+            <styled.div w="100%">
+              <styled.p>
+                <ExternalLink
+                  href="https://www.linkedin.com/in/marc-neander"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://www.linkedin.com/in/marc-neander
+                </ExternalLink>
+              </styled.p>
+            </styled.div>
+          </VStack>
         </Center>
+        <styled.section
+          mb="7"
+          display="none"
+          _print={{
+            display: "block",
+          }}
+        >
+          <styled.h1 fontWeight="700" fontSize="3xl">
+            Marc Neander
+          </styled.h1>
+        </styled.section>
+        <styled.section
+          mb="14"
+          display="none"
+          _print={{
+            display: "block",
+          }}
+        >
+          <styled.h1 fontWeight="700" fontSize="xl" mb="4">
+            Roles
+          </styled.h1>
+          <styled.ul listStyle="disc" pl="5">
+            <styled.li w="auto">Fullstack</styled.li>
+            <li>Frontend</li>
+            <li>Backend</li>
+            <li>Architect</li>
+            <li>Devops</li>
+          </styled.ul>
+        </styled.section>
         <styled.section mb="14">
           <styled.h1 fontWeight="700" fontSize="xl" mb="4">
             About
           </styled.h1>
           <styled.p mb="4">
-            Full Stack Engineer with more than 10 years of professional experience.
+            Senior software engineer with more than 10 years of professional experience.
           </styled.p>
           <styled.p mb="4">
             I typically build front-ends with{" "}
@@ -80,12 +141,13 @@ export default function Profile() {
             <ExternalLink href="https://nodejs.org" target="_blank" rel="noopener noreferrer">
               Node.js
             </ExternalLink>
-            . Passionate about performance, aesthetics, user experience and accessibility. I’m a
-            social and quality driven team player. Able to lead projects and people.
+            . Passionate about performance, aesthetics, infrastructure, user experience and
+            accessibility. I’m a social and quality driven team player. Able to lead projects and
+            people.
           </styled.p>
           <styled.p>
-            Off work I’m first and foremost a dad to my two kids. But my passion for rock climbing
-            is still strong and I try to get out as often as I can.
+            Off work I’m first and foremost a dad to my two kids but my passion for rock climbing is
+            still strong and I try to get out as often as I can.
           </styled.p>
         </styled.section>
         <styled.section mb="12">
@@ -98,8 +160,8 @@ export default function Profile() {
             given.
           </styled.p>
           <styled.p mb="4">
-            Currently (extra) excited about gRPC, tRPC, GraphQL, NextJS, error monitoring, logs,
-            tests and DX.
+            Currently (extra) excited about gRPC, tRPC, GraphQL, NextJS/Remix, error monitoring, IaC
+            and DX in general.
           </styled.p>
           <styled.p mb="4">
             Designed several large scale applications, both front-ends, back-ends and
@@ -108,7 +170,7 @@ export default function Profile() {
           </styled.p>
           <styled.p mb="4">
             I’ve been a mentor for several developers during my career and I’m always happy to share
-            what I know and don’t.
+            what I know and what I don’t.
           </styled.p>
         </styled.section>
         <styled.section mb="14">
